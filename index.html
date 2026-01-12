@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Studies Database</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #555;
+            font-size: 14px;
+        }
+
+        input, select {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        .results-info {
+            margin-bottom: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .study-card {
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            transition: box-shadow 0.2s;
+        }
+
+        .study-card:hover {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .study-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .study-authors {
+            color: #555;
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        .study-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 12px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .study-meta span {
+            display: flex;
+            align-items: center;
+        }
+
+        .study-meta strong {
+            margin-right: 5px;
+            color: #444;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .tag {
+            background-color: #e3f2fd;
+            color: #1976d2;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .tag.population {
+            background-color: #f3e5f5;
+            color: #7b1fa2;
+        }
+
+        .tag.method {
+            background-color: #e8f5e9;
+            color: #388e3c;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Research Studies Database</h1>
+        
+        <div class="filters">
+            <div class="filter-group">
+                <label for="search">Search</label>
+                <input type="text" id="search" placeholder="Search titles, authors...">
+            </div>
+            
+            <div class="filter-group">
+                <label for="methodFilter">Method</label>
+                <select id="methodFilter">
+                    <option value="">All Methods</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="populationFilter">Population</label>
+                <select id="populationFilter">
+                    <option value="">All Populations</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="sortBy">Sort By</label>
+                <select id="sortBy">
+                    <option value="date-desc">Date (Newest First)</option>
+                    <option value="date-asc">Date (Oldest First)</option>
+                    <option value="title">Title (A-Z)</option>
+                    <option value="author">Author (A-Z)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="results-info">
+            <span id="resultsCount">0 studies found</span>
+            <button onclick="resetFilters()" style="margin-left: 15px;">Reset Filters</button>
+        </div>
+
+        <div id="studiesContainer"></div>
+    </div>
+
+    <script>
+        // Sample data - this would be loaded from your JSON file
+        const studiesData = [
+            {
+                title: "Effects of Curved Treadmill Training on Running Biomechanics",
+                authors: ["Smith, J.", "Johnson, M.", "Williams, K."],
+                year: 2023,
+                journal: "Journal of Sports Science",
+                methods: ["Biomechanical Analysis", "Randomized Control Trial"],
+                population: "Recreational Runners",
+                sampleSize: 45,
+                keyFindings: "Curved treadmills showed significant improvements in running economy"
+            },
+            {
+                title: "Gait Cycle Variations in Elite vs Novice Runners",
+                authors: ["Davis, R.", "Martinez, L."],
+                year: 2022,
+                journal: "Gait & Posture",
+                methods: ["Motion Capture", "Longitudinal Study"],
+                population: "Elite Athletes",
+                sampleSize: 30,
+                keyFindings: "Elite runners demonstrated more consistent gait patterns"
+            },
+            {
+                title: "Impact of Footwear on Walking Speed Fluctuations",
+                authors: ["Chen, W.", "Anderson, P.", "Brown, T."],
+                year: 2024,
+                journal: "Footwear Science",
+                methods: ["Observational Study", "Biomechanical Analysis"],
+                population: "Elderly Adults",
+                sampleSize: 60,
+                keyFindings: "Proper footwear reduced speed fluctuations during walking"
+            },
+            {
+                title: "Metabolic Cost Differences Between Motorized and Non-Motorized Treadmills",
+                authors: ["Taylor, S.", "White, D."],
+                year: 2023,
+                journal: "Medicine & Science in Sports",
+                methods: ["Metabolic Testing", "Crossover Study"],
+                population: "Recreational Runners",
+                sampleSize: 25,
+                keyFindings: "Non-motorized treadmills showed 20% higher energy expenditure"
+            },
+            {
+                title: "Stride-to-Stride Variability in Children with Cerebral Palsy",
+                authors: ["Garcia, M.", "Lee, H.", "Patel, N."],
+                year: 2021,
+                journal: "Developmental Medicine",
+                methods: ["Motion Capture", "Case-Control Study"],
+                population: "Pediatric Patients",
+                sampleSize: 40,
+                keyFindings: "Higher variability associated with fall risk"
+            }
+        ];
+
+        let filteredStudies = [...studiesData];
+
+        function populateFilters() {
+            const methods = new Set();
+            const populations = new Set();
+
+            studiesData.forEach(study => {
+                study.methods.forEach(method => methods.add(method));
+                populations.add(study.population);
+            });
+
+            const methodFilter = document.getElementById('methodFilter');
+            methods.forEach(method => {
+                const option = document.createElement('option');
+                option.value = method;
+                option.textContent = method;
+                methodFilter.appendChild(option);
+            });
+
+            const populationFilter = document.getElementById('populationFilter');
+            populations.forEach(population => {
+                const option = document.createElement('option');
+                option.value = population;
+                option.textContent = population;
+                populationFilter.appendChild(option);
+            });
+        }
+
+        function filterAndSortStudies() {
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+            const methodFilter = document.getElementById('methodFilter').value;
+            const populationFilter = document.getElementById('populationFilter').value;
+            const sortBy = document.getElementById('sortBy').value;
+
+            filteredStudies = studiesData.filter(study => {
+                const matchesSearch = searchTerm === '' || 
+                    study.title.toLowerCase().includes(searchTerm) ||
+                    study.authors.some(author => author.toLowerCase().includes(searchTerm));
+                
+                const matchesMethod = methodFilter === '' || 
+                    study.methods.includes(methodFilter);
+                
+                const matchesPopulation = populationFilter === '' || 
+                    study.population === populationFilter;
+
+                return matchesSearch && matchesMethod && matchesPopulation;
+            });
+
+            // Sort
+            filteredStudies.sort((a, b) => {
+                switch(sortBy) {
+                    case 'date-desc':
+                        return b.year - a.year;
+                    case 'date-asc':
+                        return a.year - b.year;
+                    case 'title':
+                        return a.title.localeCompare(b.title);
+                    case 'author':
+                        return a.authors[0].localeCompare(b.authors[0]);
+                    default:
+                        return 0;
+                }
+            });
+
+            displayStudies();
+        }
+
+        function displayStudies() {
+            const container = document.getElementById('studiesContainer');
+            const resultsCount = document.getElementById('resultsCount');
+            
+            resultsCount.textContent = `${filteredStudies.length} ${filteredStudies.length === 1 ? 'study' : 'studies'} found`;
+
+            if (filteredStudies.length === 0) {
+                container.innerHTML = '<div class="no-results">No studies match your filters</div>';
+                return;
+            }
+
+            container.innerHTML = filteredStudies.map(study => `
+                <div class="study-card">
+                    <div class="study-title">${study.title}</div>
+                    <div class="study-authors">${study.authors.join(', ')}</div>
+                    <div class="study-meta">
+                        <span><strong>Year:</strong> ${study.year}</span>
+                        <span><strong>Journal:</strong> ${study.journal}</span>
+                        <span><strong>Sample Size:</strong> ${study.sampleSize}</span>
+                    </div>
+                    <div><strong>Key Findings:</strong> ${study.keyFindings}</div>
+                    <div class="tags">
+                        <span class="tag population">${study.population}</span>
+                        ${study.methods.map(method => `<span class="tag method">${method}</span>`).join('')}
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function resetFilters() {
+            document.getElementById('search').value = '';
+            document.getElementById('methodFilter').value = '';
+            document.getElementById('populationFilter').value = '';
+            document.getElementById('sortBy').value = 'date-desc';
+            filterAndSortStudies();
+        }
+
+        // Event listeners
+        document.getElementById('search').addEventListener('input', filterAndSortStudies);
+        document.getElementById('methodFilter').addEventListener('change', filterAndSortStudies);
+        document.getElementById('populationFilter').addEventListener('change', filterAndSortStudies);
+        document.getElementById('sortBy').addEventListener('change', filterAndSortStudies);
+
+        // Initialize
+        populateFilters();
+        displayStudies();
+    </script>
+</body>
+</html>

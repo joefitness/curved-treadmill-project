@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Your Study Title",
+    "authors": ["Author 1", "Author 2"],
+    "year": 2023,
+    "journal": "Journal Name",
+    "methods": ["Method 1", "Method 2"],
+    "population": "Population Type",
+    "sampleSize": 50,
+    "keyFindings": "Brief summary"
+  }
+]
