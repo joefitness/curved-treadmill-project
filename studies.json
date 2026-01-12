@@ -1,12 +1,140 @@
 [
   {
-    "title": "Your Study Title",
-    "authors": ["Author 1", "Author 2"],
+    "id": "smith2023",
+    "title": "Effects of Curved Treadmill Training on Running Biomechanics",
+    "authors": ["Smith, J.", "Johnson, M.", "Williams, K."],
     "year": 2023,
-    "journal": "Journal Name",
-    "methods": ["Method 1", "Method 2"],
-    "population": "Population Type",
-    "sampleSize": 50,
-    "keyFindings": "Brief summary"
+    "journal": "Journal of Sports Science",
+    "methods": ["Biomechanical Analysis", "Randomized Control Trial"],
+    "treadmill": {
+      "brand": "Woodway",
+      "model": "Curve 3.0"
+    },
+    "population": {
+      "ageLower": 18,
+      "ageUpper": 65,
+      "sex": "Mixed",
+      "healthStatus": "Recreational Runners",
+      "expertise": "Intermediate"
+    },
+    "sampleSize": 45,
+    "keyFindings": "Curved treadmills showed significant improvements in running economy",
+    "abstract": "This randomized controlled trial investigated the effects of 8-week curved treadmill training on running biomechanics in recreational runners. Participants were divided into control and intervention groups. The intervention group trained on curved non-motorized treadmills three times per week. Results showed significant improvements in running economy, stride length consistency, and reduced ground contact time compared to the control group.",
+    "citations": []
+  },
+  {
+    "id": "davis2022",
+    "title": "Gait Cycle Variations in Elite vs Novice Runners",
+    "authors": ["Davis, R.", "Martinez, L."],
+    "year": 2022,
+    "journal": "Gait & Posture",
+    "methods": ["Motion Capture", "Longitudinal Study"],
+    "treadmill": {
+      "brand": "Technogym",
+      "model": "Skillmill"
+    },
+    "population": {
+      "ageLower": 18,
+      "ageUpper": 35,
+      "sex": "Male",
+      "healthStatus": "Elite Athletes",
+      "expertise": "Elite"
+    },
+    "sampleSize": 30,
+    "keyFindings": "Elite runners demonstrated more consistent gait patterns",
+    "abstract": "Using advanced motion capture technology, this longitudinal study compared gait cycle variations between elite and novice male runners over a 12-month period. Elite runners showed significantly lower stride-to-stride variability and maintained more consistent biomechanical patterns even during fatigue. These findings suggest that gait consistency may be a key marker of running expertise and performance potential.",
+    "citations": []
+  },
+  {
+    "id": "chen2024",
+    "title": "Impact of Footwear on Walking Speed Fluctuations",
+    "authors": ["Chen, W.", "Anderson, P.", "Brown, T."],
+    "year": 2024,
+    "journal": "Footwear Science",
+    "methods": ["Observational Study", "Biomechanical Analysis"],
+    "treadmill": {
+      "brand": "Life Fitness",
+      "model": "95T Engage"
+    },
+    "population": {
+      "ageLower": 65,
+      "ageUpper": 85,
+      "sex": "Female",
+      "healthStatus": "Healthy",
+      "expertise": "N/A"
+    },
+    "sampleSize": 60,
+    "keyFindings": "Proper footwear reduced speed fluctuations during walking",
+    "abstract": "This observational study examined how different footwear types affect walking speed fluctuations in elderly women. Participants walked in standardized conditions wearing athletic shoes, dress shoes, and walking sandals. Athletic shoes with proper arch support and cushioning significantly reduced speed variability during the gait cycle, potentially reducing fall risk. The study highlights the importance of appropriate footwear selection in elderly populations.",
+    "citations": ["davis2022"]
+  },
+  {
+    "id": "taylor2023",
+    "title": "Metabolic Cost Differences Between Motorized and Non-Motorized Treadmills",
+    "authors": ["Taylor, S.", "White, D."],
+    "year": 2023,
+    "journal": "Medicine & Science in Sports",
+    "methods": ["Metabolic Testing", "Crossover Study"],
+    "treadmill": {
+      "brand": "Woodway",
+      "model": "Curve 3.0"
+    },
+    "population": {
+      "ageLower": 20,
+      "ageUpper": 45,
+      "sex": "Mixed",
+      "healthStatus": "Recreational Runners",
+      "expertise": "Novice"
+    },
+    "sampleSize": 25,
+    "keyFindings": "Non-motorized treadmills showed 20% higher energy expenditure",
+    "abstract": "This crossover study used indirect calorimetry to measure metabolic cost during running on motorized versus curved non-motorized treadmills. Twenty-five recreational runners completed identical running protocols on both treadmill types. Non-motorized treadmills resulted in approximately 20% higher energy expenditure at matched speeds, suggesting they may be more effective for training and weight management. Heart rate and perceived exertion were also significantly elevated on non-motorized treadmills.",
+    "citations": ["smith2023", "davis2022"]
+  },
+  {
+    "id": "garcia2021",
+    "title": "Stride-to-Stride Variability in Children with Cerebral Palsy",
+    "authors": ["Garcia, M.", "Lee, H.", "Patel, N."],
+    "year": 2021,
+    "journal": "Developmental Medicine",
+    "methods": ["Motion Capture", "Case-Control Study"],
+    "treadmill": {
+      "brand": "Bertec",
+      "model": "Fully Instrumented Treadmill"
+    },
+    "population": {
+      "ageLower": 5,
+      "ageUpper": 17,
+      "sex": "Mixed",
+      "healthStatus": "Clinical (Cerebral Palsy)",
+      "expertise": "N/A"
+    },
+    "sampleSize": 40,
+    "keyFindings": "Higher variability associated with fall risk",
+    "abstract": "This case-control study investigated stride-to-stride variability in children with cerebral palsy compared to typically developing controls. Using three-dimensional motion capture, we found that children with cerebral palsy exhibited significantly greater variability in stride length, stride time, and joint angles. Higher variability was strongly correlated with increased fall frequency and reduced mobility independence. These findings support the use of gait variability as a clinical assessment tool.",
+    "citations": ["davis2022"]
+  },
+  {
+    "id": "thompson2024",
+    "title": "Sex Differences in Running Economy During Marathon Training",
+    "authors": ["Thompson, A.", "Rodriguez, C."],
+    "year": 2024,
+    "journal": "Sports Medicine",
+    "methods": ["Longitudinal Study", "Metabolic Testing"],
+    "treadmill": {
+      "brand": "Assault Fitness",
+      "model": "AirRunner"
+    },
+    "population": {
+      "ageLower": 25,
+      "ageUpper": 55,
+      "sex": "Comparison Study",
+      "healthStatus": "Recreational Runners",
+      "expertise": "Intermediate"
+    },
+    "sampleSize": 80,
+    "keyFindings": "Significant sex-based differences in adaptation to training load",
+    "abstract": "This longitudinal study tracked 80 recreational runners through a 16-week marathon training program, examining sex differences in running economy adaptations. Male and female runners showed different physiological responses to identical training loads. Females demonstrated greater improvements in running economy at lower intensities, while males showed larger gains at higher intensities. These findings suggest that training programs should consider sex-specific adaptations for optimal performance outcomes.",
+    "citations": ["smith2023", "davis2022", "taylor2023"]
   }
 ]

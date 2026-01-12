@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Studies Database</title>
+    <title>Curved Non-Motorized Treadmill Research Studies Database (cNMT DB)</title>
     <style>
         * {
             margin: 0;
@@ -86,6 +86,13 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
+        .study-id {
+            font-size: 11px;
+            color: #999;
+            margin-bottom: 8px;
+            font-family: monospace;
+        }
+
         .study-title {
             font-size: 18px;
             font-weight: 600;
@@ -116,6 +123,51 @@
         .study-meta strong {
             margin-right: 5px;
             color: #444;
+        }
+
+        .abstract-toggle {
+            background: none;
+            border: none;
+            color: #1976d2;
+            cursor: pointer;
+            padding: 5px 0;
+            font-size: 14px;
+            text-decoration: underline;
+            margin-top: 10px;
+        }
+
+        .abstract-toggle:hover {
+            color: #1565c0;
+        }
+
+        .abstract-content {
+            margin-top: 10px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 3px solid #1976d2;
+            font-size: 14px;
+            line-height: 1.6;
+            display: none;
+        }
+
+        .abstract-content.show {
+            display: block;
+        }
+
+        .citations {
+            margin-top: 12px;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .citation-link {
+            color: #1976d2;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .citation-link:hover {
+            color: #1565c0;
         }
 
         .tags {
@@ -168,7 +220,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Research Studies Database</h1>
+        <h1>Curved Non-Motorized Treadmill Research Studies Database (cNMT DB)</h1>
         
         <div class="filters">
             <div class="filter-group">
@@ -184,9 +236,33 @@
             </div>
             
             <div class="filter-group">
-                <label for="populationFilter">Population</label>
-                <select id="populationFilter">
-                    <option value="">All Populations</option>
+                <label for="minAge">Min Age</label>
+                <input type="number" id="minAge" placeholder="Min" min="0" max="120">
+            </div>
+            
+            <div class="filter-group">
+                <label for="maxAge">Max Age</label>
+                <input type="number" id="maxAge" placeholder="Max" min="0" max="120">
+            </div>
+            
+            <div class="filter-group">
+                <label for="sexFilter">Sex</label>
+                <select id="sexFilter">
+                    <option value="">All</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="treadmillFilter">Treadmill</label>
+                <select id="treadmillFilter">
+                    <option value="">All Treadmills</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="healthStatusFilter">Health Status</label>
+                <select id="healthStatusFilter">
+                    <option value="">All</option>
                 </select>
             </div>
             
@@ -210,7 +286,7 @@
     </div>
 
     <script>
-        let studiesData = [];
+         let studiesData = [];
 
         fetch('studies.json')
         .then(response => response.json())
@@ -221,15 +297,18 @@
             displayStudies();
         });
 
+
         let filteredStudies = [...studiesData];
 
         function populateFilters() {
             const methods = new Set();
-            const populations = new Set();
+            const sexOptions = new Set();
+            const healthStatuses = new Set();
 
             studiesData.forEach(study => {
                 study.methods.forEach(method => methods.add(method));
-                populations.add(study.population);
+                sexOptions.add(study.population.sex);
+                healthStatuses.add(study.population.healthStatus);
             });
 
             const methodFilter = document.getElementById('methodFilter');
@@ -240,19 +319,30 @@
                 methodFilter.appendChild(option);
             });
 
-            const populationFilter = document.getElementById('populationFilter');
-            populations.forEach(population => {
+            const sexFilter = document.getElementById('sexFilter');
+            Array.from(sexOptions).sort().forEach(sex => {
                 const option = document.createElement('option');
-                option.value = population;
-                option.textContent = population;
-                populationFilter.appendChild(option);
+                option.value = sex;
+                option.textContent = sex;
+                sexFilter.appendChild(option);
+            });
+
+            const healthStatusFilter = document.getElementById('healthStatusFilter');
+            Array.from(healthStatuses).sort().forEach(status => {
+                const option = document.createElement('option');
+                option.value = status;
+                option.textContent = status;
+                healthStatusFilter.appendChild(option);
             });
         }
 
         function filterAndSortStudies() {
             const searchTerm = document.getElementById('search').value.toLowerCase();
             const methodFilter = document.getElementById('methodFilter').value;
-            const populationFilter = document.getElementById('populationFilter').value;
+            const minAge = document.getElementById('minAge').value;
+            const maxAge = document.getElementById('maxAge').value;
+            const sexFilter = document.getElementById('sexFilter').value;
+            const healthStatusFilter = document.getElementById('healthStatusFilter').value;
             const sortBy = document.getElementById('sortBy').value;
 
             filteredStudies = studiesData.filter(study => {
@@ -263,10 +353,21 @@
                 const matchesMethod = methodFilter === '' || 
                     study.methods.includes(methodFilter);
                 
-                const matchesPopulation = populationFilter === '' || 
-                    study.population === populationFilter;
+                // Check if study's age range overlaps with filter range
+                const matchesAge = (minAge === '' && maxAge === '') ||
+                    (minAge === '' && study.population.ageLower <= parseInt(maxAge)) ||
+                    (maxAge === '' && study.population.ageUpper >= parseInt(minAge)) ||
+                    (minAge !== '' && maxAge !== '' && 
+                     study.population.ageLower <= parseInt(maxAge) && 
+                     study.population.ageUpper >= parseInt(minAge));
 
-                return matchesSearch && matchesMethod && matchesPopulation;
+                const matchesSex = sexFilter === '' || 
+                    study.population.sex === sexFilter;
+
+                const matchesHealthStatus = healthStatusFilter === '' || 
+                    study.population.healthStatus === healthStatusFilter;
+
+                return matchesSearch && matchesMethod && matchesAge && matchesSex && matchesHealthStatus;
             });
 
             // Sort
@@ -299,8 +400,24 @@
                 return;
             }
 
-            container.innerHTML = filteredStudies.map(study => `
-                <div class="study-card">
+            container.innerHTML = filteredStudies.map(study => {
+                // Find studies that cite this one
+                const citedBy = studiesData.filter(s => s.citations.includes(study.id));
+                const citedByText = citedBy.length > 0 
+                    ? `Cited by: ${citedBy.map(s => `<span class="citation-link" onclick="filterByCitation('${s.id}')">${s.authors[0].split(',')[0]} et al. (${s.year})</span>`).join(', ')}`
+                    : '';
+
+                // Format citations this study makes
+                const citesText = study.citations.length > 0
+                    ? `Cites: ${study.citations.map(id => {
+                        const cited = studiesData.find(s => s.id === id);
+                        return cited ? `<span class="citation-link" onclick="filterByCitation('${id}')">${cited.authors[0].split(',')[0]} et al. (${cited.year})</span>` : '';
+                    }).filter(Boolean).join(', ')}`
+                    : '';
+
+                return `
+                <div class="study-card" id="study-${study.id}">
+                    <div class="study-id">ID: ${study.id}</div>
                     <div class="study-title">${study.title}</div>
                     <div class="study-authors">${study.authors.join(', ')}</div>
                     <div class="study-meta">
@@ -309,18 +426,62 @@
                         <span><strong>Sample Size:</strong> ${study.sampleSize}</span>
                     </div>
                     <div><strong>Key Findings:</strong> ${study.keyFindings}</div>
+                    <button class="abstract-toggle" onclick="toggleAbstract('${study.id}')">Show Abstract</button>
+                    <div class="abstract-content" id="abstract-${study.id}">
+                        ${study.abstract}
+                    </div>
+                    ${citesText ? `<div class="citations">${citesText}</div>` : ''}
+                    ${citedByText ? `<div class="citations">${citedByText}</div>` : ''}
                     <div class="tags">
-                        <span class="tag population">${study.population}</span>
+                        <span class="tag population">Ages ${study.population.ageLower}-${study.population.ageUpper}</span>
+                        <span class="tag population">${study.population.sex}</span>
+                        <span class="tag population">${study.population.healthStatus}</span>
                         ${study.methods.map(method => `<span class="tag method">${method}</span>`).join('')}
                     </div>
                 </div>
-            `).join('');
+            `;
+            }).join('');
+        }
+
+        function toggleAbstract(studyId) {
+            const abstractDiv = document.getElementById(`abstract-${studyId}`);
+            const button = abstractDiv.previousElementSibling;
+            
+            if (abstractDiv.classList.contains('show')) {
+                abstractDiv.classList.remove('show');
+                button.textContent = 'Show Abstract';
+            } else {
+                abstractDiv.classList.add('show');
+                button.textContent = 'Hide Abstract';
+            }
+        }
+
+        function filterByCitation(studyId) {
+            // Reset all filters first
+            document.getElementById('search').value = '';
+            document.getElementById('methodFilter').value = '';
+            document.getElementById('minAge').value = '';
+            document.getElementById('maxAge').value = '';
+            document.getElementById('sexFilter').value = '';
+            document.getElementById('healthStatusFilter').value = '';
+            
+            // Filter to show only the clicked study
+            filteredStudies = studiesData.filter(study => study.id === studyId);
+            displayStudies();
+            
+            // Scroll to the study
+            setTimeout(() => {
+                document.getElementById(`study-${studyId}`).scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 100);
         }
 
         function resetFilters() {
             document.getElementById('search').value = '';
             document.getElementById('methodFilter').value = '';
-            document.getElementById('populationFilter').value = '';
+            document.getElementById('minAge').value = '';
+            document.getElementById('maxAge').value = '';
+            document.getElementById('sexFilter').value = '';
+            document.getElementById('healthStatusFilter').value = '';
             document.getElementById('sortBy').value = 'date-desc';
             filterAndSortStudies();
         }
@@ -328,7 +489,10 @@
         // Event listeners
         document.getElementById('search').addEventListener('input', filterAndSortStudies);
         document.getElementById('methodFilter').addEventListener('change', filterAndSortStudies);
-        document.getElementById('populationFilter').addEventListener('change', filterAndSortStudies);
+        document.getElementById('minAge').addEventListener('input', filterAndSortStudies);
+        document.getElementById('maxAge').addEventListener('input', filterAndSortStudies);
+        document.getElementById('sexFilter').addEventListener('change', filterAndSortStudies);
+        document.getElementById('healthStatusFilter').addEventListener('change', filterAndSortStudies);
         document.getElementById('sortBy').addEventListener('change', filterAndSortStudies);
 
         // Initialize
