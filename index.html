@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curved Non-Motorized Treadmill Research Studies Database (cNMT DB)</title>
+    <title>Research Studies Database</title>
     <style>
         * {
             margin: 0;
@@ -196,6 +196,12 @@
             color: #388e3c;
         }
 
+        .tag.open-access {
+            background-color: #fff3e0;
+            color: #e65100;
+            font-weight: 600;
+        }
+
         .no-results {
             text-align: center;
             padding: 40px;
@@ -220,7 +226,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Curved Non-Motorized Treadmill Research Studies Database (cNMT DB)</h1>
+        <h1>Research Studies Database</h1>
         
         <div class="filters">
             <div class="filter-group">
@@ -253,9 +259,18 @@
             </div>
             
             <div class="filter-group">
-                <label for="treadmillFilter">Treadmill</label>
+                <label for="treadmillFilter">Treadmill Brand</label>
                 <select id="treadmillFilter">
-                    <option value="">All Treadmills</option>
+                    <option value="">All Brands</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="openAccessFilter">Open Access</label>
+                <select id="openAccessFilter">
+                    <option value="">All</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
                 </select>
             </div>
             
@@ -286,7 +301,7 @@
     </div>
 
     <script>
-         let studiesData = [];
+        let studiesData = [];
 
         fetch('studies.json')
         .then(response => response.json())
@@ -297,18 +312,21 @@
             displayStudies();
         });
 
-
         let filteredStudies = [...studiesData];
 
         function populateFilters() {
             const methods = new Set();
             const sexOptions = new Set();
             const healthStatuses = new Set();
+            const treadmillBrands = new Set();
 
             studiesData.forEach(study => {
                 study.methods.forEach(method => methods.add(method));
                 sexOptions.add(study.population.sex);
                 healthStatuses.add(study.population.healthStatus);
+                if (study.treadmill) {
+                    treadmillBrands.add(study.treadmill.brand);
+                }
             });
 
             const methodFilter = document.getElementById('methodFilter');
@@ -327,6 +345,14 @@
                 sexFilter.appendChild(option);
             });
 
+            const treadmillFilter = document.getElementById('treadmillFilter');
+            Array.from(treadmillBrands).sort().forEach(brand => {
+                const option = document.createElement('option');
+                option.value = brand;
+                option.textContent = brand;
+                treadmillFilter.appendChild(option);
+            });
+
             const healthStatusFilter = document.getElementById('healthStatusFilter');
             Array.from(healthStatuses).sort().forEach(status => {
                 const option = document.createElement('option');
@@ -342,6 +368,8 @@
             const minAge = document.getElementById('minAge').value;
             const maxAge = document.getElementById('maxAge').value;
             const sexFilter = document.getElementById('sexFilter').value;
+            const treadmillFilter = document.getElementById('treadmillFilter').value;
+            const openAccessFilter = document.getElementById('openAccessFilter').value;
             const healthStatusFilter = document.getElementById('healthStatusFilter').value;
             const sortBy = document.getElementById('sortBy').value;
 
@@ -364,10 +392,17 @@
                 const matchesSex = sexFilter === '' || 
                     study.population.sex === sexFilter;
 
+                const matchesTreadmill = treadmillFilter === '' || 
+                    (study.treadmill && study.treadmill.brand === treadmillFilter);
+
+                const matchesOpenAccess = openAccessFilter === '' ||
+                    (openAccessFilter === 'yes' && study.openAccess === true) ||
+                    (openAccessFilter === 'no' && study.openAccess === false);
+
                 const matchesHealthStatus = healthStatusFilter === '' || 
                     study.population.healthStatus === healthStatusFilter;
 
-                return matchesSearch && matchesMethod && matchesAge && matchesSex && matchesHealthStatus;
+                return matchesSearch && matchesMethod && matchesAge && matchesSex && matchesTreadmill && matchesOpenAccess && matchesHealthStatus;
             });
 
             // Sort
@@ -424,6 +459,7 @@
                         <span><strong>Year:</strong> ${study.year}</span>
                         <span><strong>Journal:</strong> ${study.journal}</span>
                         <span><strong>Sample Size:</strong> ${study.sampleSize}</span>
+                        ${study.treadmill ? `<span><strong>Treadmill:</strong> ${study.treadmill.brand} ${study.treadmill.model}</span>` : ''}
                     </div>
                     <div><strong>Key Findings:</strong> ${study.keyFindings}</div>
                     <button class="abstract-toggle" onclick="toggleAbstract('${study.id}')">Show Abstract</button>
@@ -437,6 +473,7 @@
                         <span class="tag population">${study.population.sex}</span>
                         <span class="tag population">${study.population.healthStatus}</span>
                         ${study.methods.map(method => `<span class="tag method">${method}</span>`).join('')}
+                        ${study.openAccess ? '<span class="tag open-access">🔓 Open Access</span>' : ''}
                     </div>
                 </div>
             `;
@@ -481,6 +518,8 @@
             document.getElementById('minAge').value = '';
             document.getElementById('maxAge').value = '';
             document.getElementById('sexFilter').value = '';
+            document.getElementById('treadmillFilter').value = '';
+            document.getElementById('openAccessFilter').value = '';
             document.getElementById('healthStatusFilter').value = '';
             document.getElementById('sortBy').value = 'date-desc';
             filterAndSortStudies();
@@ -492,6 +531,8 @@
         document.getElementById('minAge').addEventListener('input', filterAndSortStudies);
         document.getElementById('maxAge').addEventListener('input', filterAndSortStudies);
         document.getElementById('sexFilter').addEventListener('change', filterAndSortStudies);
+        document.getElementById('treadmillFilter').addEventListener('change', filterAndSortStudies);
+        document.getElementById('openAccessFilter').addEventListener('change', filterAndSortStudies);
         document.getElementById('healthStatusFilter').addEventListener('change', filterAndSortStudies);
         document.getElementById('sortBy').addEventListener('change', filterAndSortStudies);
 

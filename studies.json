@@ -20,7 +20,8 @@
     "sampleSize": 45,
     "keyFindings": "Curved treadmills showed significant improvements in running economy",
     "abstract": "This randomized controlled trial investigated the effects of 8-week curved treadmill training on running biomechanics in recreational runners. Participants were divided into control and intervention groups. The intervention group trained on curved non-motorized treadmills three times per week. Results showed significant improvements in running economy, stride length consistency, and reduced ground contact time compared to the control group.",
-    "citations": []
+    "citations": [],
+    "openAccess" : true
   },
   {
     "id": "davis2022",
@@ -43,7 +44,8 @@
     "sampleSize": 30,
     "keyFindings": "Elite runners demonstrated more consistent gait patterns",
     "abstract": "Using advanced motion capture technology, this longitudinal study compared gait cycle variations between elite and novice male runners over a 12-month period. Elite runners showed significantly lower stride-to-stride variability and maintained more consistent biomechanical patterns even during fatigue. These findings suggest that gait consistency may be a key marker of running expertise and performance potential.",
-    "citations": []
+    "citations": [],
+    "openAccess" : true
   },
   {
     "id": "chen2024",
@@ -66,7 +68,8 @@
     "sampleSize": 60,
     "keyFindings": "Proper footwear reduced speed fluctuations during walking",
     "abstract": "This observational study examined how different footwear types affect walking speed fluctuations in elderly women. Participants walked in standardized conditions wearing athletic shoes, dress shoes, and walking sandals. Athletic shoes with proper arch support and cushioning significantly reduced speed variability during the gait cycle, potentially reducing fall risk. The study highlights the importance of appropriate footwear selection in elderly populations.",
-    "citations": ["davis2022"]
+    "citations": ["davis2022"],
+    "openAccess" : true
   },
   {
     "id": "taylor2023",
@@ -89,7 +92,8 @@
     "sampleSize": 25,
     "keyFindings": "Non-motorized treadmills showed 20% higher energy expenditure",
     "abstract": "This crossover study used indirect calorimetry to measure metabolic cost during running on motorized versus curved non-motorized treadmills. Twenty-five recreational runners completed identical running protocols on both treadmill types. Non-motorized treadmills resulted in approximately 20% higher energy expenditure at matched speeds, suggesting they may be more effective for training and weight management. Heart rate and perceived exertion were also significantly elevated on non-motorized treadmills.",
-    "citations": ["smith2023", "davis2022"]
+    "citations": ["smith2023", "davis2022"],
+    "openAccess" : true
   },
   {
     "id": "garcia2021",
@@ -112,7 +116,8 @@
     "sampleSize": 40,
     "keyFindings": "Higher variability associated with fall risk",
     "abstract": "This case-control study investigated stride-to-stride variability in children with cerebral palsy compared to typically developing controls. Using three-dimensional motion capture, we found that children with cerebral palsy exhibited significantly greater variability in stride length, stride time, and joint angles. Higher variability was strongly correlated with increased fall frequency and reduced mobility independence. These findings support the use of gait variability as a clinical assessment tool.",
-    "citations": ["davis2022"]
+    "citations": ["davis2022"],
+    "openAccess" : true
   },
   {
     "id": "thompson2024",
@@ -135,6 +140,7 @@
     "sampleSize": 80,
     "keyFindings": "Significant sex-based differences in adaptation to training load",
     "abstract": "This longitudinal study tracked 80 recreational runners through a 16-week marathon training program, examining sex differences in running economy adaptations. Male and female runners showed different physiological responses to identical training loads. Females demonstrated greater improvements in running economy at lower intensities, while males showed larger gains at higher intensities. These findings suggest that training programs should consider sex-specific adaptations for optimal performance outcomes.",
-    "citations": ["smith2023", "davis2022", "taylor2023"]
+    "citations": ["smith2023", "davis2022", "taylor2023"],
+    "openAccess" : true
   }
 ]
