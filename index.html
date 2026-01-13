@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research Studies Database</title>
+    <title>Curved Non-Motorized Treadmill Research Studies</title>
     <style>
         * {
             margin: 0;
@@ -29,8 +29,44 @@
 
         h1 {
             color: #333;
-            margin-bottom: 30px;
+            margin-bottom: 15px;
             font-size: 28px;
+        }
+
+        .description {
+            color: #666;
+            margin-bottom: 25px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .filter-toggle {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .filter-toggle:hover {
+            background-color: #45a049;
+        }
+
+        .filter-toggle::after {
+            content: '▼';
+            transition: transform 0.3s;
+        }
+
+        .filter-toggle.collapsed::after {
+            transform: rotate(-90deg);
         }
 
         .filters {
@@ -41,6 +77,15 @@
             padding: 20px;
             background-color: #f9f9f9;
             border-radius: 6px;
+            max-height: 1000px;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .filters.collapsed {
+            max-height: 0;
+            padding: 0;
+            margin-bottom: 15px;
         }
 
         .filter-group {
@@ -67,10 +112,39 @@
             border-color: #4CAF50;
         }
 
+        .checkbox-group {
+            max-height: 150px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 8px;
+            background-color: white;
+        }
+
+        .checkbox-item {
+            display: flex;
+            align-items: center;
+            padding: 4px 0;
+        }
+
+        .checkbox-item input[type="checkbox"] {
+            margin-right: 8px;
+            width: auto;
+        }
+
+        .checkbox-item label {
+            font-weight: normal;
+            margin-bottom: 0;
+            cursor: pointer;
+        }
+
         .results-info {
             margin-bottom: 20px;
             color: #666;
             font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
         }
 
         .study-card {
@@ -123,6 +197,15 @@
         .study-meta strong {
             margin-right: 5px;
             color: #444;
+        }
+
+        .study-meta a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+
+        .study-meta a:hover {
+            text-decoration: underline;
         }
 
         .abstract-toggle {
@@ -226,9 +309,17 @@
 </head>
 <body>
     <div class="container">
-        <h1>Research Studies Database</h1>
+        <h1>Curved Non-Motorized Treadmill Studies</h1>
         
-        <div class="filters">
+        <div class="description">
+            This database contains research studies examining curved non-motorized treadmills and their applications in sports science, biomechanics, and exercise physiology. Use the filters below to search and sort studies by various criteria including population characteristics, research methods, treadmill specifications, and open access availability.
+        </div>
+
+        <button class="filter-toggle" onclick="toggleFilters()">
+            Show/Hide Filters
+        </button>
+        
+        <div class="filters" id="filterSection">
             <div class="filter-group">
                 <label for="search">Search</label>
                 <input type="text" id="search" placeholder="Search titles, authors...">
@@ -259,10 +350,8 @@
             </div>
             
             <div class="filter-group">
-                <label for="treadmillFilter">Treadmill Brand</label>
-                <select id="treadmillFilter">
-                    <option value="">All Brands</option>
-                </select>
+                <label>Treadmill Brand</label>
+                <div class="checkbox-group" id="treadmillBrandCheckboxes"></div>
             </div>
             
             <div class="filter-group">
@@ -294,7 +383,7 @@
 
         <div class="results-info">
             <span id="resultsCount">0 studies found</span>
-            <button onclick="resetFilters()" style="margin-left: 15px;">Reset Filters</button>
+            <button onclick="resetFilters()">Reset Filters</button>
         </div>
 
         <div id="studiesContainer"></div>
@@ -302,17 +391,29 @@
 
     <script>
         let studiesData = [];
+        let filteredStudies = [];
 
+        // Load data from JSON file
         fetch('studies.json')
-        .then(response => response.json())
-        .then(data => {
-            studiesData = data;
-            filteredStudies = [...studiesData];
-            populateFilters();
-            displayStudies();
-        });
+            .then(response => response.json())
+            .then(data => {
+                studiesData = data;
+                filteredStudies = [...studiesData];
+                populateFilters();
+                displayStudies();
+            })
+            .catch(error => {
+                console.error('Error loading studies:', error);
+                document.getElementById('studiesContainer').innerHTML = 
+                    '<div class="no-results">Error loading studies. Please make sure studies.json is in the same directory.</div>';
+            });
 
-        let filteredStudies = [...studiesData];
+        function toggleFilters() {
+            const filterSection = document.getElementById('filterSection');
+            const toggleButton = document.querySelector('.filter-toggle');
+            filterSection.classList.toggle('collapsed');
+            toggleButton.classList.toggle('collapsed');
+        }
 
         function populateFilters() {
             const methods = new Set();
@@ -345,12 +446,24 @@
                 sexFilter.appendChild(option);
             });
 
-            const treadmillFilter = document.getElementById('treadmillFilter');
+            const treadmillBrandCheckboxes = document.getElementById('treadmillBrandCheckboxes');
             Array.from(treadmillBrands).sort().forEach(brand => {
-                const option = document.createElement('option');
-                option.value = brand;
-                option.textContent = brand;
-                treadmillFilter.appendChild(option);
+                const div = document.createElement('div');
+                div.className = 'checkbox-item';
+                
+                const checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.id = `brand-${brand}`;
+                checkbox.value = brand;
+                checkbox.addEventListener('change', filterAndSortStudies);
+                
+                const label = document.createElement('label');
+                label.htmlFor = `brand-${brand}`;
+                label.textContent = brand;
+                
+                div.appendChild(checkbox);
+                div.appendChild(label);
+                treadmillBrandCheckboxes.appendChild(div);
             });
 
             const healthStatusFilter = document.getElementById('healthStatusFilter');
@@ -368,10 +481,13 @@
             const minAge = document.getElementById('minAge').value;
             const maxAge = document.getElementById('maxAge').value;
             const sexFilter = document.getElementById('sexFilter').value;
-            const treadmillFilter = document.getElementById('treadmillFilter').value;
             const openAccessFilter = document.getElementById('openAccessFilter').value;
             const healthStatusFilter = document.getElementById('healthStatusFilter').value;
             const sortBy = document.getElementById('sortBy').value;
+
+            // Get selected treadmill brands
+            const selectedBrands = Array.from(document.querySelectorAll('#treadmillBrandCheckboxes input:checked'))
+                .map(cb => cb.value);
 
             filteredStudies = studiesData.filter(study => {
                 const matchesSearch = searchTerm === '' || 
@@ -381,7 +497,6 @@
                 const matchesMethod = methodFilter === '' || 
                     study.methods.includes(methodFilter);
                 
-                // Check if study's age range overlaps with filter range
                 const matchesAge = (minAge === '' && maxAge === '') ||
                     (minAge === '' && study.population.ageLower <= parseInt(maxAge)) ||
                     (maxAge === '' && study.population.ageUpper >= parseInt(minAge)) ||
@@ -392,8 +507,8 @@
                 const matchesSex = sexFilter === '' || 
                     study.population.sex === sexFilter;
 
-                const matchesTreadmill = treadmillFilter === '' || 
-                    (study.treadmill && study.treadmill.brand === treadmillFilter);
+                const matchesTreadmill = selectedBrands.length === 0 ||
+                    (study.treadmill && selectedBrands.includes(study.treadmill.brand));
 
                 const matchesOpenAccess = openAccessFilter === '' ||
                     (openAccessFilter === 'yes' && study.openAccess === true) ||
@@ -405,7 +520,6 @@
                 return matchesSearch && matchesMethod && matchesAge && matchesSex && matchesTreadmill && matchesOpenAccess && matchesHealthStatus;
             });
 
-            // Sort
             filteredStudies.sort((a, b) => {
                 switch(sortBy) {
                     case 'date-desc':
@@ -424,6 +538,26 @@
             displayStudies();
         }
 
+        function formatCitation(studyId) {
+            const study = studiesData.find(s => s.id === studyId);
+            if (!study) return '';
+            
+            const authors = study.authors;
+            const year = study.year;
+            
+            if (authors.length === 1) {
+                const lastName = authors[0].split(',')[0];
+                return `${lastName} (${year})`;
+            } else if (authors.length === 2) {
+                const lastName1 = authors[0].split(',')[0];
+                const lastName2 = authors[1].split(',')[0];
+                return `${lastName1} & ${lastName2} (${year})`;
+            } else {
+                const lastName = authors[0].split(',')[0];
+                return `${lastName} et al. (${year})`;
+            }
+        }
+
         function displayStudies() {
             const container = document.getElementById('studiesContainer');
             const resultsCount = document.getElementById('resultsCount');
@@ -436,19 +570,16 @@
             }
 
             container.innerHTML = filteredStudies.map(study => {
-                // Find studies that cite this one
                 const citedBy = studiesData.filter(s => s.citations.includes(study.id));
                 const citedByText = citedBy.length > 0 
-                    ? `Cited by: ${citedBy.map(s => `<span class="citation-link" onclick="filterByCitation('${s.id}')">${s.authors[0].split(',')[0]} et al. (${s.year})</span>`).join(', ')}`
+                    ? `Cited by: ${citedBy.map(s => `<span class="citation-link" onclick="filterByCitation('${s.id}')">${formatCitation(s.id)}</span>`).join(', ')}`
                     : '';
 
-                // Format citations this study makes
                 const citesText = study.citations.length > 0
-                    ? `Cites: ${study.citations.map(id => {
-                        const cited = studiesData.find(s => s.id === id);
-                        return cited ? `<span class="citation-link" onclick="filterByCitation('${id}')">${cited.authors[0].split(',')[0]} et al. (${cited.year})</span>` : '';
-                    }).filter(Boolean).join(', ')}`
+                    ? `Cites: ${study.citations.map(id => `<span class="citation-link" onclick="filterByCitation('${id}')">${formatCitation(id)}</span>`).filter(Boolean).join(', ')}`
                     : '';
+
+                const doiLink = study.DOI ? `<span><strong>DOI:</strong> <a href="https://doi.org/${study.DOI}" target="_blank" rel="noopener noreferrer">${study.DOI}</a></span>` : '';
 
                 return `
                 <div class="study-card" id="study-${study.id}">
@@ -460,6 +591,7 @@
                         <span><strong>Journal:</strong> ${study.journal}</span>
                         <span><strong>Sample Size:</strong> ${study.sampleSize}</span>
                         ${study.treadmill ? `<span><strong>Treadmill:</strong> ${study.treadmill.brand} ${study.treadmill.model}</span>` : ''}
+                        ${doiLink}
                     </div>
                     <div><strong>Key Findings:</strong> ${study.keyFindings}</div>
                     <button class="abstract-toggle" onclick="toggleAbstract('${study.id}')">Show Abstract</button>
@@ -494,19 +626,18 @@
         }
 
         function filterByCitation(studyId) {
-            // Reset all filters first
             document.getElementById('search').value = '';
             document.getElementById('methodFilter').value = '';
             document.getElementById('minAge').value = '';
             document.getElementById('maxAge').value = '';
             document.getElementById('sexFilter').value = '';
+            document.getElementById('openAccessFilter').value = '';
             document.getElementById('healthStatusFilter').value = '';
+            document.querySelectorAll('#treadmillBrandCheckboxes input').forEach(cb => cb.checked = false);
             
-            // Filter to show only the clicked study
             filteredStudies = studiesData.filter(study => study.id === studyId);
             displayStudies();
             
-            // Scroll to the study
             setTimeout(() => {
                 document.getElementById(`study-${studyId}`).scrollIntoView({ behavior: 'smooth', block: 'center' });
             }, 100);
@@ -518,27 +649,21 @@
             document.getElementById('minAge').value = '';
             document.getElementById('maxAge').value = '';
             document.getElementById('sexFilter').value = '';
-            document.getElementById('treadmillFilter').value = '';
             document.getElementById('openAccessFilter').value = '';
             document.getElementById('healthStatusFilter').value = '';
             document.getElementById('sortBy').value = 'date-desc';
+            document.querySelectorAll('#treadmillBrandCheckboxes input').forEach(cb => cb.checked = false);
             filterAndSortStudies();
         }
 
-        // Event listeners
         document.getElementById('search').addEventListener('input', filterAndSortStudies);
         document.getElementById('methodFilter').addEventListener('change', filterAndSortStudies);
         document.getElementById('minAge').addEventListener('input', filterAndSortStudies);
         document.getElementById('maxAge').addEventListener('input', filterAndSortStudies);
         document.getElementById('sexFilter').addEventListener('change', filterAndSortStudies);
-        document.getElementById('treadmillFilter').addEventListener('change', filterAndSortStudies);
         document.getElementById('openAccessFilter').addEventListener('change', filterAndSortStudies);
         document.getElementById('healthStatusFilter').addEventListener('change', filterAndSortStudies);
         document.getElementById('sortBy').addEventListener('change', filterAndSortStudies);
-
-        // Initialize
-        populateFilters();
-        displayStudies();
     </script>
 </body>
 </html>
