@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curved Non-Motorized Treadmill Research Studies</title>
+    <title>Curve Non-Motorized Treadmill Research Database</title>
     <style>
         * {
             margin: 0;
@@ -88,6 +88,50 @@
             margin-bottom: 15px;
         }
 
+        .filter-legend {
+            grid-column: 1 / -1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .legend-box {
+            padding: 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            line-height: 1.5;
+        }
+
+        .legend-box-utility {
+            background-color: #c8e6c9;
+        }
+
+        .legend-box-focus {
+            background-color: #ffe0b2;
+        }
+
+        .legend-title {
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+
+        .legend-title-utility {
+            color: #2e7d32;
+        }
+
+        .legend-title-focus {
+            color: #e65100;
+        }
+
+        .legend-description {
+            color: #333;
+            font-size: 12px;
+        }
+
         .filter-group {
             display: flex;
             flex-direction: column;
@@ -154,10 +198,52 @@
             margin-bottom: 20px;
             background-color: #fff;
             transition: box-shadow 0.2s;
+            position: relative;
+            overflow: hidden;
         }
 
         .study-card:hover {
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .study-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 8px;
+            background-color: transparent;
+        }
+
+        .study-card.utility::before {
+            background-color: #c8e6c9;
+        }
+
+        .study-card.focus::before {
+            background-color: #ffe0b2;
+        }
+
+        .treadmill-focus-badge {
+            position: absolute;
+            top: 12px;
+            right: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: 4px 8px;
+            border-radius: 3px;
+        }
+
+        .treadmill-focus-badge.utility {
+            background-color: #c8e6c9;
+            color: #2e7d32;
+        }
+
+        .treadmill-focus-badge.focus {
+            background-color: #ffe0b2;
+            color: #e65100;
         }
 
         .study-id {
@@ -285,6 +371,19 @@
             font-weight: 600;
         }
 
+        .keywords {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #e0e0e0;
+            font-size: 13px;
+            color: #666;
+        }
+
+        .keywords strong {
+            color: #444;
+            margin-right: 5px;
+        }
+
         .no-results {
             text-align: center;
             padding: 40px;
@@ -309,10 +408,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Curved Non-Motorized Treadmill Studies</h1>
-        
+        <h1>Curved Non-Motorized Treadmill Research Database</h1>
         <div class="description">
             This database contains research studies examining curved non-motorized treadmills and their applications in sports science, biomechanics, and exercise physiology. Use the filters below to search and sort studies by various criteria including population characteristics, research methods, treadmill specifications, and open access availability.
+            <b>Note: This database is in active development and may not reflect ALL of the available studies.</b>
         </div>
 
         <button class="filter-toggle" onclick="toggleFilters()">
@@ -371,13 +470,37 @@
             </div>
             
             <div class="filter-group">
+                <label for="treadmillFocusFilter">Treadmill Focus</label>
+                <select id="treadmillFocusFilter">
+                    <option value="">All</option>
+                    <option value="Utility">Utility</option>
+                    <option value="Focus">Focus</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
                 <label for="sortBy">Sort By</label>
                 <select id="sortBy">
                     <option value="date-desc">Date (Newest First)</option>
                     <option value="date-asc">Date (Oldest First)</option>
                     <option value="title">Title (A-Z)</option>
-                    <option value="author">Author (A-Z)</option>
+                    <option value="author">First Author (A-Z)</option>
                 </select>
+            </div>
+
+            <div class="filter-legend">
+                <div class="legend-box legend-box-utility">
+                    <div class="legend-title legend-title-utility">UTILITY</div>
+                    <div class="legend-description">
+                        The treadmill was used as a tool for data collection, but the study focus was not on the treadmill itself (e.g., measuring sprint performance, fatigue, or biomechanics where the treadmill is simply the measurement platform).
+                    </div>
+                </div>
+                <div class="legend-box legend-box-focus">
+                    <div class="legend-title legend-title-focus">FOCUS</div>
+                    <div class="legend-description">
+                        The treadmill itself was the primary subject of investigation (e.g., comparing curved vs. motorized treadmills, validating treadmill measurements, or studying treadmill-specific effects).
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -400,7 +523,7 @@
                 studiesData = data;
                 filteredStudies = [...studiesData];
                 populateFilters();
-                displayStudies();
+                filterAndSortStudies(); // Changed from displayStudies() to apply sorting
             })
             .catch(error => {
                 console.error('Error loading studies:', error);
@@ -483,6 +606,7 @@
             const sexFilter = document.getElementById('sexFilter').value;
             const openAccessFilter = document.getElementById('openAccessFilter').value;
             const healthStatusFilter = document.getElementById('healthStatusFilter').value;
+            const treadmillFocusFilter = document.getElementById('treadmillFocusFilter').value;
             const sortBy = document.getElementById('sortBy').value;
 
             // Get selected treadmill brands
@@ -492,7 +616,8 @@
             filteredStudies = studiesData.filter(study => {
                 const matchesSearch = searchTerm === '' || 
                     study.title.toLowerCase().includes(searchTerm) ||
-                    study.authors.some(author => author.toLowerCase().includes(searchTerm));
+                    study.authors.some(author => author.toLowerCase().includes(searchTerm)) ||
+                    (study.keywords && study.keywords.some(keyword => keyword.toLowerCase().includes(searchTerm)));
                 
                 const matchesMethod = methodFilter === '' || 
                     study.methods.includes(methodFilter);
@@ -517,7 +642,10 @@
                 const matchesHealthStatus = healthStatusFilter === '' || 
                     study.population.healthStatus === healthStatusFilter;
 
-                return matchesSearch && matchesMethod && matchesAge && matchesSex && matchesTreadmill && matchesOpenAccess && matchesHealthStatus;
+                const matchesTreadmillFocus = treadmillFocusFilter === '' ||
+                    (study.treadmillFocus && study.treadmillFocus === treadmillFocusFilter);
+
+                return matchesSearch && matchesMethod && matchesAge && matchesSex && matchesTreadmill && matchesOpenAccess && matchesHealthStatus && matchesTreadmillFocus;
             });
 
             filteredStudies.sort((a, b) => {
@@ -529,7 +657,9 @@
                     case 'title':
                         return a.title.localeCompare(b.title);
                     case 'author':
-                        return a.authors[0].localeCompare(b.authors[0]);
+                        const lastNameA = a.authors[0].split(',')[0].trim();
+                        const lastNameB = b.authors[0].split(',')[0].trim();
+                        return lastNameA.localeCompare(lastNameB);
                     default:
                         return 0;
                 }
@@ -581,8 +711,17 @@
 
                 const doiLink = study.DOI ? `<span><strong>DOI:</strong> <a href="https://doi.org/${study.DOI}" target="_blank" rel="noopener noreferrer">${study.DOI}</a></span>` : '';
 
+                const focusClass = study.treadmillFocus && study.treadmillFocus.toLowerCase() !== 'unknown' 
+                    ? study.treadmillFocus.toLowerCase() 
+                    : '';
+                
+                const focusBadge = study.treadmillFocus && study.treadmillFocus.toLowerCase() !== 'unknown'
+                    ? `<div class="treadmill-focus-badge ${study.treadmillFocus.toLowerCase()}">${study.treadmillFocus}</div>`
+                    : '';
+
                 return `
-                <div class="study-card" id="study-${study.id}">
+                <div class="study-card ${focusClass}" id="study-${study.id}">
+                    ${focusBadge}
                     <div class="study-id">ID: ${study.id}</div>
                     <div class="study-title">${study.title}</div>
                     <div class="study-authors">${study.authors.join(', ')}</div>
@@ -607,6 +746,11 @@
                         ${study.methods.map(method => `<span class="tag method">${method}</span>`).join('')}
                         ${study.openAccess ? '<span class="tag open-access">🔓 Open Access</span>' : ''}
                     </div>
+                    ${study.keywords && study.keywords.length > 0 ? `
+                    <div class="keywords">
+                        <strong>Keywords:</strong> ${study.keywords.join(', ')}
+                    </div>
+                    ` : ''}
                 </div>
             `;
             }).join('');
@@ -651,6 +795,7 @@
             document.getElementById('sexFilter').value = '';
             document.getElementById('openAccessFilter').value = '';
             document.getElementById('healthStatusFilter').value = '';
+            document.getElementById('treadmillFocusFilter').value = '';
             document.getElementById('sortBy').value = 'date-desc';
             document.querySelectorAll('#treadmillBrandCheckboxes input').forEach(cb => cb.checked = false);
             filterAndSortStudies();
@@ -663,6 +808,7 @@
         document.getElementById('sexFilter').addEventListener('change', filterAndSortStudies);
         document.getElementById('openAccessFilter').addEventListener('change', filterAndSortStudies);
         document.getElementById('healthStatusFilter').addEventListener('change', filterAndSortStudies);
+        document.getElementById('treadmillFocusFilter').addEventListener('change', filterAndSortStudies);
         document.getElementById('sortBy').addEventListener('change', filterAndSortStudies);
     </script>
 </body>
