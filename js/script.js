@@ -2,7 +2,7 @@
         let filteredStudies = [];
 
         // Load data from JSON file
-        fetch('js/studies.json')
+        fetch('studies/studies.json')
             .then(response => response.json())
             .then(data => {
                 studiesData = data;
