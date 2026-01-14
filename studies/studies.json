@@ -261,26 +261,28 @@
     ],
     "journal": "Sports Biomechanics",
     "methods": [
-      "Biomechanical Analysis"
+      "Biomechanical Analysis",
+      "Crossover Study",
+      "Repeated Design"
     ],
     "population": {
       "ageLower": 18,
-      "ageUpper": 45,
+      "ageUpper": 54,
       "sex": "Mixed",
-      "healthStatus": "Recreational Runners",
-      "expertise": "Recreational"
+      "healthStatus": "Recreational",
+      "expertise": "Runners"
     },
     "sampleSize": 21,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "Bodytone",
+      "model": "ZRO-T"
     },
-    "treadmillFocus": "",
-    "abstract": "Compared running surface effects on impact accelerations during 30-minute runs. 21 recreational runners completed tests on MT, cNMT, and overground.",
+    "treadmillFocus": "Focus",
+    "abstract": "Running can be performed on different types of surfaces with distinct characteristics. These differences between the running surfaces may affect impact accelerations during prolonged running. The aim of this study was to compare the effect of the type of running surface (motorised treadmill (MT), curved non-motorised treadmill (cNMT), and overground (OVG)) and prolonged running in impact accelerations, spatiotemporal parameters and perceptual variables. In the current study, twenty-one recreational runners completed three randomised crossover prolonged running test on these surfaces consisting of a 30-minute run at 80% of the individual maximal aerobic speed. A two-way repeated-measure analysis of variance, with the level of significance set at p < 0.05, showed a reduction in impact accelerations, such as tibia peak acceleration, when running on cNMT vs MT (p = 0.001, ES = 4.2) or OVG (p = 0.004, ES = 2.9). Running on cNMT produced an increase in stride frequency (p = 0.023, ES = 0.9) and higher rating of perceived effort (p < 0.001, ES = 8.9) and heart rate (p = 0.001, ES = 2.9) compared to OVG, with no differences between treadmills. These findings suggest that impact accelerations, spatiotemporal parameters, rating of perceived exertion and heart rate are different between the surfaces analysed, what should be taken into consideration when running on these surfaces. N=21 (17 males and 4 females; age 36 ± 9 years)",
     "keyFindings": "Reduction in impact accelerations on cNMT; increased stride frequency and higher RPE and heart rate",
-    "keywords": [],
+    "keywords": ["treadmill", "biomechanics", "locomotion", "accelerometer"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1080/14763141.2023.2214519",
     "citations": []
   },
   {
@@ -298,23 +300,23 @@
       "Review"
     ],
     "population": {
-      "ageLower": 18,
-      "ageUpper": 35,
+      "ageLower": null,
+      "ageUpper": null,
       "sex": "Mixed",
-      "healthStatus": "Soccer Players",
-      "expertise": "Various"
+      "healthStatus": "Athlete",
+      "expertise": "Soccer"
     },
     "sampleSize": 0,
     "treadmill": {
       "brand": "Various",
       "model": "Non-Motorized"
     },
-    "treadmillFocus": "",
-    "abstract": "Review of soccer simulations for research and training. Scored free-running, non-motorised, and motorised-treadmill simulations for research and practical applications.",
+    "treadmillFocus": "Utility",
+    "abstract": "Soccer is a fast-growing area of research, demonstrated by a 10-fold increase in the number of PubMed articles derived from the search term 'soccer' between 2001 and 2021. The scope of contemporary soccer-related articles ranges from match-play observations to laboratory evaluations of performance. The activity profile of soccer match-play is variable and techniques to collect data within matches are limited. Soccer-specific simulations have been developed to simulate the evolving demands of match-play. The evolutionary designs of novel simulations provide a reproducible exercise stimulus for varying researcher and practitioner objectives. The applied researcher can utilise simulations to investigate the efficacy of nutritional interventions and environmental stress on performance, while assessing the physiological and biomechanical responses to representations of match-play. Practitioners can adopt simulations for rehabilitation to progressively facilitate return-to-play processes, while implementing extra top-up conditioning sessions for unused and partial-match players. However, there are complexities involved with the selection of varying simulations which are dependent on the research question or practical application. There also remains a paucity of published information to support researchers and practitioners in selecting from differing simulation models. To assist with researcher and practitioner interpretations, we present a commentary of the current simulations to inform decision-making processes for research and training purposes and enhance the application of future research. An objective scoring system was adopted for rating the research and practical applications of each simulation design. Overall scores of 22, 16 and 18 out of 36 were revealed for free-running (n = 7), non-motorised- (n = 4) and motorised-treadmill-based simulations (n = 4), respectively.",
     "keyFindings": "Commentary reviewing soccer match-play simulations including non-motorised treadmill-based designs",
-    "keywords": [],
+    "keywords": ["football", "field-based", "free-running", "treadmill", "protocol"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1080/24733938.2022.2070268",
     "citations": []
   },
   {
@@ -331,29 +333,30 @@
       "Barrett, R.S.",
       "Diamond, L.E."
     ],
-    "journal": "Sports Health",
+    "journal": "Sports Health: A Multidisciplinary Approach",
     "methods": [
       "Biomechanical Analysis",
-      "Case-Control Study"
+      "Case-Control Study",
+      "Motion Capture"
     ],
     "population": {
       "ageLower": 18,
       "ageUpper": 45,
       "sex": "Mixed",
-      "healthStatus": "FAIS/Healthy",
-      "expertise": "Recreational"
+      "healthStatus": "Recreational",
+      "expertise": "Active"
     },
     "sampleSize": 49,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "49 recreationally active individuals with FAIS, cam morphology, or healthy controls measured before and after repeated sprint exercise on nonmotorized treadmill.",
+    "treadmillFocus": "Utility",
+    "abstract": "Background: People with femoroacetabular with femoroacetabular impingement syndrome (FAIS) often report pain during sports involving repeated sprinting. It remains unclear how sports participation influences running biomechanics in individuals with FAIS.  Hypothesis: Changes in running biomechanics and/or isometric hip strength after repeated sprint exercise would be greatest in individuals with FAIS compared with asymptomatic individuals with (CAM) and without cam morphology (Control).  Study Design: Controlled laboratory study.  Level of Evidence: Level 3.  Methods: Three-dimensional hip biomechanics during maximal running (10 m) and hip strength were measured in 49 recreationally active individuals (FAIS = 15; CAM = 16; Control = 18) before and after repeated sprint exercise performed on a nonmotorized treadmill (8-16 x 30 m). Effects of group and time were assessed for biomechanics and strength variables with repeated-measures analyses of variance. Relationships between hip pain (Copenhagen Hip and Groin Outcome Score) and changes in hip moments and strength after repeated sprint exercise were determined using Spearman's correlation coefficients (ρ).  Results: Running speed, hip flexion angles, hip flexion and extension moments, and hip strength in all muscle groups were significantly reduced from pre to post. No significant between-group differences were observed before or after repeated sprint exercise. No significant relationships (ρ = 0.04-0.30) were observed between hip pain and changes in hip moments or strength in the FAIS group.  Conclusion: Changes in running biomechanics and strength after repeated sprint exercise did not differ between participants with FAIS and asymptomatic participants with and without cam morphology. Self-reported pain did not appear to influence biomechanics during running or strength after repeated sprint exercise in participants with FAIS.  Clinical Relevance: A short bout of repeated sprinting may not elicit changes in running biomechanics in FAIS beyond what occurs in those without symptoms. Longer duration activities or activities requiring greater hip flexion angles may better provoke pathology-related changes in running biomechanics in people with FAIS.",
     "keyFindings": "Changes in running biomechanics after repeated sprints did not differ between FAIS and controls",
-    "keywords": [],
+    "keywords": ["fatigue", "groin", "hip pain", "loading", "sprinting"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1177/19417381221131570",
     "citations": []
   },
   {
@@ -373,7 +376,8 @@
     ],
     "journal": "Sensors",
     "methods": [
-      "Biomechanical Analysis"
+      "Biomechanical Analysis",
+      "Motion Capture"
     ],
     "population": {
       "ageLower": 18,
@@ -384,15 +388,15 @@
     },
     "sampleSize": 20,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "20 participants ran at 70%, 80%, 90%, and 100% maximal effort on curved non-motorized treadmill. Assessed IMU accuracy for measuring sagittal plane lower-limb kinematics and pelvic orientation.",
+    "treadmillFocus": "Utility",
+    "abstract": "Inertial measurement units (IMUs) have been validated for measuring sagittal plane lowerlimb kinematics during moderate-speed running, but their accuracy at maximal speeds remains less understood. This study aimed to assess IMU measurement accuracy during high-speed running and maximal effort sprinting on a curved non-motorized treadmill using discrete (Bland-Altman analysis) and continuous (root mean square error [RMSE], normalised RMSE, Pearson correlation, and statistical parametric mapping analysis [SPM]) metrics. The hip, knee, and ankle flexions and the pelvic orientation (tilt, obliquity, and rotation) were captured concurrently from both IMU and optical motion capture systems, as 20 participants ran steadily at 70%, 80%, 90%, and 100% of their maximal effort sprinting speed (5.36 ± 0.55, 6.02 ± 0.60, 6.66 ± 0.71, and 7.09 ± 0.73 m/s, respectively). Bland-Altman analysis indicated a systematic bias within ±1◦ for the peak pelvic tilt, rotation, and lower-limb kinematics and -3.3◦ to -4.1◦ for the pelvic obliquity. The SPM analysis demonstrated a good agreement in the hip and knee flexion angles for most phases of the stride cycle, albeit with significant differences noted around the ipsilateral toe-off. The RMSE ranged from 4.3◦ (pelvic obliquity at 70% speed) to 7.8◦ (hip flexion at 100% speed). Correlation coefficients ranged from 0.44 (pelvic tilt at 90%) to 0.99 (hip and knee flexions at all speeds). Running speed minimally but significantly affected the RMSE for the hip and ankle flexions. The present IMU system is effective for measuring lower-limb kinematics during sprinting, but the pelvic orientation estimation was less accurate. N=20 (14 males, 6 females; age: 26.8 ± 5.5 years)",
     "keyFindings": "IMU system effective for measuring lower-limb kinematics during sprinting; pelvic orientation estimation less accurate",
-    "keywords": [],
+    "keywords": ["gait analysis", "IMU", "inertial sensors", "optical motion capture", "running mechanics", "root mean square error", "Bland-Altman analysis", "statistical parametric mapping", "biomechanical model"],
     "openAccess": true,
-    "DOI": "",
+    "DOI": "https://doi.org/10.3390/s23239599",
     "citations": []
   },
   {
@@ -410,26 +414,27 @@
     ],
     "journal": "Journal of Strength and Conditioning Research",
     "methods": [
-      "Randomized Control Trial"
+      "Randomized Control Trial",
+      "Crossover Study"
     ],
     "population": {
       "ageLower": 18,
-      "ageUpper": 35,
+      "ageUpper": 27,
       "sex": "Mixed",
       "healthStatus": "Healthy",
       "expertise": "Recreational"
     },
     "sampleSize": 26,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "26 recreationally active adults completed 30nmt at 9am, 2pm, and 7pm in randomized order. No significant main effects for time found for peak power, mean power, peak velocity, mean velocity, or distance.",
-    "keyFindings": "No significant differences in performance during maximal anaerobic assessments throughout day; peak/nadir times may be individualized",
-    "keywords": [],
+    "treadmillFocus": "Utility",
+    "abstract": "The purpose of this study was to determine the effects of time of day on performance during a maximal effort sprinting assessment (30nmt) and determine potential differences based on chronotype and sex. Twenty-six recreationally active men (n 5 12) and women (n 5 14) between the ages of 18 and 35 years old (21.5 6 2.4 years) completed the 30nmt at 9:00 AM, 2:00 PM, and 7:00 PM in a randomized order over a 24-hour period. Resting heart rate and temperature assessments were taken at each visit. A dietary recall and the MorningnessEveningness Questionnaire were used to assess kilocalories (kcals) and chronotype, respectively. Two-way (time x sex) repeated measures analyses of variance were conducted to determine differences in peak/mean power, peak/mean velocity, distance, resting heart rate, temperature, and kcals at each time point. Paired sample t tests were used to assess peak and nadir of each performance variable. A significance level was set at p , 0.05. There was a significant main effect for temperature (p , 0.001), resting heart rate (p 5 0.007), and pre-exercise caloric intake (p 5 0.021) throughout the day. No significant main effects for time were found for peak power (p 5 0.766), mean power (p 5 0.094), peak velocity (p 5 0.497), mean velocity (p 5 0.193), or distance (p 5 0.262). There were no significant time 3 sex interactions for any dependent performance variables (p . 0.05). Significant differences were shown between the peak and nadir of each performance variable (p , 0.001). There were no significant differences in performance during maximal effort anaerobic assessments shown throughout the day; however, peak/nadir of performance times may be individualized and differ between morning types and intermediate types. N=26 (12 men; 14 women; mean age = 21.5±2.5)",
+    "keyFindings": "No significant differences in performance during maximal anaerobic assessments throughout day; peak/nadir times may be individualized; Treadmill was used for a 30 second all out test to find peak and mean power, similar to Wingate test.",
+    "keywords": ["circadian rhythm", "chronotypes", "Wingate anaerobic test", "Woodway Curve"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1519/JSC.0000000000004521",
     "citations": []
   },
   {
