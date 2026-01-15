@@ -600,7 +600,7 @@
       "brand": "Jubatus",
       "model": "iRunner"
     },
-    "treadmillFocus": "",
+    "treadmillFocus": "Utility",
     "abstract": "Falls are the leading cause of injury and injury-related death in the elderly. This study evaluated the effect of virtual reality gait training (VRGT) with non-motorized treadmill on balance and gait ability of elderly individuals who had experienced a fall. Fifty-six elderly individuals living in local communities participated in this study. Subjects who met the selection criteria were randomly divided into a VRGT group (n = 28) and a control group (n = 28). The VRGT group received VRGT with non-motorized treadmill for 50 min a day for 4 weeks and 5 days a week. The control group received non-motorized treadmill gait training without virtual reality for the same amount of time as the VRGT group. Before and after the training, the one-leg-standing test, Berg Balance Scale, Functional Reach test, and Timed Up and Go test were used to assess balance ability, and the gait analyzer system was used to evaluate the improvement in gait spatiotemporal parameters. In the VRGT group, the balance ability variable showed a significant decrease in the one-leg-standing test and a significant improvement in the Timed Up and Go test. With respect to spatiotemporal gait parameters, velocity and step width decreased significantly in the VRGT group (p < 0.05), and stride length and step length were significantly improved in the VRGT group (p < 0.05). VRGT with non-motorized treadmill has been shown to improve balance and gait ability in the elderly. This study is expected to provide basic data on exercise programs for the elderly to prevent falls.",
     "keyFindings": "Virtual reality gait training with non-motorized treadmill improved balance and gait ability in elderly with fall history",
     "keywords": ["elderly", "virtual reality", "postural balance", "gait"],
@@ -623,23 +623,23 @@
       "Crossover Study"
     ],
     "population": {
-      "ageLower": 18,
-      "ageUpper": 35,
+      "ageLower": 19,
+      "ageUpper": 41,
       "sex": "Male",
-      "healthStatus": "Team-Sport Athletes",
-      "expertise": "Trained"
+      "healthStatus": "Athlete",
+      "expertise": "3+ Years of Respective Sport"
     },
     "sampleSize": 14,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "14 male team-sport athletes performed repeated-sprint running protocols on nonmotorized treadmill with and without deceleration. No significant differences in measured variables between conditions.",
+    "treadmillFocus": "Utility",
+    "abstract": "This study aimed to determine whether repeated-sprint running with deceleration aggravates markers of muscle damage or delays the recovery of performance compared with repeated-sprint running without deceleration. Fourteen male team-sport athletes performed 2 randomly ordered testing sessions on a nonmotorized treadmill with one session requiring subjects to decelerate (TMd) within 4 seconds before stopping or immediately step to the side of the treadmill belt at the completion of each sprint (TMa). Peak and mean velocities, speed decrement, blood lactate concentrations, and oxygen uptake were monitored during the repeated-sprint running protocols. Countermovement vertical jump (CMJ) performance, perceived muscle soreness, sit-and-reach flexibility, plasma creatine kinase (CK), lactate dehydrogenase (LDH), and myoglobin (Mb) concentrations were quantified immediately before and after and 45 minutes, 24 and 48 hours after repeated-sprint running protocols. Although muscle damage was indicated by increases in CK, LDH, and Mb (p # 0.05) in both groups, there was no significant effect of condition (TMa vs. TMd) on any of the measured performance or physiological variables (p . 0.05). The present study indicated that the removal of deceleration from repeated-sprint running on a nonmotorized treadmill has no effect on metabolism or performance during or after repeated-sprint running or markers of muscle damage. N= 14 (Age=25.3±6, Height=178±6.3cm, body mass=78.7±7.4 kg)",
     "keyFindings": "Removal of deceleration from repeated-sprint running had no effect on metabolism, performance, or markers of muscle damage",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["repeated-sprint activity", "repeated-sprint training", "recovery"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1519/JSC.0000000000002164",
     "citations": []
   },
   {
@@ -658,7 +658,8 @@
     ],
     "journal": "Chronobiology International",
     "methods": [
-      "Review"
+      "Review",
+      "Systematic Review"
     ],
     "population": {
       "ageLower": 18,
@@ -672,12 +673,12 @@
       "brand": "Various",
       "model": "Non-Motorized"
     },
-    "treadmillFocus": "",
-    "abstract": "Systematic review of time-of-day effects on repeated sprint performance. 10 articles included. Eight studies found repeated-sprint performance increased in favor of evening.",
+    "treadmillFocus": "Utility",
+    "abstract": "The lack of standardization of methods and procedures have hindered agreement in the literature related to time-of-day effects on repeated sprint performance and needs clarification. Therefore, the aim of the present study was to investigate and systematically review the evidence relating to time-of-day based on performance measures in repeated-sprints. The entire content of PubMed (MEDLINE), Scopus, SPORTDiscus® (via EBSCOhost) and Web of Science was searched. Only experimental research studies conducted in male adult participants aged ≥18yrs, published in English before June 2019 were included. Studies assessing repeatedsprints between a minimum of two time-points during the day (morning versus evening) were deemed eligible. The primary search revealed that a total of 10 out of 112 articles were considered eligible and subsequently included. Seven articles were deemed strong and three moderate quality. Eight studies found repeated-sprint performance across the first, first few, or all sprints, to increase in favor of the evening. The magnitude of difference is dependent on the modality and the exercise protocol used. The non-motorized treadmill established an average 3.5-8.5% difference in distance covered, average and peak velocity, and average power, across all sprints in three studies and in peak power in two studies. In cycling, power output differed across all sprints by 6.0% in one study and 8.0% for the first sprint only in five studies. All four studies measuring power decrement values (i.e. rate of fatigue) established differences up to 4.0% and two out of five studies established total work to be significantly higher by 8.0%. Repeated-sprint performance is affected by time-of-day with greater performance in the late/ early afternoon. The magnitude is dependent on the variable assessed and the mode of exercise. There is a clear demand for more rigorous investigations which control factors that specifically relate to investigations of time-of-day and are specific to the sport of individuals.",
     "keyFindings": "Repeated-sprint performance affected by time-of-day with greater performance in late/early afternoon",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["Chronobiology", "circadian rhythm", "diurnal variation", "RS performance", "repeated accelerations", "review"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1080/07420528.2019.1703732",
     "citations": []
   },
   {
@@ -696,22 +697,22 @@
     ],
     "population": {
       "ageLower": 18,
-      "ageUpper": 35,
+      "ageUpper": 26,
       "sex": "Male",
-      "healthStatus": "Team-Sport Athletes",
-      "expertise": "Trained"
+      "healthStatus": "Healthy",
+      "expertise": "Physically Active"
     },
     "sampleSize": 10,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve XL"
     },
-    "treadmillFocus": "",
-    "abstract": "10 male team-sport athletes ran at 2.78 m/s on cNMT and MT at different grades (4%, 6%, 8%). Curved design of cNMT estimated to mimic 6.9\u00b13% MT grade.",
+    "treadmillFocus": "Focus",
+    "abstract": "Physiological and perceptual demands of running on a curved nonmotorized treadmill compared with running on a motorized treadmill set at different grades. J Strength Cond Res 34(5): 1197-1200, 2020—The current study compared the physiological and perceptual demands of running on a commercially available curved nonmotorized treadmill (cNMT) with different incline grades on a motorized treadmill (MT). Ten male team-sport athletes completed, after a familiarization session, a 6-minute run at a target velocity of 2.78 m·s<sup>-1</sup> on the cNMT (cNMTrun). The mean individual running velocity of cNMTrun was then used as warm-up and experimental running velocity in 3 subsequent visits, in which subjects ran for 6 minutes on the MT set at different grades (4, 6, or 8%). In all experimental trials (cNMTrun, 4MTrun, 6MTrun, and 8MTrun) and in the warm-up of the subjects' third visit (1MTrun), oxygen consumption (V̇o2) and heart rate (HR) were monitored, and ratings of perceived exertion (RPE) were obtained. The HR in cNMTrun was significantly higher compared with all MT trials. V̇o2 and RPE were significantly higher in cNMTrun compared with 1MTrun and 4MTrun, but not different from 6MTrun and 8MTrun. The relationship between V̇o2 and MT grades was highly linear (V̇o2 = 34.36 + 1.7 MT grade; r = 0.99), and using linear interpolation, the concave curved design of the cNMT was estimated to mimic a 6.9 ± 3% MT grade. On matched running velocities, V̇o2 and RPE responses while running on the cNMT are similar to a 6-8% MT grade. These findings can be used as a reference value by athletes and coaches in the planning of cNMT training sessions and amend running velocities accordingly. Future studies are needed to determine whether this estimate is similar for female runners, or those of a lower body mass. N=10 (age 22±2 y, height 180±6 cm, mass 77±11 kg)",
     "keyFindings": "VO2 and RPE responses on cNMT similar to 6-8% MT grade at matched running velocities",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["training", "uphill running", "energy metabolism", "nonmotorized treadmill"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1519/JSC.0000000000003571",
     "citations": []
   },
   {
@@ -729,23 +730,23 @@
       "Metabolic Testing"
     ],
     "population": {
-      "ageLower": 16,
+      "ageLower": 18,
       "ageUpper": 31,
       "sex": "Mixed",
-      "healthStatus": "Sport Science Students",
-      "expertise": "Recreational"
+      "healthStatus": "Recreational",
+      "expertise": "Physically Active"
     },
     "sampleSize": 24,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "24 sport-science students performed traditional GXT on motorized treadmill and 1-km self-paced running test on nonmotorized treadmill to compare VO2max assessment methods.",
+    "treadmillFocus": "Focus",
+    "abstract": "Purpose: To compare the assessment of the maximal oxygen consumption (VO2max) in a traditional graded exercise test (GXT) with a 1-km self-paced running test on a nonmotorized treadmill in men and women. Methods: A total of 24 sport-science students (12 women: age 23.7 [7.7] y, body height 1.68 [0.02] m, body mass 66.6 [4.3] kg; 12 men: 22.1 [3.1] y, body height 1.82 [0.06] m, body mass 75.6 [11.0] kg) performed a traditional GXT on a motorized treadmill and a 1-km self-paced running test on a nonmotorized treadmill. VO2max, blood lactate, heart rate, and rating of perceived exertion, together with running velocity and duration at each test, were measured. Results: The main findings of the study were that the 1-km test produced significantly higher VO2max values (53.2 [9.9] vs 51.8 [8.8] mL/kg/min ) and blood lactate concentrations (11.9 [1.8] vs 11.1 [2.2] mmol/L) than the GXT (F≥4.8, P≤.04, η<sup>2</sup>≥.18). However, after controlling for sex, these differences were only present in men (60.6 [8.1] vs 58.1 [8.0] mL/kg/min , P=.027). Peak running velocity was higher in the GXT than in the 1-km test (15.7 [2.7] vs 13.0 [2.8] km/h). Men had higher VO2max values and running velocities than women in both tests. However, men and women used approximately similar pacing strategies during the 1-km test. Conclusions: Higher VO2max values were observed in a 1-km self-paced test than in the GXT. This indicates that a 1-km running test performed on a nonmotorized treadmill could serve as a simple and sport-specific alternative for the assessment of VO2max. N = 24 (12 women: 23.7 ± 7.7 years, body height 1.68 ± 0.02 m, 75 body mass 66.6 ± 4.3 kg and 12 men; 22.1 ± 3.1 years, body height 1.82 ± 0.06 m, body mass 76 75.6 ± 11.0 kg)",
     "keyFindings": "Higher VO2max values observed in 1-km self-paced test than in traditional GXT (53.2 vs 51.8 ml/kg/min); difference only present in men",
-    "keywords": [],
+    "keywords": ["aerobic capacity", "pacing", "treadmill", "incremental", "RPE"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1123/ijspp.2019-0843",
     "citations": []
   },
   {
@@ -763,23 +764,23 @@
     ],
     "population": {
       "ageLower": 18,
-      "ageUpper": 35,
+      "ageUpper": 29,
       "sex": "Male",
-      "healthStatus": "Team-Sport Athletes",
-      "expertise": "Trained"
+      "healthStatus": "Athletes",
+      "expertise": "Team Sport"
     },
     "sampleSize": 11,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "11 male team-sport athletes completed two self-paced simulations 72-h apart on non-motorized treadmill. Assessed within- and post-match responses including voluntary activation and physiological markers.",
+    "treadmillFocus": "Utility",
+    "abstract": "Introduction: Competitive soccer results in acute physiological and perceptual disturbances lasting up to 96-h, yet multiple games are often played with 72-h rest. Contextual factors influence match activities, impacting the assessment of post-match responses. We assessed the within- and post-match responses to two self-paced simulations (SIM1 and SIM2) in a 72-h period. Method: Eleven male team-sport athletes attended eight consecutive testing sessions after familiarisation. Assessments occurred at pre-, half-time, post- and 2 h post-SIM1, and daily up to four-days after SIM2. Statistics included effect size ± 90% CL comparisons to pre-SIM1 and regression analysis. Results: At half time there was reduced voluntary activation (SIM1: -1.52 ± 1.41 and SIM2: -0.50 ± 0.58) and potentiated twitch torque (SIM1: -0.50 ± 0.37 and SIM2: -0.31 ± 0.37), suggesting central and peripheral fatigue, respectively. The difference in activity profiles between simulations was unclear. Both simulations resulted in acute physiological and perceptual decrements, similar to published data from competitive matches. Higher strength was associated with reduced soreness and fatigue at all time points (range: r = 0.27 to 0.69) and lower peripheral fatigue. vV.O2peak was negatively associated with CK (range: r = -0.28 to -0.70). Conclusion: 72-h recovery is sufficient to maintain activity between simulations. Lower-body strength and aerobic capacity displayed protective effects against post-simulation decrements. N= 11 males (24.4 ± 3.8 y, 82.4 ± 8.4 kg, VO<sub>2</sub>peak 53.8 ± 3.5 ml.kg<sup>-1</sup>.min<sup>-1</sup>)",
     "keyFindings": "72-h recovery sufficient to maintain activity between simulations; lower-body strength and aerobic capacity displayed protective effects",
-    "keywords": [],
+    "keywords": ["Team Sport", "Fatigue", "Non-Motorised Treadmill", "Physical Characteristics"],
     "openAccess": false,
-    "DOI": "",
-    "citations": []
+    "DOI": "https://doi.org/10.1080/24733938.2020.1746824",
+    "citations": ["tofari2018"]
   },
   {
     "id": "bruseghini2019",
