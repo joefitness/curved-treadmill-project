@@ -455,22 +455,22 @@
     ],
     "population": {
       "ageLower": 18,
-      "ageUpper": 45,
+      "ageUpper": 39,
       "sex": "Mixed",
-      "healthStatus": "Recreational Runners",
-      "expertise": "Recreational"
+      "healthStatus": "Recreational",
+      "expertise": "Runners"
     },
     "sampleSize": 27,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "Bodytone",
+      "model": "ZRO-T"
     },
-    "treadmillFocus": "",
-    "abstract": "27 recreational runners ran at different speeds on cNMT and MT. Analysis showed lower impact accelerations but higher intensity training on cNMT.",
+    "treadmillFocus": "Focus",
+    "abstract": "An increase in the popularity of running can be seen over the last decades, with a large number of injuries on it. Most of the running injuries are related to impact accelerations and are due to overuse. In order to reduce the risk of injury or to improve performance and health new treadmill designs have been created, as it can be the curved non-motorized treadmill. The aim of this study was to analyse impact accelerations, spatio-temporal parameters and perceptual differences while running on curved non-motorized treadmill (cNMT) compared to motorized treadmill (MT) at different speeds. Therefore, 27 recreational runners completed two tests consisting of 10 min warm-up and three bouts of 8 min running at 2.77 m/s, 3.33 m/s and self-selected speed on cNMT and MT, previously randomised. Although the surface did not influence spatio-temporal parameters, a reduction in impact accelerations, head acceleration rate (mean effect size [ES] = 0.86), tibia peak (mean ES = 0.45) and tibia magnitude (mean ES = 0.55), was observed while running on cNMT in comparison with running on MT. Moreover, higher heart rate (HR) (mean ES = 0.51) and rating of perceived effort (RPE) (mean ES = 0.34) were found while running on cNMT. These findings demonstrated that higher intensity training and lower impact accelerations are experimented on cNMT, what can be used by trainers and athletes while planning training sessions. N = 27 (22 males and 5 females; age 25 ± 7 years)",
     "keyFindings": "Reduction in impact accelerations on cNMT; higher heart rate and RPE on cNMT",
-    "keywords": [],
+    "keywords": ["biomechanics","accelerometer","treadmill","locomotion"],
     "openAccess": true,
-    "DOI": "",
+    "DOI": "https://doi.org/10.3390/ijerph18105475",
     "citations": []
   },
   {
@@ -487,26 +487,27 @@
     ],
     "journal": "Journal of Science and Medicine in Sport",
     "methods": [
-      "Biomechanical Analysis"
+      "Biomechanical Analysis",
+      "Motion Capture"
     ],
     "population": {
-      "ageLower": 20,
-      "ageUpper": 32,
+      "ageLower": 18,
+      "ageUpper": 38,
       "sex": "Mixed",
-      "healthStatus": "Recreational Athletes",
-      "expertise": "Recreational"
+      "healthStatus": "Recreational",
+      "expertise": "Active"
     },
     "sampleSize": 18,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "18 recreational athletes performed 12 maximal 30-m sprints on non-motorised treadmill with 3D kinematics and GRF recorded during overground sprint before and after.",
+    "treadmillFocus": "Utility",
+    "abstract": "Objectives: To quantify the changes in work done by lower limb joint moments during maximal speed  running following a sports-specific repeated running protocol.  Design: Observational with repeated-measures.  Methods: Recreational athletes (n=18 (9 females), age=26.2±6.2 years) performed 12 maximal 30metre sprints on a non-motorised treadmill. Three-dimensional kinematics and ground reaction forces  were subsequently recorded during a 10-metre maximal overground sprint before and immediately after  the repeated running protocol, from which we calculated work done by sagittal plane hip, knee, and  ankle moments. Relative work (J/kg) was reported as a percentage of positive and negative work done  by the sum of joint moments.  Results: Following the repeated running protocol, maximal sprint speed decreased by 19% and was  accompanied by reductions in total positive (-1.47 J/kg) and negative (-0.92 J/kg) work, in addition to  work done by hip (-0.43 to -0.82 J/kg) and knee (-0.28 J/kg) moments during swing. Compared to before  the repeated running protocol, less relative work was done by hip extension (-9%) and knee  flexion/extension (-3%) moments during swing. Reductions in work done by hip and knee joint  moments during swing were significantly correlated with reductions in maximum running speed  (r=0.61-0.89, p<0.05).  Conclusions: A sports-specific repeated sprint protocol resulted in reductions in mechanical work done  by sagittal plane hip and knee joint moments during maximal overground sprinting. Interventions  focused on maintaining positive work done by the hip flexors/extensors and negative work done by  knee flexors/extensors during the swing phase of running may help prevent reductions in speed  following repeated sprinting. N=18 (9 females and 9 males; age=26.2±6.2 years)",
     "keyFindings": "Reductions in mechanical work by hip and knee joints during maximal sprinting after repeated running protocol",
-    "keywords": [],
+    "keywords": ["biomechanics", "performance", "sprinting", "power", "force plate", "ground reaction forces"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "http://dx.doi.org/10.1016/j.jsams.2021.03.008",
     "citations": []
   },
   {
