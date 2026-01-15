@@ -592,20 +592,20 @@
       "ageLower": 65,
       "ageUpper": 85,
       "sex": "Mixed",
-      "healthStatus": "Elderly (Fall History)",
-      "expertise": "N/A"
+      "healthStatus": "Elderly",
+      "expertise": "Fall History"
     },
     "sampleSize": 56,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Jubatus",
+      "model": "iRunner"
     },
     "treadmillFocus": "",
-    "abstract": "56 elderly individuals completed VR gait training with non-motorized treadmill for 50 min/day, 5 days/week for 4 weeks. Significant improvements in balance and gait spatiotemporal parameters.",
+    "abstract": "Falls are the leading cause of injury and injury-related death in the elderly. This study evaluated the effect of virtual reality gait training (VRGT) with non-motorized treadmill on balance and gait ability of elderly individuals who had experienced a fall. Fifty-six elderly individuals living in local communities participated in this study. Subjects who met the selection criteria were randomly divided into a VRGT group (n = 28) and a control group (n = 28). The VRGT group received VRGT with non-motorized treadmill for 50 min a day for 4 weeks and 5 days a week. The control group received non-motorized treadmill gait training without virtual reality for the same amount of time as the VRGT group. Before and after the training, the one-leg-standing test, Berg Balance Scale, Functional Reach test, and Timed Up and Go test were used to assess balance ability, and the gait analyzer system was used to evaluate the improvement in gait spatiotemporal parameters. In the VRGT group, the balance ability variable showed a significant decrease in the one-leg-standing test and a significant improvement in the Timed Up and Go test. With respect to spatiotemporal gait parameters, velocity and step width decreased significantly in the VRGT group (p < 0.05), and stride length and step length were significantly improved in the VRGT group (p < 0.05). VRGT with non-motorized treadmill has been shown to improve balance and gait ability in the elderly. This study is expected to provide basic data on exercise programs for the elderly to prevent falls.",
     "keyFindings": "Virtual reality gait training with non-motorized treadmill improved balance and gait ability in elderly with fall history",
-    "keywords": [],
+    "keywords": ["elderly", "virtual reality", "postural balance", "gait"],
     "openAccess": true,
-    "DOI": "",
+    "DOI": "https://doi.org/10.3390/geriatrics6010001",
     "citations": []
   },
   {
