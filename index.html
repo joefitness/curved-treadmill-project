@@ -25,7 +25,26 @@
                 <label for="search">Search</label>
                 <input type="text" id="search" placeholder="Search titles, authors...">
             </div>
-            
+
+            <div class="filter-group">
+                <label for="sortBy">Sort By</label>
+                <select id="sortBy">
+                    <option value="date-desc">Date (Newest First - Default)</option>
+                    <option value="date-asc">Date (Oldest First)</option>
+                    <option value="title">Title (A-Z)</option>
+                    <option value="author">First Author (A-Z)</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label for="treadmillFocusFilter">Treadmill Focus</label>
+                <select id="treadmillFocusFilter">
+                    <option value="">All</option>
+                    <option value="Utility">Utility</option>
+                    <option value="Focus">Focus</option>
+                </select>
+            </div>
+          
             <div class="filter-group">
                 <label for="methodFilter">Method</label>
                 <select id="methodFilter">
@@ -71,25 +90,6 @@
                 </select>
             </div>
             
-            <div class="filter-group">
-                <label for="treadmillFocusFilter">Treadmill Focus</label>
-                <select id="treadmillFocusFilter">
-                    <option value="">All</option>
-                    <option value="Utility">Utility</option>
-                    <option value="Focus">Focus</option>
-                </select>
-            </div>
-            
-            <div class="filter-group">
-                <label for="sortBy">Sort By</label>
-                <select id="sortBy">
-                    <option value="date-desc">Date (Newest First)</option>
-                    <option value="date-asc">Date (Oldest First)</option>
-                    <option value="title">Title (A-Z)</option>
-                    <option value="author">First Author (A-Z)</option>
-                </select>
-            </div>
-
             <div class="filter-legend">
                 <div class="legend-box legend-box-utility">
                     <div class="legend-title legend-title-utility">UTILITY</div>

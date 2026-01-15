@@ -526,23 +526,23 @@
       "Biomechanical Analysis"
     ],
     "population": {
-      "ageLower": 18,
-      "ageUpper": 35,
-      "sex": "Mixed",
-      "healthStatus": "Runners",
-      "expertise": "Trained"
+      "ageLower": 22,
+      "ageUpper": 28,
+      "sex": "Male",
+      "healthStatus": "Athletes",
+      "expertise": "Runners"
     },
-    "sampleSize": 10,
+    "sampleSize": 3,
     "treadmill": {
       "brand": "Assault",
       "model": "AirRunner"
     },
-    "treadmillFocus": "",
-    "abstract": "Study in Planica Nordic Centre wind tunnel with AirRunner treadmill equipped with force sensors. Examined running under conditions of headwind and backwind at different speeds.",
-    "keyFindings": "Wind tunnel and treadmill sufficiently accurate to perform kinetic measurements of running parameters in changing conditions",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "treadmillFocus": "Utility",
+    "abstract": "The aim of the study was the application of high-tech wind tunnel device to identify the changes in the biokinetic parameters of running performed on the specially designed treadmill. The research was carried out in the “Planica Nordic Centre—PNC” in the wind tunnel system, where the AirRunner Assault treadmill, which was equipped with four sensors measuring the vertical and horizontal ground reaction forces, was installed. To obtain biokinetic data, the runners performed the treadmill's run under conditions of airflow directed at each participant's back (backwind speeds +3 m/s and +5 m/s) and the chest (headwind speeds -5 m/s and -7 m/s). The runner's speed was measured via image analysis using a DSLR camera and markers on the belt of the treadmill. Additionally, a high-speed camera synchronised to the force acquisition system was used to analyse the contact phase via comparison of foot placement and time series of the ground reaction forces. The contact phases of the running step were found to be longer than the flight phases, with their duration ranging from 0.15 to 0.20 s and the maximum forces at take-off were found to be greater than when running with the backwind. It should be noted that the application of high-tech devices wind tunnel and treadmill were found to be sufficiently accurate to perform kinetic measurements of running parameters in changing conditions, such as resistance and assistance (facilitating). Athlete Ages: 26, 22, 28",
+    "keyFindings": "Wind tunnel and treadmill sufficiently accurate to perform kinetic measurements of running parameters in changing conditions; A camera was used to determine accurate belt speed",
+    "keywords": ["running", "kinematics", "wind tunnel", "kinetics", "air resistance", "technique", "force plate"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.3390/sym13030505",
     "citations": []
   },
   {
@@ -561,21 +561,21 @@
       "ageLower": 20,
       "ageUpper": 32,
       "sex": "Male",
-      "healthStatus": "Athletes (Hockey)",
-      "expertise": "Elite"
+      "healthStatus": "Athletes",
+      "expertise": "Field Hockey"
     },
     "sampleSize": 11,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "11 elite male field hockey players completed 8 multi-set RSH sessions on non-motorized treadmill in normobaric hypoxic chamber over 6 weeks.",
+    "treadmillFocus": "Utility",
+    "abstract": "Repeated-sprint training in hypoxia (RSH) studies conducted “in-season” are scarce. This study investigated the effect of discontinuous, running-based RSH, on repeated-sprint treadmill performance in hypoxia in a team sport cohort, prior to international competition. Over a 6-week “in-season” period, 11 elite male players (Malaysia national team) completed eight multi-set RSH sessions on a non-motorized treadmill in a normobaric hypoxic chamber (FiO<sub>2</sub> = 13.8%). Three testing sessions (Sessions 1, 5, and 8), involved three sets of 5 x 8-s sprints, with 52-s recovery between sprints and 4-5 min between sets. Training sessions (Sessions 2, 3, 4, 6, and 7) consisted of four to five sets of 4-5 x 8-s sprints. During testing sessions, maximum sprinting speed was recorded for each sprint with values averaged for each set. For each set, a peak speed and fatigue index were calculated. Data were compared using two-way repeated measures ANOVA (sessions x sets). Average speed per set increased between testing sessions (p = 0.001, η<sup>2</sup>p = 0.49), with higher values in Session 8 (25.1 ± 0.9 km•h<sup>-1</sup>, +4 ± 3%, p = 0.005), but not Session 5 (24.8 ± 1.0 km•h<sup>-1</sup>, +3 ± 3%, p = 0.405), vs. Session 1 (24.2 ± 1.5 km•h<sup>-1</sup>). Peak sprinting speed in each set also increased across testing sessions (p = 0.008, η<sup>2</sup>p = 0.382), with Session 8 (26.5 ± 1.1 km•h<sup>-1</sup>) higher than Session 5 (25.8 ± 1.0 km•h<sup>-1</sup>, +1 ± 4%, p = 0.06) and Session 1 (25.7 ± 1.5 km•h<sup>-1</sup>, +4 ± 4%, p = 0.034). Fatigue index differed between sessions (p = 0.04, η<sup>2</sup>p = 0.331, Session 1; -6.8 ± 4.8%, Session 5; -3.8 ± 2%, Session 8; -5.3 ± 2.6%). In international field hockey players, a 6-week in-season RSH program improved average and peak, repeated treadmill sprint speeds following eight, but not five sessions. n=11 (age 26.1 ± 4.2 years).",
     "keyFindings": "6-week in-season RSH program improved average and peak repeated treadmill sprint speeds following eight sessions",
-    "keywords": [],
+    "keywords": ["repeated-sprint training in hypoxia", "repeated-sprint ability", "team sports", "hockey", "sprint performance"],
     "openAccess": true,
-    "DOI": "",
-    "citations": []
+    "DOI": "https://doi.org/10.3389/fspor.2020.00066",
+    "citations": ["edwards2017"]
   },
   {
     "id": "lee2020",
