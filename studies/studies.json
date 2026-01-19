@@ -899,7 +899,7 @@
       "Billaut, F.",
       "Minahan, C."
     ],
-    "journal": "Journal of Sports Science & Medicine",
+    "journal": "Journal of Sports Science and Medicine",
     "methods": [
       "Crossover Study"
     ],
@@ -907,20 +907,20 @@
       "ageLower": 18,
       "ageUpper": 35,
       "sex": "Male",
-      "healthStatus": "Team-Sport Athletes",
-      "expertise": "Trained"
+      "healthStatus": "Athlete",
+      "expertise": "Team Sport"
     },
     "sampleSize": 11,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "11 amateur team-sport athletes performed RSR444 under normoxic and hypoxic conditions on non-motorized treadmill. Cognitive function tests performed pre and 20 min post.",
+    "treadmillFocus": "Utility",
+    "abstract": "This study determined if a single bout of repeated-sprint running under hypoxic (RSH) conditions was associated with impaired cognitive function when compared with repeated-sprint running under normoxic (RSN) conditions. Eleven amateur team-sport athletes performed a repeated-sprint running protocol (4 sets of 4, 4-s all-out sprints; i.e., RSR444) under both conditions (14.5% and 20.9% O2) on a non-motorized treadmill. Changes in SpO2, prefrontal cortex total haemoglobin (Δ[THb]), oxyhaemoglobin (Δ[O2Hb]), deoxyhaemoglobin (Δ[HHb]) and cognitive function (detection task: DET; identification task: IDN; one card learning task: OCL; performed pre and 20 min post RSR444) were examined. During RSH, SpO2 was lower following each set (p ≤ 0.05), while [HHb] was higher after each set (p ≤ 0.05) compared with RSN. In addition, while there was no effect of condition on DET (p = 0.20) or IDN (p = 0.14), OCL accuracy was lower after, compared with before, RSH (p=0.04), but not RSN (p = 0.52). A significant relationship was observed between ∆[HHB] and ∆OCL accuracy (r = -0.68, p = 0.01). Performance of a single bout of RSH with 14.5% O2 resulted in impaired cognitive function in amateur team-sport athletes. Coaches should be mindful of timing of RSH prescription with regard to other training sessions that challenge speed and movement accuracy.",
     "keyFindings": "Single bout of RSH with 14.5% O2 resulted in impaired cognitive function in amateur team-sport athletes",
-    "keywords": [],
+    "keywords": ["Altitude", "repeated sprint hypoxia", "sports", "cerebral oxygenation", "exercise", "cognition"],
     "openAccess": true,
-    "DOI": "",
+    "DOI": "https://pubmed.ncbi.nlm.nih.gov/31191108/",
     "citations": []
   },
   {
@@ -937,22 +937,22 @@
     ],
     "population": {
       "ageLower": 18,
-      "ageUpper": 45,
-      "sex": "Mixed",
-      "healthStatus": "Trained Runners",
-      "expertise": "Trained"
+      "ageUpper": 56,
+      "sex": "Male",
+      "healthStatus": "Athlete",
+      "expertise": "Runners"
     },
     "sampleSize": 12,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 1.5"
     },
-    "treadmillFocus": "",
-    "abstract": "12 trained runners performed HIIT session of six 4-min work intervals on non-motorized treadmill with recovery durations of 1MIN, 2MIN, 3MIN, or self-selected duration.",
-    "keyFindings": "Recovery duration length had limited effect on physiological strain; running velocities higher with longest recovery (3MIN)",
-    "keywords": [],
+    "treadmillFocus": "Utility",
+    "abstract": "<b>Objectives</b> This study aimed to examine the effects of different recovery durations on self-selected running velocities, physiological responses, and ratings of perceived exertion (RPE) in a commonly used high intensity interval training (HIIT) protocol. <b>Design & methods</b> Twelve trained runners performed an incremental treadmill exercise test to determine maximal oxygen uptake (VO(<sub>2</sub>) and heart rate (HRmax). In four subsequent visits, participants performed a HIIT session comprising six 4-min work intervals, in which the recovery duration between work intervals equalled either a fixed (1MIN, 2MIN, 3MIN) or a self-selected duration (ssMIN). HIIT sessions were run on a non-motorized treadmill, and were performed under isoeffort conditions. <b>Results</b> Mean running velocity was significantly higher in 3MIN compared with all other protocols, and higher in ssMIN compared with 2MIN. No significant differences in time spent ≥90% and 95% VO<sub>2max</sub>, or ≥90% and 95% HRmax were evident between the four protocols. RPE responses were similar across and within the protocols showing a gradual increase with each progressive interval. <b>Conclusion</b> In a self-paced HIIT session of six 4-min work intervals, the length of recovery durations had a limited effect on the total physiological strain endured in the training. However, running velocities were higher when participants received the longest recovery period (3MIN). Longer recovery durations may facilitate a higher external training load (faster running), whilst maintaining a similar internal training load (physiological stimulus), and may therefore allow for greater training adaptations. N=12 males mean±SD: 34±11 years; 1.80±0.06 m; 74±6 kg; V̇O2max:  53±7 mL·kg<sup>-1</sup>·min<sup>-1</sup>)",
+    "keyFindings": "Recovery duration length had limited effect on physiological strain; running velocities higher with longest recovery (3MIN). Technical note: Data were sampled at 4Hz on CNMT. ",
+    "keywords": ["Exercise","Energy metabolism", "Cardiovascular", "Athletic performance"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1016/j.jsams.2018.09.230",
     "citations": []
   },
   {
@@ -980,15 +980,15 @@
     },
     "sampleSize": 10,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "To investigate effects of lowering core and mean skin temperature on self-paced intermittent running in heat. 10 males completed four randomised 46-min self-paced intermittent protocols on non-motorised treadmill.",
+    "treadmillFocus": "Utility",
+    "abstract": "<b>Purpose</b> To investigate the effects of lowering core (T<sub>gi</sub>) and mean skin temperature (T<sub>sk</sub>) concomitantly and independently on self-paced intermittent running in the heat. <b>Methods</b> 10 males (30.5±5.8 years, 73.2±14.5 kg, 176.9±8.0 cm, 56.2±6.6 ml/kg/min) completed four randomised 46-min self-paced intermittent protocols on a non-motorised treadmill in 34.4±1.4 °C, 36.3±4.6% relative humidity. 30-min prior to exercise, participants were cooled via either ice slurry ingestion (INT); a cooling garment (EXT); mixed-cooling (ice slurry and cooling garment concurrently) (MIX); or no-cooling (CON). <b>Results</b> At the end of pre-cooling and the start of exercise T<sub>gi</sub> were lower during MIX (36.11±1.3 °C) compared to CON (37.6±0.5 °C) and EXT (36.9±0.5 °C, p<0.05). Throughout pre-cooling T<sub>sk</sub> and thermal sensation were lower in MIX compared to CON and INT, but not EXT (p<0.05). The reductions in thermophysiological responses diminished within 10-20 min of exercise. Despite lowering T<sub>gi</sub>, T<sub>sk</sub>, body temperature (Tb), and thermal sensation prior to exercise, the distances covered were similar (CON: 6.69±1.08 km, INT: 6.96±0.81 km, EXT: 6.76±0.65 km, MIX 6.87±0.70 km) (p>0.05). Peak sprint speeds were also similar between conditions (CON: 25.6±4.48 km/h, INT: 25.4±3.6 km/h, EXT: 26.0±4.94 km/h, MIX: 25.6±3.58 km/h) (p>0.05). Blood lactate, heart rate and RPE were similar between conditions (p>0.05). <b>Conclusion</b> Lowering T<sub>gi</sub> and T<sub>sk</sub> prior to self-paced intermittent exercise did not improve sprint, or submaximal running performance.",
     "keyFindings": "Lowering core and skin temperature had no impact on self-paced intermittent running performance in the heat",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["Thermoregulation", "Performance", "Team sports", "Self-pacing", "Pre-cooling", "Intermittent exercise"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1007/s00421-019-04173-y",
     "citations": []
   },
   {
@@ -1016,12 +1016,12 @@
       "brand": "Woodway",
       "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "Twenty subjects performed 3km runs on self-propelled (Woodway Curve 3.0) and motorized treadmills. Self-propelled treadmill elicited greater physiological response.",
+    "treadmillFocus": "Focus",
+    "abstract": "There are a wide range of options for individuals to choose from in order to engage in aerobic exercise; from outdoor running to computer controlled and self-propelled treadmills. Recently, self-propelled treadmills have increased in popularity and provide an alternative to a motorized treadmill. Twenty subjects (10 men, 10 women) ranging in age from 19-23 with a mean of 20.4 ± 0.8 SD were participants in this study. The subjects visited the laboratory on three occasions. The purpose of the first visit was to familiarize the subject with the self-propelled treadmill (Woodway Curve 3.0). The second visit, subjects were instructed to run on the selfpropelled treadmill for 3km at a self-determined pace. Speed data were collected directly from the self-propelled treadmill. The third visit used speed data collected during the self-propelled treadmill run to create an identically paced 3km run for the subjects to perform on a motorized treadmill (COSMED T150). During both the second and third visit, oxygen consumption (VO2) and respiratory exchange ratio (R) data were collected with COSMED's Quark cardiopulmonary exercise testing (CPET) metabolic mixing chamber system. The VO2 mean value for the self-propelled treadmill (44.90 ± 1.65 SE ml/kg/min) was significantly greater than the motorized treadmill (34.38 ± 1.39 SE ml/kg/min). The mean R value for the self-propelled treadmill (0.91 ± 0.01 SE) was significantly greater than the motorized treadmill (0.86 ± 0.01 SE). Our study demonstrated that a 3km run on a selfpropelled treadmill does elicit a greater physiological response than a 3km run at on a standard motorized treadmill. Self-propelled treadmills provide a mode of exercise that offers increased training loads and should be considered as an alternative to motorized treadmills.",
     "keyFindings": "VO2 was significantly greater on self-propelled treadmill (44.90 vs 34.38 ml/kg/min)",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["Treadmills", "Metabolic", "Motorized Treadmills"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.26524/ijpefs1842",
     "citations": []
   },
   {
@@ -1041,23 +1041,23 @@
       "Crossover Study"
     ],
     "population": {
-      "ageLower": 18,
-      "ageUpper": 35,
+      "ageLower": 19,
+      "ageUpper": 38,
       "sex": "Mixed",
       "healthStatus": "Healthy",
       "expertise": "Recreational"
     },
     "sampleSize": 20,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "20 healthy adults performed walking and running overground and on MT and NMT. Analyzed shoulder, trunk, and lower-extremity kinematics for each condition.",
+    "treadmillFocus": "Focus",
+    "abstract": "<b>Context: </b> Motorized treadmills (MTs) present an altered motor task compared to overground (OG) locomotion in that MT belt surfaces are motor-driven, whereas individuals walking/running OG must propel themselves. A possible solution may lie with novel nonmotorized treadmill (NMT) devices as the belt surface is propelled by the user. <b>Objective:</b> The purpose of this study was to compare gait performance during both MT and NMT locomotion to OG. <b>Design:</b> Crossover study. <b>Setting:</b> A university research laboratory. <b>Patients:</b> A total of 20 healthy adults (10 women) participated in the study. <b>Intervention:</b> Each participant performed self-selected walking and running OG, and on both an MT and NMT. <b>Main Outcome Measure:</b> Shoulder, trunk, and lower-extremity kinematics were analyzed for each treadmill condition and compared to OG. <b>Results:</b> The analyses demonstrated that there were no differences between MT and OG gait kinematics during either walking or running. However, NMT gait showed increased hip, knee, and ankle flexions in late swing and early stance compared to OG during both walking and running. For example, during walking, the NMT elicited hip-, knee-, and ankle-flexion/extension angles of 34.7°, 8.0°, and 3.6° at foot strike compared to 24.8°, -3.1°, and -5.8° in the OG condition (P < .05). There was also a significant reduction in trunkflexion/extension range of motion during running compared to OG (7.7° in NMT vs 9.8° in OG). <b>Conclusions:</b> These differences may have implications for both training and rehabilitation on an NMT. Future studies should consider the influence of NMT familiarization on gait performance and should emphasize the assessment of neuromuscular performance. Mean age = 23.3±4.4 years, mean height= 173.0 ±10.7cm (158-188 cm), and mean total body mass was 71.9 (15.9) kg (range: 52.1-110.8 kg).",
     "keyFindings": "MT matched overground kinematics; NMT showed increased flexions in late swing and early stance",
-    "keywords": [],
+    "keywords": ["gait mode", "biomechanics", "walking", "running", "surface"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1123/jsr.2016-0125",
     "citations": []
   },
   {
@@ -1084,15 +1084,15 @@
     },
     "sampleSize": 16,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "TrueForm Runner",
+      "model": "Enduro"
     },
-    "treadmillFocus": "",
-    "abstract": "16 college-aged participants completed 5 four-minute running bouts alternating between TMT and CNT. Gait analyzed using Optogait equipment.",
+    "treadmillFocus": "Focus",
+    "abstract": "Running on a non-motorized, curved-deck treadmill is thought to improve gait mechanics. It is not known, though, whether the change in gait carries over to running on a motorized treadmill on level ground. To determine the effect of running on a curved non-motorized treadmill (CNT) on gait characteristics, measured during a subsequent bout of running on a traditional motorized treadmill (TMT), sixteen healthy college-aged participants, aged (mean ± SD) 20.4 ± 1.6 years, volunteered to have their gait analyzed while running on a TMT and CNT. After familiarization with, and a warm-up on, both treadmills, each subject completed five 4-min bouts of running, alternating between traditional motorized and curved non-motorized treadmills: TMT-1, CNT-1, TMT-2, CNT-2, and TMT-3. Variables of interest included step length (m), stride length (m), imbalance score (%), and stride angle (◦), and were measured using Optogait gait analysis equipment. We found differences in gait characteristics among TMT-1, TMT-2, and TMT-3, which can be attributed to running on the CNT. The results show that running on a CNT resulted in significant changes in gait characteristics (step length, stride length, imbalance score and stride angle). These findings suggest that running on a CNT can significantly influence running gait.",
     "keyFindings": "Running on CNT resulted in significant changes in gait characteristics (step length, stride length, imbalance, stride angle)",
-    "keywords": [],
+    "keywords": ["treadmill", "curved", "running gait", "imbalance", "stride angle", "stride length", "step length"],
     "openAccess": true,
-    "DOI": "",
+    "DOI": "http://dx.doi.org/10.3390/sports6030058",
     "citations": []
   },
   {
@@ -1117,15 +1117,15 @@
     },
     "sampleSize": 13,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve XL"
     },
-    "treadmillFocus": "",
-    "abstract": "13 trained male runners performed incremental running test on MT then ran at progressively higher velocities on cNMT and MT. cNMT elicited higher relative oxygen uptake across all velocities.",
+    "treadmillFocus": "Focus",
+    "abstract": "<b>Objectives</b> To compare physiological and perceptual response of running on a curved non-motorized treadmill (cNMT) with running on a motorized treadmill (MT), and to determine the running velocity at which a physiological response ≥ 90% VO2max was elicited. <b>Design & methods</b> 13 trained male runners (mean ± SD; 36 ± 11 years, 1.80 ± 0.06 m, 70 ± 4 kg, VO2max: 57.3 ± 3.5 mL  kg<sup>-1</sup> min<sup>-1</sup>) performed an incremental running test on a MT to determine VO2max and the accompanying maximum velocity (Vmax). Participants first completed a familiarization session on the cNMT. Next, participants ran for 4 min at five/six progressively higher velocities (40-90% Vmax). These runs were completed on the cNMT and MT in two separate visits in a randomized and counterbalanced order. <b>Results</b> No participant was able to complete the 4 min run at 80% Vmax on the cNMT. Running on the cNMT elicit a higher relative oxygen uptake (%VO2max) across all velocities compared to the MT (32.5 ± 5%, p < 0.001, ES 3.3 ± 0.9), and was accompanied by significantly higher heart rates (16.8 ± 3%, p < 0.001, ES 3.4 ± 1.5), an altered cadence (2.6 ± 0.7%, p < 0.001, ES 0.8 ± 0.3) and ratings of perceived exertion (27.2 ± 5%, p < 0.001, ES 2.3 ± 0.6). A less efficient running economy was evident when running on the cNMT (+38.4 ± 16%, p < 0.001, ES 2.73). Individual (n = 9) linear interpolation predicted an exercise intensity of 90% VO2max was achieved in the non-motorized condition when  running at 62.1 ± 3.5% Vmax (R2 = 0.986 ± 0.01), which was lower than MT run in which 90% VO<sub>2</sub>  max was achieved at 81.4 ± 5.6% Vmax (R<sup>2</sup> = 0.985 ± 0.02; 29.8 ± 8%, p < 0.001, ES 3.87). <b>Conclusions</b> Running on the cNMT has higher physiological and perceptual demands and increases cadence.",
     "keyFindings": "Running on cNMT has higher physiological and perceptual demands; 90% VO2max achieved at 62% Vmax on cNMT vs 81% Vmax on MT",
-    "keywords": [],
+    "keywords": ["Non-motorised treadmill", "Running", "HIIT", "Self-paced training"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1016/j.jsams.2018.05.011",
     "citations": []
   },
   {
@@ -1145,20 +1145,20 @@
       "ageLower": 18,
       "ageUpper": 35,
       "sex": "Male",
-      "healthStatus": "Team-Sport Athletes",
-      "expertise": "Trained"
+      "healthStatus": "Athlete",
+      "expertise": "Team Sport"
     },
     "sampleSize": 12,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "12 male team-sport athletes performed 90-minute self-paced soccer match simulation on nonmotorized treadmill. Assessments at prematch, halftime, postmatch, and recovery timepoints.",
+    "treadmillFocus": "Utility",
+    "abstract": "Assessing responses to soccer match play is limited by match variability or unrealistic simulations. To address this, the biological, perceptual, and performance responses were assessed using a self-paced, simulated soccer match protocol using a nonmotorized treadmill. Twelve male team-sport athletes performed the 90-minute simulation. Match activity, quadriceps twitch interpolation (voluntary activation [%VA] and potentiated twitch [POT]), biochemical markers, strength and power performance, rating of perceived exertion (RPE), and self-report wellness were collected prematch, halftime, postmatch, and 2, 24, 48, 72, and 96-hour postmatch. Change compared with prematch was calculated using effect size ±90% confidence limit, and relationships were assessed using regression analysis. Subjects covered 12,445.8 ± 768.7 m at 87.1 ± 3.2% maximal heart rate (mean ± SD). Reductions in %VA and POT was present at halftime (-0.38 ± 0.46 and -0.79 ± 0.30, respectively) and persisted postmatch. Squat jump height decreased at halftime (-0.42 ± 0.31) and was decreased until Post<sub>96</sub>. Perceptual fatigue, soreness (-0.92 ± 0.88 and -1.49 6 0.76, respectively), and creatine kinase (CK) (1.11 ± 0.43) peaked at Post<sub>24</sub>. Pretest strength (N•kg<sup>-1</sup>) correlated with changes in CK (r = -0.58 to -0.81), peak oxygen consumption (VO<sub>2</sub>peak) correlated with reduced perceived wellness at Post<sub>24</sub> (r = 0.44-0.58) and RPE post (r = -0.71 ± 0.28). High-speed running correlated with soreness (r<sup>2</sup> = 0.42) and  very high-speed running with reduced POT (r<sup>2</sup> = 0.61). Previously, unreported half-time reductions in %VA and POT plateaued by postmatch, suggesting a role in regulating second-half performance. Perceptual and neuromuscular responses seem related to running intensity. Greater lower-body strength and VO<sub>2</sub>peak were associated with less CK (i.e., muscle damage) and perceptual responses postmatch, respectively, suggesting a training focus should be placed on these capacities. (24.5 ± 3.9 years [age range: 19-31 years old], 76.8 ± 5.1 kg, VO<sub>2</sub>peak 52.3 ± 4.0 ml•kg<sup>-1</sup>•min<sup>-1</sup>)",
     "keyFindings": "Half-time reductions in voluntary activation and potentiated twitch plateaued by postmatch; perceptual and neuromuscular responses related to running intensity",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["central fatigue", "peripheral fatigue", "nonmotorized treadmill", "activity profile", "physical characteristics"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1519/JSC.0000000000001875",
     "citations": []
   },
   {
@@ -1184,15 +1184,15 @@
     },
     "sampleSize": 12,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 1.5"
     },
     "treadmillFocus": "",
-    "abstract": "12 healthy students performed long (4\u00d74 min) and short intervals (4\u00d78\u00d720 s) of high-intensity training on non-motorized treadmill with same total duration.",
+    "abstract": "This study compared the effects of long (4 x 4 min) and short intervals (4 x 8 x 20 s) of high-intensity interval exercise bouts (HIIT) on running performance, physiological and perceptual responses, and excess postexercise oxygen consumption (EPOC). Twelve healthy college students (8 men, 4 women; mean age = 22 ± 2 years) performed long (90-95 % of peak heart rate) and short intervals (maximal intensity) of high-intensity training (running on a non-motorized treadmill) with the same total duration on separate days. The total volume of consumed oxygen during recovery was the same in both cases (P = 0.21), whereas the short intervals of high-intensity training were performed at a faster mean running velocity (3.5 ± 0.18 vs. 2.95 ± 0.07 m/s) and at a lower RPEbreath compared with the long intervals of high-intensity training. The blood lactate concentration also tended to be lower during the short intervals of high-intensity training, indicating that short-interval training was perceived to be easier than long-interval training, even though the cardiovascular and metabolic responses are similar. Furthermore, EPOC lasted significantly longer (83.4 ± 3.2 vs. 61.3 ± 27.9 min, P = 0.016) and tended to be higher (8.02 ± 4.22 = vs. 5.70 ± 3.75 L O<sub>2</sub>, P = 0.053) after short intervals than after long intervals of training.",
     "keyFindings": "Short intervals perceived easier than long intervals even though cardiovascular and metabolic responses similar; EPOC lasted significantly longer after short intervals",
-    "keywords": [],
+    "keywords": ["accumulated oxygen uptake", "aerobic exercise", "postexercise metabolism", "resting metabolic rate"],
     "openAccess": true,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1055/s-0043-124429",
     "citations": []
   },
   {
