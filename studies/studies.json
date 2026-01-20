@@ -1431,7 +1431,7 @@
       "brand": "Woodway",
       "model": "Curve"
     },
-    "treadmillFocus": "",
+    "treadmillFocus": "Utility",
     "abstract": "Currently no method exists for calculating and comparing the confidence-intervals (CI) for the time-series of a  bivariate plot. The study's aim was to develop 'CI2' as a method to calculate the CI on time-series bivariate  plots, and to identify if the CI between two bivariate time-series overlap. The test data were the knee and ankle  angles from 10 healthy participants running on a motorised standard-treadmill and non-motorised curvedtreadmill. For a recommended 10+ trials, CI2 involved calculating 95% confidence-ellipses at each time-point,  then taking as the CI the points on the ellipses that were perpendicular to the direction vector between the  means of two adjacent time-points. Consecutive pairs of CI created convex quadrilaterals, and any overlap of  these quadrilaterals at the same time or ±1 frame as a time-lag calculated using cross-correlations, indicated  where the two time-series differed. CI2 showed no group differences between left and right legs on both  treadmills, but the same legs between treadmills for all participants showed differences of less knee extension  on the curved-treadmill before heel-strike. To improve and standardise the use of CI2 it is recommended to  remove outlier time-series, use 95% confidence-ellipses, and scale the ellipse by the fixed Chi-square value  as opposed to the sample-size dependent F-value. For practical use, and to aid in standardisation or future  development of CI2, Matlab code is provided. CI2 provides an effective method to quantify the CI of bivariate  plots, and to explore the differences in CI between two bivariate time-series. N=10 Males (21.4±4.1years; 75.6±7.0kg; 1.81±0.08m)",
     "keyFindings": "CI2 method provides effective quantification of CI for bivariate plots and exploration of differences between time-series",
     "keywords": ["Angle-angle", "Biomechanics", "Coordination", "Phase-plot", "Spatial", "Variability"],
@@ -1459,20 +1459,20 @@
       "ageLower": 18,
       "ageUpper": 45,
       "sex": "Male",
-      "healthStatus": "Runners",
-      "expertise": "Trained"
+      "healthStatus": "Athlete",
+      "expertise": "Heat-Acclimatised Runner"
     },
     "sampleSize": 9,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "9 trained male runners completed 5 km time trials in heat with pre-cooling by cold-water immersion, mid-exercise cooling by facial water spray, or no cooling control.",
+    "treadmillFocus": "Utility",
+    "abstract": "This investigation compared the effects of external pre-cooling and mid-exercise cooling methods on running time trial performance and associated physiological responses. Nine trained male runners completed familiarisation and three randomised 5 km running time trials on a non-motorised treadmill in the heat (33°C). The trials included pre-cooling by cold-water immersion (CWI), mid-exercise cooling by intermittent facial water spray (SPRAY), and a control of no cooling (CON). Temperature, cardiorespiratory, muscular activation, and perceptual responses were measured as well as blood concentrations of lactate and prolactin. Performance time was significantly faster with CWI (24.5 ± 2.8 min; P = 0.01) and SPRAY (24.6 ± 3.3 min; P = 0.01) compared to CON (25.2 ± 3.2 min). Both cooling strategies significantly (P < 0.05) reduced forehead temperatures and thermal sensation, and increased muscle activation. Only pre-cooling significantly lowered rectal temperature both pre-exercise (by 0.5 ± 0.3°C; P < 0.01) and throughout exercise, and reduced sweat rate (P < 0.05). Both cooling strategies improved performance by a similar magnitude, and are ergogenic for athletes. The observed physiological changes suggest some involvement of central and psychophysiological mechanisms of performance improvement. N=9 trained heat-acclimatised male runners (age: 30 ± 12 y, height: 178 ± 5 cm, body mass: 75 ± 9 kg, Σ7 skinfolds: 58 ± 21 mm)",
     "keyFindings": "Both pre-exercise cold-water immersion and mid-exercise facial water spray improved 5 km performance by similar magnitude",
-    "keywords": [],
+    "keywords": ["Pre-cooling", "thermoregulation", "endurance","hot conditions", "electromyography"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1080/02640414.2016.1192294",
     "citations": []
   },
   {
@@ -1492,23 +1492,23 @@
       "Randomized Control Trial"
     ],
     "population": {
-      "ageLower": 18,
-      "ageUpper": 45,
-      "sex": "Mixed",
+      "ageLower": 21,
+      "ageUpper": 50,
+      "sex": "Male",
       "healthStatus": "Runners",
       "expertise": "Trained"
     },
     "sampleSize": 11,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "11 trained runners completed preloaded running time trials (20 min at 70% VO2max and 3 km time trial) with precooling, midcooling, combination of all methods, or control in heat.",
+    "treadmillFocus": "Utility",
+    "abstract": "The purpose of this investigation was to assess the effect of combining practical methods to cool the body on endurance running performance and physiology in the heat. Eleven trained male runners completed 4 randomized, preloaded running time trials (20 minutes at 70% VO<sub>2</sub>max and a 3 km time trial) on a nonmotorized treadmill in the heat (338 C). Trials consisted of precooling by combined cold-water immersion and ice slurry ingestion (PRE), midcooling by combined facial water spray and menthol mouth rinse (MID), a combination of all methods (ALL), and control (CON). Performance time was significantly faster in MID (13.7 ± 1.2 minutes; p<0.01) and ALL (13.7 ± 1.4 minutes; p=0.04) but not PRE (13.9 ± 1.4 minutes; p=0.24) when compared with CON (14.2 ± 1.2 minutes). Precooling significantly reduced rectal temperature (initially by 0.5 ± 0.28 C), mean skin temperature, heart rate and sweat rate, and increased iEMG activity, whereas midcooling significantly increased expired air volume and respiratory exchange ratio compared with control. Significant decreases in forehead temperature, thermal sensation, and postexercise blood prolactin concentration were observed in all conditions compared with control. Performance was improved with midcooling, whereas precooling had little or no influence. Midcooling may have improved  performance through an attenuated inhibitory psychophysiological and endocrine response to the heat. N=11 trained heat-acclimatized male runners (age: 30 ± 9 years, age range: 21-50 years, height: 178 6± 4 cm, body mass: 74 6± 7 kg, S7 skinfolds: 63 ± 15 mm, VO<sub>2</sub>max: 61 ± 6 ml•kg<sup>-1</sup>•min<sup>-1</sup>; recent 5 km personal best: 19.5 ± 1.7 minutes)",
     "keyFindings": "Performance improved with midcooling, whereas precooling had little or no influence",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["precooling", "ice slurry", "menthol", "cold-water immersion", "water spray"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1519/JSC.0000000000001532",
     "citations": []
   },
   {
@@ -1516,9 +1516,9 @@
     "year": 2017,
     "title": "Effects of Short or Long Warm-up on Intermediate Running Performance",
     "authors": [
-      "Tillaar, R.v.d.",
+      "van den Tillaar, R.",
       "Vatten, T.",
-      "Heimburg, E.v."
+      "von Heimburg, E."
     ],
     "journal": "Journal of Strength and Conditioning Research",
     "methods": [
@@ -1528,20 +1528,20 @@
       "ageLower": 21,
       "ageUpper": 26,
       "sex": "Male",
-      "healthStatus": "Athletes",
-      "expertise": "Trained"
+      "healthStatus": "Athlete",
+      "expertise": "Endurance Trained"
     },
     "sampleSize": 13,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "13 experienced endurance-trained athletes conducted 2 types of warm-ups (long: general + specific; short: specific only) followed by 3-minute running test on nonmotorized treadmill.",
+    "treadmillFocus": "Utility",
+    "abstract": "The aim of the study was to compare the effects of a long warm-up (general + specific) and a  short warm-up (specific) on intermediate running performance (3-min run). Thirteen  experienced endurance-trained athletes (age 23.2 ± 2.3 yr, body mass 79.8 ± 8.2 kg, body  height 1.82 ± 0.05 m) conducted two types of warm-ups in a cross-over design with one week  in between: a long warm-up (10 min, 80% maximal heart rate, and 8x60 m sprint with  increasing intensity and 1 min rest in between) and a short warm-up (8x60 m sprint with  increasing intensity and 1 min rest in between). Each warm-up was followed by a 3-min  running test on a non-motorized treadmill. Total running distance, running velocity at each 30  s, heart rate, blood lactate concentration, oxygen uptake, and rate of perceived exertion were  measured. No significant differences in running performance variables and physiological  parameters were found between the two warm-up protocols, except for the rate of perceived  exertion and heart rate, which were higher after the long warm-up and after the 3-min running  test compared with the short warm-up. It was concluded that a short warm-up is as effective  as a long warm-up for intermediate performance. Therefore, athletes can choose for  themselves if they want to include a general part in their warm-up routines, even though it  would not enhance their running performance more compared with only using a short specific  warm-up. However, to increase efficiency of time for training or competition these short  specific warm-up should be performed instead of long warm-ups. N= 13 experienced endurance-trained athletes (age 23.2 ± 2.3 yr, body mass 79.8 ± 8.2 kg,  body height 1.82 ± 0.05 m)",
     "keyFindings": "Short warm-up as effective as long warm-up for intermediate performance; no significant differences in running performance variables",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["blood lactate concentration", "rate of perceived exertion", "heart rate", "oxygen uptake"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1519/JSC.0000000000001489",
     "citations": []
   },
   {
@@ -1556,26 +1556,27 @@
     "journal": "Scientific Reports",
     "methods": [
       "Biomechanical Analysis",
+      "Motion Capture",
       "Metabolic Testing"
     ],
     "population": {
-      "ageLower": 18,
-      "ageUpper": 45,
+      "ageLower": 19,
+      "ageUpper": 35,
       "sex": "Mixed",
       "healthStatus": "Healthy",
       "expertise": "Recreational"
     },
-    "sampleSize": 17,
+    "sampleSize": 10,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "Investigated effect of reduced vertical displacement of CoM on oxygen uptake and walking economy without imposing altered gait patterns by having subjects walk on curved treadmill and flat treadmill.",
+    "treadmillFocus": "Focus",
+    "abstract": "The six determinants of gait proposed that the goal of gait is to minimize vertical displacement of  the body's center of mass (CoM) with the objective to optimize energy expenditure. On the contrary, recent investigations suggest that reduced vertical displacement leads to an increase in energy  expenditure. However, these investigations had the included subjects deliberately changing their gait, which could bias the endpoint measures. The present study investigated the effect of reduced vertical displacement of the CoM on oxygen uptake and walking economy without imposing altered gait patterns. This was accomplished by having subjects walk on a curved treadmill and on a flat treadmill. Vertical displacement of the CoM (sacrum marker displacement), oxygen uptake, walking economy, stride characteristics and lower limb joint angles were measured. There were significant differences in stride characteristics and phase dependent differences in lower limb movement pattern between the two conditions which in size were comparable to the changes observed between different speeds. The vertical displacement of the CoM was significantly reduced on the curved treadmill. This was accompanied by an increase in oxygen uptake and walking economy. These results support recent assertions that the six determinants of gait do not serve to improve walking economy. N=10 subjects (7 male, 3 female) included had a mean (SD) age of 21.3 (2.67) years, body mass of 75.38 (14.64) kg and height of 180.78 (6.77) cm",
     "keyFindings": "Reduced vertical displacement of CoM on curved treadmill accompanied by increase in oxygen uptake and walking economy",
     "keywords": [],
     "openAccess": true,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1038/s41598-017-17532-6",
     "citations": []
   },
   {
@@ -1595,20 +1596,20 @@
       "ageLower": 27,
       "ageUpper": 38,
       "sex": "Male",
-      "healthStatus": "Sports Officials",
-      "expertise": "Elite"
+      "healthStatus": "Athlete",
+      "expertise": "Rugby"
     },
     "sampleSize": 12,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "12 elite officials completed match simulation on non-motorised treadmill examining psychomotor performance changes during laboratory-based match simulation.",
+    "treadmillFocus": "Utility",
+    "abstract": "The onset of exercise facilitates an improvement in psychomotor performance until the second ventilatory threshold, after which performance is reduced. This inverted-U relationship appears valid for incremental and steady-state exercise, however, not for intermittent exercise. This study examined changes in psychomotor performance of team sport officials during a laboratory-based match simulation. Twelve elite Australian football (n = 5) and rugby league (n = 7) officials (32.5 ± 5.5 years; 180.0 ± 6.8 cm; 78.8 ± 7.6 kg) completed the match simulation on a non-motorised treadmill. Physiological measures were routinely taken, while psychomotor performance was assessed using the Eriksen flanker task (multiple-choice response time). Significant reductions (P < 0.05) were observed in distance covered and high-speed running during the second half when compared to the first. No significant differences (P > 0.05) in psychomotor performance at different time points were observed. Response time was significantly improved when running above 65% of maximal sprinting speed (P < 0.01). This data questions the application of the inverted-U hypothesis for intermittent exercise and suggests that the short high-intensity efforts may not result in the same physiological events that limit psychomotor performance during sustained high-intensity exercise. More so, the high-intensity efforts during the match protocol appeared to promote psychomotor performance during the intermittent exercise.",
     "keyFindings": "Response time improved when running above 65% maximal sprinting speed during intermittent exercise",
-    "keywords": [],
+    "keywords": ["cognition", "perceptual skill", "intermittent exercise", "decision making", "team sport officials"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1080/02640414.2015.1057208",
     "citations": []
   },
   {
@@ -1635,20 +1636,20 @@
       "ageLower": 18,
       "ageUpper": 45,
       "sex": "Mixed",
-      "healthStatus": "Type 1 Diabetes",
-      "expertise": "N/A"
+      "healthStatus": "Metabolic Condition",
+      "expertise": "Type 1 Diabetes"
     },
     "sampleSize": 7,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "7 T1DM participants consumed waxy barley starch or dextrose before sub-maximal exercise followed by 10-min performance run on non-motorized treadmill.",
+    "treadmillFocus": "Utility",
+    "abstract": "<b>BACKGROUND:</b> Pre-exercise carbohydrate (CHO) ingestion is an effective strategy for reducing the occurrence of hypoglycemia during or after exercise in individuals with type 1 diabetes (T1DM). The metabolic effects of ingestion of different chos for glycemic or performance gains have been under-researched. This study compared metabolic responses and fuel use during sub-maximal and high-intensity performance running following pre-exercise ingestion of waxy barley starch (WBS) or dextrose (DEX) in T1DM. <b>METHODS:</b> Seven participants attended the laboratory on two separate occasions following preliminary testing. on each visit participants consumed either 0.6 g/kg body mass of DEX or WBS 2 hours before a 26-minute discontinuous incremental treadmill protocol (4-minute running:  1.5-min rest) finishing at 80±4% VO<sub>2</sub>peak followed by a 10-min performance run on a non-motorized treadmill. capillary blood samples were  taken at rest, during and following exercise and analyzed for glucose (BG) and acid-base variables. Data (mean ± SEM) were analyzed using repeated measures anoVa (p<0.05). <b>RESULTS:</b> BG reached similar peak values one hour after cho ingestion and immediate pre-sub-maximal exercise BG were comparable. resting cho oxidation was elevated and lipid oxidation lower under WBS (p<0.05). There were no metabolic or cardio-respiratory differences during the sub-maximal exercise (P>0.05). In the final quartile of the performance run, a greater distance was completed under WBS (WBS 323±21 vs. DEX 301±20 m, P=0.02). <b>CONCLUSIONS:</b> consumption of WBS demonstrated similar hyperglycemic responses to dextrose ingestion but a greater rate of cho use at rest. interestingly, T1DM individuals displayed an improved performance at the latter stages of a high-intensity run test.",
     "keyFindings": "Waxy barley starch showed improved end-stage high-intensity performance compared to dextrose in T1DM",
-    "keywords": [],
+    "keywords": ["Blood glucose", "carbohydrates", "Molecular weight", "athletic performance"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://www.minervamedica.it/en/journals/sports-med-physical-fitness/article.php?cod=R40Y2016N11A1392",
     "citations": []
   },
   {
@@ -1674,15 +1675,15 @@
     },
     "sampleSize": 24,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "24 volunteers performed 2 peak GXT sessions (1 MT and 1 NMT). Neither peak VO2, peak HR, nor VT were significantly different, but submaximal responses differed.",
+    "treadmillFocus": "Focus",
+    "abstract": "Despite growing popularity of nonmotorized treadmills (NMTs), little data exist regarding responses during exercise testing using this equipment, which is important when providing an appropriate exercise prescription. The purpose of this study was to evaluate physiological and perceptual responses during peak graded exercise tests (GXTs) on a motorized treadmill (MT) vs. NMT. Volunteers (12 men and 12 women aged 18-35 years) performed 2 peak GXT sessions (1 MT and 1 NMT). Respiratory gases and heart rate (HR) were collected each minute; perceptual response was estimated (Borg's 6-20 rating of perceived exertion [RPE] scale) during the final 10 seconds of each stage. Peak values (i.e., V̇o2, HR, speed) were determined during the final 10 seconds of each test; ventilatory threshold (VT) was assessed using the V-slope method. Paired t-tests matching variables measured at each stage of the GXT identified significantly higher values on the NMT for V̇o2 83% of the time, HR 67% of the time, and RPE 25% of the time. Interestingly though, neither peak V̇o2 (48.6 ± 9.2 ml·kg·min<sup>-1</sup> vs. 47.8 ± 8.9 ml·kg·min<sup>-1</sup>), peak HR (185 ± 9 b·min<sup>-1</sup> vs. 188 ± 10 b·min<sup>-1</sup>; p = 0.90), nor VT (72.7 ± 5.7% vs. 73.8 ± 5.4%) were significantly different on the NMT vs. the MT. However, significant differences were identified between NMT and MT tests for time to exhaustion (9:55 ± 1:49 vs. 12:05 ± 2:48; p < 0.01) and peak speed (8.0 ± 0.9 mph vs. 9.2 ± 1.4 mph; p < 0.01). Thus, although peak values obtained were similar between testing sessions on the NMT and MT, the majority of submaximal data were significantly different between trials. These differences are important when designing exercise prescriptions using submaximal values from NMT testing that may be inappropriately high or low at corresponding intensities during training.",
     "keyFindings": "Peak values similar between NMT and MT; majority of submaximal data significantly different between trials",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["exercise test", "specificity of testing", "maximal testing", "perceived exertion", "oxygen consumption"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1519/JSC.0000000000001273",
     "citations": []
   },
   {
@@ -1705,20 +1706,20 @@
       "ageLower": 18,
       "ageUpper": 45,
       "sex": "Male",
-      "healthStatus": "Runners",
-      "expertise": "Trained"
+      "healthStatus": "Athlete",
+      "expertise": "Runner"
     },
     "sampleSize": 11,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "11 moderately trained male runners completed 5-km time trials in hot conditions with ice slurry ingestion, menthol mouth rinse, or no intervention on non-motorized treadmill.",
+    "treadmillFocus": "Utility",
+    "abstract": "The purpose of this study was to compare the effects of a cooling strategy designed to predominately lower thermal state with a strategy designed to lower thermal sensation on endurance running performance and physiology in the heat. Eleven moderately trained male runners completed familiarization and three randomized, crossover 5-km running time trials on a non-motorized treadmill in hot conditions (33 °C). The trials included ice slurry ingestion before exercise (ICE), menthol mouth rinse during exercise (MEN), and no intervention (CON). Running performance was significantly improved with MEN (25.3 ± 3.5 min; P = 0.01), but not ICE (26.3 ± 3.2 min; P = 0.45) when compared with CON (26.0 ± 3.4 min).  Rectal temperature was significantly decreased with ICE (by 0.3 ± 0.2 °C; P < 0.01), which persisted for 2 km of the run and MEN significantly decreased perceived thermal sensation (between 4 and 5 km) and ventilation (between 1 and 2 km) during the time trial. End-exercise blood prolactin concentration was elevated with MEN compared with CON (by 25.1 ± 24.4 ng/mL; P = 0.02). The data demonstrate that a change in the perception of thermal sensation during exercise from menthol mouth rinse was associated with improved endurance running performance in the heat. Ice slurry ingestion reduced core temperature but did not decrease thermal sensation during exercise or improve running performance. N=11 moderately trained heat-acclimatized male runners (age: 29 ± 9 years, height: 179 ± 7 cm, body mass: 73 ± 10 kg, Σ7 skinfolds: 58 ± 24 mm)",
     "keyFindings": "Menthol mouth rinse improved running performance in heat; ice slurry reduced core temperature but did not improve performance",
     "keywords": [],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1111/sms.12555",
     "citations": []
   },
   {
@@ -1738,25 +1739,20 @@
       "ageLower": 21,
       "ageUpper": 27,
       "sex": "Male",
-      "healthStatus": "Athletes",
+      "healthStatus": "Athlete",
       "expertise": "Trained"
     },
     "sampleSize": 10,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "The aim of this study was to compare perceptual and physiological variables between running on three different modalities at increasing velocity. Ten male athletes conducted three 1000 m laps at increasing velocity on three different running modalities.",
+    "treadmillFocus": "Focus",
+    "abstract": "The aim of this study was to compare perceptual and physiological variables between running on three different modalities — an indoor athletics track, a motorized treadmill, and a non-motorized curved treadmill — for 1000 m at three different velocities. Ten male athletes (age 24±3 years, body mass 69.8±6.91 kg, height 1.80±0.06 m, VO2peak 69.0±6.70 ml/kg/ min) conducted three 1000 m laps at increasing velocity on three different running modalities. The athletes had a 3-minute recovery between each lap, where the rate of perceived exertion (RPE) was registered and the blood lactate concentration and heart rate were measured. Oxygen uptake was measured using a portable metabolic analyser. The physiological (oxygen uptake, heart rate, and blood lactate concentration) and perceptual (RPE) variables were higher when running on a non-motorized curved treadmill compared with running on the track or a motorized treadmill. No differences were found between running on a motorized treadmill and the track except for the RPE, which was lower when running on the track compared with the motorized treadmill. Running on a non-motorized curved treadmill at three different velocities results in a higher oxygen uptake (37%) and heart rate (22%) and is subjectively much harder than running on a track or a motorized treadmill at the same velocities. The difference is around 4 km/h when comparing the physiological and perceptual responses. Thus, when performing training sessions on a non-motorized curved treadmill, subjects should subtract 4 km/h from their regular pace on a track or motorized treadmill to get the same response considering oxygen uptake, heart rate, RPE and blood lactate concentration.",
     "keyFindings": "Physiological and perceptual variables were higher on non-motorized curved treadmill compared to track or motorized treadmill",
-    "keywords": [
-      "rate of perceived exertion",
-      "blood lactate concentration",
-      "heart rate",
-      "oxygen uptake"
-    ],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["rate of perceived exertion","blood lactate concentration","heart rate","oxygen uptake"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.12697/akut.2016.22.02",
     "citations": []
   },
   {
