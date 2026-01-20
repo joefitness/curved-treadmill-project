@@ -645,7 +645,7 @@
   {
     "id": "pullinger2020",
     "year": 2020,
-    "title": "Time-of-day variation on performance measures in repeated-sprint tests: a systematic review",
+    "title": "Time-of-day variation on performance measures in repeated-sprint tests: A systematic review",
     "authors": [
       "Pullinger, S.A.",
       "Cocking, S.",
@@ -1187,7 +1187,7 @@
       "brand": "Woodway",
       "model": "Curve 1.5"
     },
-    "treadmillFocus": "",
+    "treadmillFocus": "Utility",
     "abstract": "This study compared the effects of long (4 x 4 min) and short intervals (4 x 8 x 20 s) of high-intensity interval exercise bouts (HIIT) on running performance, physiological and perceptual responses, and excess postexercise oxygen consumption (EPOC). Twelve healthy college students (8 men, 4 women; mean age = 22 ± 2 years) performed long (90-95 % of peak heart rate) and short intervals (maximal intensity) of high-intensity training (running on a non-motorized treadmill) with the same total duration on separate days. The total volume of consumed oxygen during recovery was the same in both cases (P = 0.21), whereas the short intervals of high-intensity training were performed at a faster mean running velocity (3.5 ± 0.18 vs. 2.95 ± 0.07 m/s) and at a lower RPEbreath compared with the long intervals of high-intensity training. The blood lactate concentration also tended to be lower during the short intervals of high-intensity training, indicating that short-interval training was perceived to be easier than long-interval training, even though the cardiovascular and metabolic responses are similar. Furthermore, EPOC lasted significantly longer (83.4 ± 3.2 vs. 61.3 ± 27.9 min, P = 0.016) and tended to be higher (8.02 ± 4.22 = vs. 5.70 ± 3.75 L O<sub>2</sub>, P = 0.053) after short intervals than after long intervals of training.",
     "keyFindings": "Short intervals perceived easier than long intervals even though cardiovascular and metabolic responses similar; EPOC lasted significantly longer after short intervals",
     "keywords": ["accumulated oxygen uptake", "aerobic exercise", "postexercise metabolism", "resting metabolic rate"],
@@ -1215,20 +1215,20 @@
       "ageLower": 18,
       "ageUpper": 35,
       "sex": "Male",
-      "healthStatus": "Runners",
-      "expertise": "Trained"
+      "healthStatus": "Athlete",
+      "expertise": "Runner"
     },
     "sampleSize": 10,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "10 male runners completed 3 TT to establish reliability then ran at 5-km pace on NMT and MT. Familiarization session should be included for TT using NMT.",
+    "treadmillFocus": "Focus",
+    "abstract": "This study examined the reliability of running performance across 3 nonmotorized treadmill (NMT) 5-km time trials (TTs) and physiological, gait, and perceptual differences at a 5-km pace for both NMT and motorized treadmills (MTs). Ten male runners experienced in road racing who had never run on an NMT completed 3 TT to establish personal best 5-km pace. In a later session, participants ran at this pace for 5 minutes on the NMT while metabolic, gait, and perceptual measures were recorded and then ran at outdoor 5-km personal best pace on an MT at 1% grade (counter-balanced crossover design). Intraclass correlation (ICC = 0.95) between the TT1 and TT2 was strong but improved between TT2 and TT3 (ICC = 0.99) with considerable reduction in variability. Nonmotorized treadmill resulted in a 24% slower pace (10.6 ± 1.5 vs. 13.9 ± 2.6 km·h<sup>-1</sup>; p < 0.001), shorter stride length (1.02 ± 0.10 vs. 1.27 ± 0.18 m; p < 0.001), and decreased cadence (175 ± 12 vs. 181 ± 13 steps per·minute; p = 0.01). However, V̇o2, respiratory exchange ratio (RER), lactate concentration, and heart rate did not differ between modalities (NMT = 3.4 ± 0.4 L·min<sup>-1</sup>, 0.96 ± 0.04, 6.9 ± 3.7 mmol, 172 ± 10 b·min<sup>-1</sup>; MT = 3.4 ± 0.5 L·min<sup>-1</sup>, 0.96 ± 0.04, 5.7 ± 3.4 mmol, 170 ± 10 b·min<sup>-1</sup>). rate of perceived exertion (RPE) for legs, breathing, and overall did not differ between treadmill types. A familiarization session should be included for TT using NMT. Other than gait and pace characteristics similar responses were elicited by both treadmills when running at 5-km pace. However, with these considerations, NMT TT of 4-km might be more appropriate in matching MT 5-km TT duration without altering physiological responses significantly..",
     "keyFindings": "ICC improved between TT2 and TT3 (0.99); NMT resulted in 24% slower pace but similar VO2, RER, lactate, and HR responses",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["pacing", "endurance", "running", "maximal oxygen consumption"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1519/JSC.0000000000001993",
     "citations": []
   },
   {
@@ -1250,20 +1250,20 @@
       "ageLower": 18,
       "ageUpper": 35,
       "sex": "Mixed",
-      "healthStatus": "Trained Runners",
-      "expertise": "Trained"
+      "healthStatus": "Athlete",
+      "expertise": "Runner"
     },
     "sampleSize": 14,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "14 trained runners performed 5\u00d76-min bouts at progressively higher speeds. Running on cNMT showed higher cardiometabolic demand than overground or motorized treadmill.",
+    "treadmillFocus": "Focus",
+    "abstract": "The aim of this study was to compare the cardiometabolic demands of running on a curved non-motorized treadmill (cNMT) with overground (OVR) and motorized treadmill (MOT) running. Fourteen trained male (n = 7) and female (n = 7) runners (VO<sub>2</sub>peak 56.6 ± 4.0 mL.kg<sup>-1</sup>•min<sup>-1</sup>) participated in the study. Each experimental session consisted of 5 x 6-min bouts of running at progressively higher speeds, separated by 6-min rest (females 9-15 km•h<sup>-1</sup>; males 10.5-16.5 km•h<sup>-1</sup>). Oxygen consumption (VO<sub>2</sub>) and heart rate (HR) during the last 2 min of each bout were measured using a portable metabolic cart. Running at a set speed on the cNMT required a higher percentage of VO<sub>2</sub>peak than OVR (mean ± 90% CI, 22 ± 6%; ES ± 90% CI, 1.87 ± 0.15) and MOT (16 ± 6%; ES 1.50 ± 0.15) running. Similarly, HR during the cNMT was higher compared to OVR (25 ± 9 beats•min<sup>-1</sup>, ES 1.23 ± 0.14) and MOT (22 ± 9 beats•min<sup>-1</sup>, ES 1.35 ± 0.13) trials. The decline in running economy observed during the cNMT trial was negatively related to body mass (R<sup>2</sup> 0.493, P = 0.01), indicating lighter runners were required to work at a higher relative intensity to overcome treadmill belt resistance. These data demonstrate the higher cardiometabolic demand associated with running at a given speed on the cNMT. It is critical these differences are taken into account when prescribing training intensities on the cNMT or translating data from the laboratory to an athletic setting.",
     "keyFindings": "cNMT required 22% higher VO2max than overground and 16% higher than motorized treadmill",
-    "keywords": [],
+    "keywords": ["running", "running economy", "VO2", "oxygen consumption", "treadmill", "perceived exertion", "lower body power", "lower body strength"],
     "openAccess": true,
-    "DOI": "",
+    "DOI": "https://doi.org/10.3389/fphys.2017.00914",
     "citations": []
   },
   {
