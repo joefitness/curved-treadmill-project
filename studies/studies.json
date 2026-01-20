@@ -1278,26 +1278,27 @@
     ],
     "journal": "Journal of Mechanics in Medicine and Biology",
     "methods": [
-      "Biomechanical Analysis"
+      "Biomechanical Analysis",
+      "Motion Capture"
     ],
     "population": {
-      "ageLower": 18,
-      "ageUpper": 45,
+      "ageLower": 22,
+      "ageUpper": 26,
       "sex": "Male",
       "healthStatus": "Healthy",
       "expertise": "Recreational"
     },
     "sampleSize": 16,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "DRAXFIT",
+      "model": "SPT-1000C"
     },
-    "treadmillFocus": "",
-    "abstract": "16 healthy adult men maintained different self-paced speeds on NMCT with three curvature radii. Dynamic stability assessed across speeds and radii.",
-    "keyFindings": "Stability decreased at slow speeds but increased at fast speeds as curvature radius decreased",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "treadmillFocus": "Focus",
+    "abstract": "It is generally believed that running on a curved surface is more unstable than running on a flat surface. In this study, the dynamic stability of locomotion on a nonmotorized curved treadmill (NMCT) with three curvature radii was compared with that on a motorized flat treadmill. Sixteen healthy adult men maintained four different self-paced speeds: slow walking, fast walking, jogging, and running. Significant differences were statistically verified using two-way repeated-measures analysis of variance (ANOVA) according to the curvature radii and speeds, and the interaction effects were confirmed. Furthermore, to understand the significant differences between the speed and curvature radius, post hoc analyses were performed using one-way ANOVA. Except for the step width, the other parameters showed differences and correlation effects between the curvature radius and speed. As the curvature radius decreased, the stability decreased at slow speeds (slow walking) but increased at fast speeds (running). However, as the curvature radius increased, the stability increased at slow speeds (slow walking) but decreased at high speeds (running). The study results will help in suggesting the appropriate curvature radius for different user types such as athletes, the elderly, and people who require rehabilitation and will serve as preliminary data for designing the curvature radii of NMCTs.",
+    "keyFindings": "Stability decreased at slow speeds but increased at fast speeds as curvature radius decreased. <b>NOTE:</b> A custom treadmill was built based on the DRAXFIT CNMT model to explore differences in curvature. ",
+    "keywords": ["Curved treadmill", "nonmotorized treadmill", "curvature radius", "dynamic stability", "margin of stability"],
+    "openAccess": true,
+    "DOI": "http://dx.doi.org/10.1142/S0219519417501056",
     "citations": []
   },
   {
@@ -1313,26 +1314,27 @@
     ],
     "journal": "International Journal of Precision Engineering and Manufacturing",
     "methods": [
-      "Biomechanical Analysis"
+      "Biomechanical Analysis",
+      "Motion Capture"
     ],
     "population": {
-      "ageLower": 18,
-      "ageUpper": 45,
-      "sex": "Mixed",
+      "ageLower": 22,
+      "ageUpper": 26,
+      "sex": "Male",
       "healthStatus": "Healthy",
       "expertise": "Recreational"
     },
-    "sampleSize": 27,
+    "sampleSize": 16,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "DRAXFIT",
+      "model": "SPT-1000C"
     },
-    "treadmillFocus": "",
-    "abstract": "Compared margin of stability under self-paced and fixed-speed conditions using nonmotorized curved treadmill with different curvature radii.",
+    "treadmillFocus": "Focus",
+    "abstract": "Understanding dynamic stability during locomotion is very important for preventing falling and injury. Although many previous studies have investigated dynamic stability characteristics under self-paced speed (SP) and fixed-speed (FS) conditions, very few have directly compared the two conditions. In this study, the margin of stability (MOS) was evaluated under the SP and FS conditions using a nonmotorized curved treadmill (NMCT). Interaction effects were found between the curvature radius and speed, the differences between each curvature radius and speed were confirmed, and significant differences were found between the SP and FS conditions. According to experimental results, under both the SP and FS conditions, the dynamic stability increased with the curvature radius during slow and fast walking. However, under the SP condition, as the curvature radius increased, the MOS in the anteroposterior direction decreased during running; however, under the FS condition, no distinctive trend was observed. At most curvature radii and speeds, significant differences were found between the SP and FS conditions. The study results indicated that while exercising on the NMCT, the SP and FS conditions at different curvature radii and speeds could influence the dynamic stability. The results could be utilized for verifying exercise capacity enhancement and rehabilitation exercise effects.",
     "keyFindings": "Self-paced and fixed-speed conditions at different curvature radii influence dynamic stability",
-    "keywords": [],
+    "keywords": ["Curvature radius", "Fixed speed", "Margin of stability", "Nonmotorized curved treadmill", "Self-paced speed"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1007%2Fs12541-017-0105-5",
     "citations": []
   },
   {
@@ -1348,32 +1350,32 @@
     ],
     "journal": "International Journal of Precision Engineering and Manufacturing",
     "methods": [
-      "Biomechanical Analysis"
+      "Mathematical Modeling"
     ],
     "population": {
-      "ageLower": 18,
-      "ageUpper": 45,
-      "sex": "Mixed",
-      "healthStatus": "Healthy",
+      "ageLower": 0,
+      "ageUpper": 0,
+      "sex": "N/A",
+      "healthStatus": "N/A",
       "expertise": "N/A"
     },
     "sampleSize": 0,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "DRAXFIT",
+      "model": "SPT-1000C"
     },
-    "treadmillFocus": "",
-    "abstract": "This study suggests a design method for curved treadmill with mathematical model that enables prediction of belt sag extent. An experimental belt system was produced and measured values confirmed validity of the mathematical model.",
+    "treadmillFocus": "Focus",
+    "abstract": "A non-motorized curved treadmill is completely self-powered equipment operated by human movement. As a walkway, the top surface of its belt has U-shaped concave sag that enables the belt to rotate freely through human footsteps. The concave sag on the upper belt is produced by also allowing the unnecessary sag on the lower belt, which is yet to be known. This study suggests a design method for the curved treadmill accompanied by a mathematical model that enables the prediction of the exact extent of the upper and lower belt sags according to design factors. The mathematical model is presented using the approximated parabola curve instead of the catenary curve, the belt tension, and the wheel friction. An experimental belt system is produced. The extent of the upper and lower belt sags is also measured to compare with the calculated values from algebraic expressions. The theoretical values match the actual measurements, which confirm the validity of the mathematical model. The results of this study will be useful in designing curved treadmills with various geometries.",
     "keyFindings": "Mathematical model enables prediction of upper and lower belt sags according to design factors",
-    "keywords": [],
+    "keywords": ["Belt sag", "Catenary", "Conveyer belt", "Curved treadmill", "Non-motorized", "Parabola"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1007/s12541-017-0043-2",
     "citations": []
   },
   {
     "id": "molphy2017",
     "year": 2017,
-    "title": "The effect of 400 \u00b5g inhaled salbutamol on 3 km time trial performance in a low humidity environment",
+    "title": "The effect of 400 µg inhaled salbutamol on 3 km time trial performance in a low humidity environment",
     "authors": [
       "Molphy, J.",
       "Dickinson, J.W.",
@@ -1388,21 +1390,21 @@
     "population": {
       "ageLower": 18,
       "ageUpper": 35,
-      "sex": "Mixed",
-      "healthStatus": "EVH+ve/EVH-ve",
+      "sex": "Male",
+      "healthStatus": "Exercise-Induced Bronchoconstriction",
       "expertise": "Recreational"
     },
     "sampleSize": 14,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "14 participants (7 EVH+ve, 7 EVH-ve) performed 3 km running time-trials on non-motorized treadmill 15 minutes following inhalation of salbutamol, placebo, or control.",
-    "keyFindings": "400\u00b5g inhaled salbutamol does not improve 3 km time-trial performance despite significantly increased HR and FEV1",
-    "keywords": [],
+    "treadmillFocus": "Utility",
+    "abstract": "The Objectives of the study were to investigate whether 400 μg inhaled salbutamol <i>[known as albuterol in US]</i> influences 3 km running time-trial performance and lung function in eucapnic voluntary hyperpnoea positive (EVH+ve) and negative (EVH-ve) individuals. Fourteen male participants (22.4 ± 1.6yrs; 76.4 ± 8.7kg; 1.80 ± 0.07 m); (7 EVH+ve; 7 EVH-ve) were recruited following written informed consent. All participants undertook an EVH challenge to identify either EVH+ve ( ↓ FEV<sub>1</sub>>10%) or EVH-ve ( ↓ FEV<sub>1</sub><10%). Participants performed three separate 3 km running time-trials in a low-humidity (20-25%) environment on a non-motorized treadmill, 15 minutes following inhalation of salbutamol (400 μg), placebo (non-active inhalant) or control (no inhalant), in a randomized, single-blind, repeated measures design. Forced vital capacity maneuvers were performed at baseline, 10 minutes post inhalation and post time-trial. Time to complete 3 km and lung function data were analyzed using mixed model repeated measures ANOVA. Significance was assumed at p < 0.05. All EVH+ve participants had FEV<sub>1</sub> falls from baseline between 10-25% post-challenge. There was no difference in performance time between trial conditions in EVH+ve (1012.7 ± 129.6s; 1002.4 ± 123.1s; 1015.9 ± 113.0s) (p = 0.774) and EVH-ve (962.1 ± 99.2s; 962.0 ± 76.2s; 950.8 ± 84.9s) (p = 0.401) groups for salbutamol, placebo and control trials, respectively. Exercising heart rate was significantly higher  (p = 0.05) in the salbutamol trial (183 ± 8 beats•min <sup>-1</sup>) compared  to control (180 ± 9 beats•min<sup>-1</sup>) with a trend towards significance (p=0.06) in the placebo trial (179 ± 9 beats•min<sup>-1</sup>) for the pooled groups, no differences were seen between trials in groups individually. There was an increase in FEV<sub>1</sub> in both EVH+ve (4.01 ± 0.8L; 4.26 ± 0.7L; 4.25 ± 0.5L) and EVH-ve (4.81 ± 0.4L; 5.1 ± 0.4L; 5.1 ± 0.5L) groups which was significant postinhalation (p = 0.01; p = 0.02), but not post-time-trial (p = 0.27; p = 0.06), respectively, following salbutamol. EVH+ve participants did not demonstrate significant falls (>10% from baseline) in FEV<sub>1</sub> following any time-trial. Administration of 400μg inhaled salbutamol does not improve 3 km time-trial performance in either mild EVH+ve or EVH-ve individuals despite significantly increased HR and FEV<sub>1</sub>.",
+    "keyFindings": "400 µg inhaled salbutamol does not improve 3 km time-trial performance despite significantly increased HR and FEV<sub>1</sub>",
+    "keywords": ["Asthma", "exercise", "bronchoconstriction", "ergogenic", "bronchoprovocation"],
     "openAccess": true,
-    "DOI": "",
+    "DOI": "https://www.jssm.org/jssm-16-581.xml-Fulltext",
     "citations": []
   },
   {
@@ -1414,63 +1416,27 @@
     ],
     "journal": "Gait & Posture",
     "methods": [
-      "Biomechanical Analysis"
+      "Biomechanical Analysis",
+      "Motion Capture"
     ],
     "population": {
       "ageLower": 18,
-      "ageUpper": 45,
-      "sex": "Mixed",
+      "ageUpper": 35,
+      "sex": "Male",
       "healthStatus": "Healthy",
       "expertise": "Recreational"
     },
     "sampleSize": 10,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
     "treadmillFocus": "",
-    "abstract": "Developed CI2 method to calculate confidence-intervals on time-series bivariate plots. Test data were knee and ankle angles from 10 participants running on motorised and curved non-motorised treadmills.",
+    "abstract": "Currently no method exists for calculating and comparing the confidence-intervals (CI) for the time-series of a  bivariate plot. The study's aim was to develop 'CI2' as a method to calculate the CI on time-series bivariate  plots, and to identify if the CI between two bivariate time-series overlap. The test data were the knee and ankle  angles from 10 healthy participants running on a motorised standard-treadmill and non-motorised curvedtreadmill. For a recommended 10+ trials, CI2 involved calculating 95% confidence-ellipses at each time-point,  then taking as the CI the points on the ellipses that were perpendicular to the direction vector between the  means of two adjacent time-points. Consecutive pairs of CI created convex quadrilaterals, and any overlap of  these quadrilaterals at the same time or ±1 frame as a time-lag calculated using cross-correlations, indicated  where the two time-series differed. CI2 showed no group differences between left and right legs on both  treadmills, but the same legs between treadmills for all participants showed differences of less knee extension  on the curved-treadmill before heel-strike. To improve and standardise the use of CI2 it is recommended to  remove outlier time-series, use 95% confidence-ellipses, and scale the ellipse by the fixed Chi-square value  as opposed to the sample-size dependent F-value. For practical use, and to aid in standardisation or future  development of CI2, Matlab code is provided. CI2 provides an effective method to quantify the CI of bivariate  plots, and to explore the differences in CI between two bivariate time-series. N=10 Males (21.4±4.1years; 75.6±7.0kg; 1.81±0.08m)",
     "keyFindings": "CI2 method provides effective quantification of CI for bivariate plots and exploration of differences between time-series",
-    "keywords": [],
+    "keywords": ["Angle-angle", "Biomechanics", "Coordination", "Phase-plot", "Spatial", "Variability"],
     "openAccess": false,
-    "DOI": "",
-    "citations": []
-  },
-  {
-    "id": "pelka2017",
-    "year": 2017,
-    "title": "Acute effects of psychological relaxation techniques between two physical tasks",
-    "authors": [
-      "Pelka, M.",
-      "K\u00f6lling, S.",
-      "Ferrauti, A.",
-      "Meyer, T.",
-      "Pfeiffer, M.",
-      "Kellmann, M."
-    ],
-    "journal": "Journal of Sports Sciences",
-    "methods": [
-      "Randomized Control Trial",
-      "Crossover Study"
-    ],
-    "population": {
-      "ageLower": 24,
-      "ageUpper": 27,
-      "sex": "Mixed",
-      "healthStatus": "Sport Science Students",
-      "expertise": "Trained"
-    },
-    "sampleSize": 27,
-    "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
-    },
-    "treadmillFocus": "",
-    "abstract": "27 sport science students tested repeated sprint ability twice during day with 25-min breaks including different relaxation interventions. Tests executed on non-motorised treadmill (6 sprints of 4s).",
-    "keyFindings": "Systematic breathing led to better repeated sprint performance compared to control sessions",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1016/j.gaitpost.2016.12.028",
     "citations": []
   },
   {
