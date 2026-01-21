@@ -1800,26 +1800,27 @@
     ],
     "journal": "Gait & Posture",
     "methods": [
-      "Biomechanical Analysis"
+      "Biomechanical Analysis",
+      "Motion Capture"
     ],
     "population": {
       "ageLower": 18,
-      "ageUpper": 45,
+      "ageUpper": 35,
       "sex": "Mixed",
       "healthStatus": "Healthy",
       "expertise": "Recreational"
     },
     "sampleSize": 17,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "Determined validity of automated technique using belt speed data from NMT to estimate temporal-spatial gait parameters in 17 injury-free adults.",
+    "treadmillFocus": "Focus",
+    "abstract": "Non-motorized treadmills (NMT) provide belt speed data that can be used to estimate work output, and potentially, gait temporal-spatial parameters that provide an improved understanding of gait performance. The purpose of this study was to determine the validity of an automated technique that uses belt speed data from an NMT to estimate temporal-spatial gait parameters. Seventeen injuryfree adult participants performed a series of 20-s, metronome-guided walking and running trials for each of eight predetermined cadence conditions (72-200 steps/min). Two NMT-based cadence algorithms [PSD estimated cadence (PEC) and threshold estimated cadence (TEC)], and one NMT-based step length algorithm (NMT_SL) were evaluated for their ability to predict traditional motion analysis-based measures of cadence and step length (MAC and MA_SL, respectively). The results of this study demonstrate that both the PEC and TEC algorithms were capable of predicting MAC with a standard error of the estimate (SEE) less than four steps/min (R<sup>2</sup> = 0.997 and R<sup>2</sup> = 0.993, respectively). Predictions of MA_SL from NMT_SL were separated by gait type (walking vs. running) to account for an obvious separation in the step length data with a qualitative gait change. When applied to walking data, NMT_SL was capable of predicting MA_SL with an SEE of 23 mm (R<sup>2</sup> = 0.96). When applied to running data, NMT_SL was capable of predicting MA_SL with an SEE of 44 mm (R<sup>2</sup> = 0.80). The assessment of the novel technique suggests that it is feasible to use non-motorized treadmill belt speed data to predict gait events and analyze simple gait metrics. Future research should evaluate the applicability of these algorithms for use with participants/patients presenting with pathological gait. N=17 injury-free adult participants (10 men / 7 women; age = 23.9 ± 4.5 years; height = 1.74 ± 0.11 m; total body mass = 74.2 ± 16.1 kg)",
     "keyFindings": "Belt speed data from NMT can predict gait events and analyze gait metrics with high accuracy",
-    "keywords": [],
+    "keywords": ["Non-motorized treadmill", "Gait", "Temporal-spatial", "Gait events"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1016/j.gaitpost.2014.09.017",
     "citations": []
   },
   {
@@ -1855,13 +1856,13 @@
       "brand": "Woodway",
       "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "28 healthy adults completed 30-s maximal sprint on Woodway Curve 3.0. Muscle thickness, CSA, and echo intensity of rectus femoris and vastus lateralis measured via ultrasound.",
+    "treadmillFocus": "Focus",
+    "abstract": "To determine if unilateral measures of muscle architecture in the rectus femoris (RF) and vastus lateralis (VL) were related to (and predictive of) sprinting speed and unilateral (and bilateral) force (FRC) and power (POW) during a 30 s maximal sprint on the Woodway Curve 3.0<sup>TM</sup>, non-motorized treadmill (TM). Twenty-eight healthy, physically active men (n = 14) and women (n = 14) (age = 22.9 ± 2.4 years; body mass = 77.1 ± 16.2 kg; height = 171.6 ± 11.2 cm; body-fa t = 19.4 ± 8.1%) completed one familiarization and one 30-s maximal sprint on the TM to obtain maximal sprinting speed, POW and FRC. Muscle thickness (MT), cross-sectional area (CSA) and echo intensity (ECHO) of the RF and VL in the dominant (DOM; determined by unilateral sprinting power) and non-dominant (ND) legs were measured via ultrasound. Pearson correlations indicated several significant (p < 0.05) relationships between sprinting performance [POW (peak, DOM and ND), FRC (peak, DOM, ND) and sprinting time] and muscle architecture. Stepwise regression indicated that POWDOM was predictive of ipsilateral RF (MT and CSA) and VL (CSA and ECHO), while POWND was predictive of ipsilateral RF (MT and CSA) and VL (CSA); sprinting power/force asymmetry was not predictive of architecture asymmetry. Sprinting time was best predicted by peak power and peak force, though muscle quality (ECHO) and the bilateral percent difference in VL (CSA) were strong architectural predictors. Muscle architecture is related to (and predictive of) TM sprinting performance, while unilateral POW is predictive of ipsilateral architecture. However, the extent to which architecture and other factors (i.e. neuromuscular control and sprinting technique) affect TM performance remains unknown.",
     "keyFindings": "Muscle architecture is related to and predictive of treadmill sprinting performance",
-    "keywords": [],
+    "keywords": ["Asymmetry", "kinetics", "assessment", "power", "technology"],
     "openAccess": false,
-    "DOI": "",
-    "citations": []
+    "DOI": "https://doi.org/10.1080/17461391.2014.969322",
+    "citations": ["gonzalez2013"]
   },
   {
     "id": "morrison2015",
@@ -1880,20 +1881,20 @@
       "ageLower": 18,
       "ageUpper": 35,
       "sex": "Male",
-      "healthStatus": "Team-Sport Athletes",
-      "expertise": "Trained"
+      "healthStatus": "Athlete",
+      "expertise": "Team Sport"
     },
     "sampleSize": 10,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "10 amateur team-sport athletes completed RSR444 protocol (4 sets of 4, 4-s sprints) in normoxia and hypoxia on non-motorized treadmill. Performance maintained in normoxia but not hypoxia.",
+    "treadmillFocus": "Utility",
+    "abstract": "The present study compared the performance (peak speed, distance, and acceleration) of ten amateur team-sport athletes during a clustered (i.e., multiple sets) repeated-sprint protocol, (4 sets of 4, 4-s running sprints; i.e., RSR444) in normobaric normoxia (FiO<sub>2</sub> = 0.209; i.e., RSN) with normobaric hypoxia (FiO2 = 0.140; i.e., RSH). Subjects completed two separate trials (i. RSN, ii. RSH; randomised order) between 48 h and 72 h apart on a non-motorized treadmill. In addition to performance, we  examined blood lactate concentration [La-] and arterial oxygen saturation (SpO<sub>2</sub>) before, during, and after the RSR444. While there were no differences in peak speed or distance during set 1 or set 2, peak speed (p = 0.04 and 0.02, respectively) and distance (p = 0.04 and 0.02, respectively) were greater during set 3 and set 4 of RSN compared with RSH. There was no difference in the average acceleration achieved in set 1 (p = 0.45), set 2 (p = 0.26), or set 3 (p = 0.23) between RSN and RSH; however, the average acceleration was greater in RSN than RSH in set 4 (p <  0.01). Measurements of [La-] were higher during RSH than RSN immediately after Sprint 16 (10.2 ± 2.5 vs 8.6 ± 2.6 mM; p = 0.02). Estimations of SpO2 were lower during RSH than RSN, respectively, immediately prior to the commencement of the test (89.0 ± 2.0 vs 97.2 ± 1.5 %), post Sprint 8 (78.0 ± 6.3 vs 93.8 ± 3.6 %) and post Sprint 16 (75.3 ± 6.3 vs 94.5 ± 2.5 %; all p < 0.01). In summary, the RSR444 is a practical protocol for the implementation of a hypoxic repeated-sprint training intervention into the training schedules of team-sport athletes. However, given the inability of amateur team-sport athletes to maintain performance in hypoxic (FiO<sub>2</sub> = 0.140) conditions, the potential for specific training outcomes (i.e. speed) to be achieved will be compromised, thus suggesting that the RSR444 should be used with caution.",
     "keyFindings": "Amateur team-sport athletes unable to maintain performance in hypoxic conditions during RSR444 protocol",
-    "keywords": [],
+    "keywords": ["Acceleration", "altitude", "football", "multiple-set"],
     "openAccess": true,
-    "DOI": "",
+    "DOI": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4657430/",
     "citations": []
   },
   {
@@ -1914,20 +1915,20 @@
       "ageLower": 18,
       "ageUpper": 35,
       "sex": "Mixed",
-      "healthStatus": "Healthy Athletes",
-      "expertise": "Trained"
+      "healthStatus": "Healthy",
+      "expertise": "Recreational"
     },
     "sampleSize": 10,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve XL"
     },
-    "treadmillFocus": "",
-    "abstract": "10 healthy athletic adults walked and ran on NMCT and SMT at matched speeds. Intensity significantly greater for NMCT: Walking 5.9 vs 3.4 METs; Running 10.7 vs 7.3 METs.",
+    "treadmillFocus": "Focus",
+    "abstract": "<b>Objective:</b> To determine whether exercise performed on a non-motorized, curved treadmill (NMCT) provides greater physiologic stimulus compared to a standard motorized treadmill (SMT). Study design: Crossover. <b>Setting:</b> Clinical research laboratory. <b>Participants:</b> 10 healthy athletic adults. <b> Main outcome measures:</b> Participants walked (1.34 m s<sup>-1</sup>) for 3 min and ran (2.24 m s <sup>-1</sup>) for 4 min on NMCT and SMT (randomized order) while metabolic data and rating of perceived exertion (RPE) were collected. Participants then identified preferred easy and moderate intensity training paces on each treadmill while blinded to speed. Repeated-measures ANOVA and Wilcoxon Signed-Rank tests were used to compare responses between treadmills. <b>Results:</b> Intensity was significantly greater (P < 0.001) for NMCT than SMT [mean (95% confidence interval): Walking = 5.9(5.3,6.4) vs. 3.4(3.0,3.7) METs; Running = 10.7(9,6,11.7) vs. 7.3(6.8,7.8) METs]. Overall RPE was significantly greater (P < 0.01) on NMCT than SMT for walking [median (inter-quartile range): 7(1) vs. 6(0.8)] and running [11.5(3) vs. 8(2.5)]. Preferred speed was significantly slower on NMCT than SMT for easy [2.5(2.3,2.7) vs. 2.8(2.5,3.1) m s <sup>-1</sup>] and moderate [3.2(3.0,3.4) vs. 3.5(3.1,3.9) m s <sup>-1</sup>] intensities. <b>Conclusions:</b> NMCT elicits greater physiological stimulus than SMT with small, though statistically significant, changes in RPE at matched speeds. Clinicians must be aware of differences in intensity and RPE when prescribing exercise on NMCT. N=10 (5 male and 5 female; Age = 28.1 ± 9.8 y; Height = 1.77 ± 0.13 m; Mass = 70.3 ± 12.4 kg; BMI = 22.3 ± 2.3 kg m <sup>-2</sup>).",
     "keyFindings": "NMCT elicits greater physiological stimulus than SMT with small but significant changes in RPE at matched speeds",
-    "keywords": [],
+    "keywords": ["Jogging", "Energy expenditure", "Woodway Curve", "Oxygen consumption"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1016/j.ptsp.2014.09.001",
     "citations": []
   },
   {
@@ -1950,20 +1951,20 @@
       "ageLower": 19,
       "ageUpper": 45,
       "sex": "Male",
-      "healthStatus": "Runners",
-      "expertise": "Trained"
+      "healthStatus": "Athlete",
+      "expertise": "Runner"
     },
     "sampleSize": 17,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "17 male runners performed familiarization then 2 separate maximal 5 km running time trials on non-motorized treadmill. Most physiological responses demonstrated good reliability.",
+    "treadmillFocus": "Focus",
+    "abstract": "The purpose of the study was to establish the reliability of performance and physiological responses during a self-paced 5 km running time trial on a non-motorized treadmill. 17 male runners (age: 32 ± 13 years, height: 177 ± 7 cm, body mass: 71 ± 9 kg, sum of 7 skinfolds: 55 ± 21 mm) performed familiarization then 2 separate maximal 5 km running time trials on a non-motorized treadmill. Physiological responses measured included heart rate, oxygen uptake, expired air volume, blood lactate concentration, tissue saturation index and integrated electromyography.  Running time (1522 ± 163 s vs. 1519 ± 162 s for trials 1 and 2, respectively) demonstrated a low CV of 1.2% and high ICC of 0.99. All physiological variables had CVs of less than 4% and ICCs of > 0.92, with the exception of blood lactate concentration (7.0 ± 2 mmol · L<sup>-1</sup> vs. 6.5± 1.5 mmol · L<sup>-1</sup> for trials 1 and 2, respectively; CV: 12 %, ICC: 0.83) and the electromyography measures (CV: 8-27 %, ICC: 0.71-0.91). The data demonstrate that performance time in a 5 km running time trial on a non-motorized treadmill is a highly reliable test. Most physiological responses measured across the 5 km run also demonstrated good reliability.",
     "keyFindings": "Performance time in 5 km running time trial on non-motorized treadmill is highly reliable (CV: 1.2%, ICC: 0.99)",
-    "keywords": [],
+    "keywords": ["reproducibility of results","physical endurance","sports performance","pacing strategy","electromyography","near-infrared spectroscopy"],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "https://doi.org/10.1055/s-0034-1398680",
     "citations": []
   },
   {
@@ -1985,22 +1986,22 @@
     ],
     "population": {
       "ageLower": 18,
-      "ageUpper": 35,
+      "ageUpper": 45,
       "sex": "Male",
-      "healthStatus": "Runners",
-      "expertise": "Trained"
+      "healthStatus": "Athlete",
+      "expertise": "Runner"
     },
     "sampleSize": 10,
     "treadmill": {
       "brand": "Woodway",
       "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "10 male runners performed randomised 5-km time trials on NMT and outdoor athletics track. Strong correlations suggest NMT is valid tool for assessment of endurance running performance.",
+    "treadmillFocus": "Focus",
+    "abstract": "This study aimed to test the validity of a non-motorised treadmill (NMT) for the measurement of self-paced overground endurance running performance. Ten male runners performed randomised 5-km running time trials on a NMT and an outdoor athletics track. A range of physiological and perceptual responses was measured, and foot strike was classified subjectively. Performance time was strongly correlated (r = 0.82, ICC = 0.86) between running modes, despite running time being significantly longer on the NMT (1264 ± 124 s vs. 1536 ± 130 s for overground and NMT, respectively; P < 0.001). End blood lactate concentration and rating of perceived exertion were significantly higher on the NMT compared to overground. Integrated electromyography was significantly lower on the NMT for three muscles (P < 0.05), and mean stride rate was also significantly lower on the NMT (P = 0.04). Cardiorespiratory responses of heart rate, oxygen uptake and expired air volume demonstrated strong correlations (r = 0.68-0.96, ICC = 0.75-0.97) and no statistical differences (P > 0.05). Runners were consistently slower on the NMT, and as such it should not be used to measure performance over a specific distance. However, the strong correlations suggest that superior overground performance was reflected in relative terms on the NMT, and therefore, it is a valid tool for the assessment of endurance running performance in the laboratory. N= 10 Males (age: 33 ± 13 years, height: 175 ± 5 cm, body mass: 70 ± 10 kg, sum of seven skinfolds: 53 ± 20 mm)",
     "keyFindings": "Performance time strongly correlated between NMT and overground (r=0.82); runners consistently slower on NMT",
-    "keywords": [],
-    "openAccess": true,
-    "DOI": "",
+    "keywords": ["exercise performance", "exercise physiology", "endurance training", "performance test", "pacing strategy", "electromyography"],
+    "openAccess": false,
+    "DOI": "https://doi.org/10.1080/02640414.2014.986502",
     "citations": []
   },
   {
