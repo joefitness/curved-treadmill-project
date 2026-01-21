@@ -1758,7 +1758,7 @@
   {
     "id": "barreira2015",
     "year": 2015,
-    "title": "Asymmetry after hamstring injury in english premier league: issue resolved, or perhaps not?",
+    "title": "Asymmetry after hamstring injury in english premier league: Issue resolved, or perhaps not?",
     "authors": [
       "Barreira, P.",
       "Drust, B.",
@@ -1773,20 +1773,20 @@
       "ageLower": 20,
       "ageUpper": 27,
       "sex": "Male",
-      "healthStatus": "Athletes (Football)",
-      "expertise": "Elite"
+      "healthStatus": "Athlete",
+      "expertise": "Soccer"
     },
     "sampleSize": 17,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve 3.0"
     },
-    "treadmillFocus": "",
-    "abstract": "Assessed horizontal force deficits during maximum sprint running on non-motorized treadmill in Premier League football players with previous hamstring strains.",
-    "keyFindings": "No significant differences in peak forces between previously injured and non-injured limbs",
-    "keywords": [],
-    "openAccess": true,
-    "DOI": "",
+    "treadmillFocus": "Utility",
+    "abstract": "Hamstring injuries constitute one of the most concerning injuries in English Premier League football, due to its high primary incidence but also its recurrence. Functional methods assessing hamstring function during high-risk performance tasks such as sprinting are vital to identify potential risk factors. The purpose of this study was to assess horizontal force deficits during maximum sprint running on a non-motorized treadmill in football players with previous history of hamstring strains as a pre-season risk-assessment in a club setting. 17 male football players from one Premier League Club were divided into 2 groups, experimental (n= 6, age = 24.5 ± 2.3 years) and control (n= 11, age = 21.3 ± 1.2 years), according to history of previous hamstring injury. Participants performed a protocol including a 10 seconds maximum sprint on a non-motorized treadmill. Force deficits during acceleration phase and steady state phases of the sprint were assessed between limbs and between groups. The main outcome measures were horizontal and vertical peak forces during the acceleration phase or steady state. There were no significant differences in peak forces between previously injured and non-injured limbs, or between groups, challenging the ideas around functional force deficits in sprint running as a diagnostic measure of hamstring re-injury risk.",
+    "keyFindings": "No significant differences in peak forces between previously injured and non-injured limbs. This is one of the first studies to feature the force plate data from a CNMT treadmill.",
+    "keywords": ["biomechanics", "multivariate statistics", "vector-field analysis", "random field theory", "experimental error"],
+    "openAccess": false,
+    "DOI": "http://www.ncbi.nlm.nih.gov/pubmed/25700101",
     "citations": []
   },
   {
