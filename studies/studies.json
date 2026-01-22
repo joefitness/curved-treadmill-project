@@ -182,7 +182,7 @@
     "population": {
       "ageLower": 20,
       "ageUpper": 33,
-      "sex": "Women",
+      "sex": "Female",
       "healthStatus": "Healthy",
       "expertise": "Recreational"
     },
@@ -2067,7 +2067,7 @@
     "population": {
       "ageLower": 18,
       "ageUpper": 35,
-      "sex": "Men",
+      "sex": "Male",
       "healthStatus": "Healthy",
       "expertise": "Recreational"
     },
