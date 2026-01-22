@@ -2226,7 +2226,7 @@
   {
     "id": "seneli2013",
     "year": 2013,
-    "title": "Estimated V(O2)max from the rockport walk test on a nonmotorized curved treadmill",
+    "title": "Estimated VO2max from the rockport walk test on a nonmotorized curved treadmill",
     "authors": [
       "Seneli, R.M.",
       "Ebersole, K.T.",
@@ -2246,51 +2246,15 @@
     },
     "sampleSize": 23,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Curved Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "23 healthy adults performed Rockport Walk Test on measured indoor track and on curved treadmill. All VO2max estimations different from observed except for one equation on track.",
+    "treadmillFocus": "Focus",
+    "abstract": "The Rockport Walk Test (RWT) is a 1-mile walk used to estimate the maximal volume of oxygen uptake (VO2max). The purpose of this study was to validate the RWT on a nonmotorized curved treadmill (CT). Twenty-three healthy adults (10 females; 19-44 years old) participated. One trial of the RWT was performed on a measured indoor track (RWTO) and another on the CT (RWTC) on different days in randomized order. Heart rate (HR) and completion time were used to calculate VO2max using 6 different general and gender specific equations from previous research. Subjects also performed a treadmill graded exercise test (GXT), which was used as the criterion measure for VO2max. Completion times and HR between the 2 RWT were compared using dependent t-tests. Estimated VO2max values were compared between the RWTC, RWTO, and GXT through repeated measures analysis of variance, Pearson's correlations (r), and Bland-Altman's plots. There was no difference between completion times for the RWTO and RWTC but HRs were significantly higher with RWTC. When the same equation was applied to the RWTO and RWTC, there were no similar results. All VO2max estimations were different from observed VO2max except for the estimation from the relative general Kline et al. equation on the RWTO. Despite high correlations (r = 0.75-0.91), the RWTC underestimated VO2max. The RWTC underestimates VO2max but may be beneficial if a new equation were created specifically for the CT. With appropriate equations for the CT, the RWTC would provide an alternate form of VO2max testing. N = 23 (10 females and 13 males). Age = 19-44 years; 27.35 ± 6.09 years; Height= 173.02 ± 7.97 cm; weight= 87.57 ± 15.16 kg for males and 68.45 ± 9.09 kg for females",
     "keyFindings": "RWTC underestimates VO2max but may be beneficial if new equation created specifically for curved treadmill",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
-    "citations": []
-  },
-  {
-    "id": "zois2013",
-    "year": 2013,
-    "title": "High-intensity re-warm-ups enhance soccer performance",
-    "authors": [
-      "Zois, J.",
-      "Bishop, D.",
-      "Fairweather, I.",
-      "Ball, K.",
-      "Aughey, R.J."
-    ],
-    "journal": "International Journal of Sports Medicine",
-    "methods": [
-      "Randomized Control Trial",
-      "Crossover Study"
-    ],
-    "population": {
-      "ageLower": 18,
-      "ageUpper": 35,
-      "sex": "Mixed",
-      "healthStatus": "Team-Sport Athletes",
-      "expertise": "Trained"
-    },
-    "sampleSize": 23,
-    "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
-    },
-    "treadmillFocus": "",
-    "abstract": "Participants performed 2\u00d726-min periods of intermittent activity protocol on non-motorized treadmill, interspersed by 15-min passive recovery, 3-min small-sided game, or 5RM leg-press. Various performance measures assessed.",
-    "keyFindings": "5RM leg-press re-warm-up improved physical performance; small-sided game re-warm-up enhanced skill execution",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["oxygen consumption", "submaximal testing", "exercise testing", "aerobic performance", "heart rate"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1519/JSC.0b013e31828f04d8",
     "citations": []
   },
   {
@@ -2312,23 +2276,23 @@
       "Metabolic Testing"
     ],
     "population": {
-      "ageLower": 18,
+      "ageLower": 24,
       "ageUpper": 45,
       "sex": "Mixed",
-      "healthStatus": "Type 1 Diabetes",
-      "expertise": "N/A"
+      "healthStatus": "Metabolic Condition",
+      "expertise": "Type 1 Diabetes"
     },
     "sampleSize": 7,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "Seven T1DM individuals consumed isomaltulose or dextrose before incremental run followed by 10-min all-out performance test on nonmotorized treadmill.",
+    "treadmillFocus": "Utility",
+    "abstract": "<b>Purpose</b> Individuals with type 1 diabetes mellitus (T1DM) are encouraged to reduce rapid-acting insulin and consume CHO to prevent hypoglycemia during or after exercise. However, research comparing the metabolic and performance effects of different CHO is limited. This study compared the alterations in metabolism and fuel oxidation in response to performance running after preexercise ingestion of isomaltulose or dextrose in T1DM. <b>Methods</b> After preliminary testing, on two occasions, seven T1DM individuals consumed 0.6 g·kg<sup>-1</sup> body mass of either dextrose (DEX; glycemic index = 96) or isomaltulose (ISO; glycemic index = 32), 2 h before a discontinuous incremental run to 80% V˙O2peak on a motorized treadmill followed by a 10-min all-out performance test on a nonmotorized treadmill. Blood glucose (BG), acid-base, and cardiorespiratory parameters were measured 2 h before, during, and after both run tests. Data (mean ± SEM) were analyzed using repeated-measures ANOVA. <b>Results</b> Preexercise BG area under the curve was lower under ISO in comparison with DEX (ISO = +4.0 ± 0.3 mmol·L<sup>-1</sup>·h<sup>-1</sup> vs DEX = +7.0 ± 0.6 mmol·L<sup>-1</sup>·h<sup>-1</sup>, P < 0.01). Resting blood lactate concentrations and rate of CHO oxidation under ISO were greater than those elicited under DEX (P < 0.05). There were no metabolic or cardiorespiratory differences between conditions in response to submaximal exercise despite lower BG concentrations under ISO (P < 0.05). T1DM individuals completed the same distance at the same speed during the 10-min run test under both conditions (not significant). <b>Conclusions</b> Consumption of isomaltulose alongside rapid-acting insulin reduction improves BG responses to exercise and produces a similar high-intensity run performance compared with dextrose in T1DM individuals.N=7 (2 men, 5 women; 34 ± 5 years",
     "keyFindings": "Isomaltulose improves blood glucose responses and produces similar high-intensity run performance vs dextrose",
-    "keywords": [],
-    "openAccess": false,
-    "DOI": "",
+    "keywords": ["blood glucose", "fuel oxidation", "cho", "feeding", "glycemic index"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1249/MSS.0b013e31823f6557",
     "citations": []
   },
   {
@@ -2355,13 +2319,13 @@
     },
     "sampleSize": 31,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "Examined effects of 4 weeks training on motorized vs non-motorized treadmills on hamstring/quadriceps strength ratios in 31 subjects.",
+    "treadmillFocus": "Focus",
+    "abstract": "Previous literature suggests that muscular involvement and biomechanical changes elicit different responses between overground and treadmill training. The objective of this study was to examine the effects of training on two different treadmill designs on the conventional (CR; concentric only) and functional (FR; eccentric to concentric) hamstring and quadriceps strength ratios. Fifteen men and sixteen women were randomly divided into three groups: motorized (MT), non-motorized (NMT) or control (C). Subjects completed pre and post-test isokinetic concentric and eccentric quadriceps and hamstring testing of both legs. Subjects completed 4 weeks of training on their respective treadmills with mileage increasing 1/2 mile each week, beginning with 2 miles. The C group did not participate in any training. The CR revealed a significant two way interaction of group x time with MT increasing (pre: 0.80 ± 0.09 to post: 0.84 ± 0.09), NMT decreasing (pre: 0.76 ± 0.13 to post: 0.74 ± 0.10), and C showing no change (pre: 0.79 ± 0.10 to post: 0.79 ± 0.09. The FR revealed a significant two way interaction of speed x sex with the FR increasing as speeds increased for men (60 degrees.s-1: 1.04 ± 0.11; 180 degrees.s<sup>-1</sup>: 1.66± 0.27; 300 degrees•s<sup>-1</sup>: 2.36± 0.45) and women (60 degrees•s<sup>-1</sup>: 1.05 ± 0.16; 180 degrees•s<sup>-1</sup>: 1.90± 0.26; 300 degrees•s<sup>-1</sup>: 2.75 ± 0.47) but women increased greater relative to men. Training mode elicited a specific change in concentric hamstring and quadriceps strength resulting in specific changes to the CR; however, neither training mode had an effect on eccentric hamstrings nor the FR. Special attention should be given to the mode of endurance training when the goal is to alter the hamstring/quadriceps CR. n=15 men (age: 22.67 ± 2.16 years; height 1.78 ± 0.09 m; mass 83.00 ± 14.22 kg) and 16 women (age: 22.31 ± 1.62 years; height 1.65 ± 0.06 m; mass 73.33 ± 15.69 kg)",
     "keyFindings": "Training mode elicited specific changes in concentric strength; no effect on eccentric hamstrings",
-    "keywords": [],
+    "keywords": ["concentric", "eccentric", "conventional", "functional", "running", "walking"],
     "openAccess": true,
     "DOI": "",
     "citations": []
@@ -2378,26 +2342,27 @@
     ],
     "journal": "Journal of Strength and Conditioning Research",
     "methods": [
-      "Metabolic Testing"
+      "Metabolic Testing",
+      "Conference Poster / Presentation"
     ],
     "population": {
       "ageLower": 18,
-      "ageUpper": 35,
+      "ageUpper": 26,
       "sex": "Mixed",
       "healthStatus": "Healthy",
       "expertise": "Recreational"
     },
     "sampleSize": 20,
     "treadmill": {
-      "brand": "Unknown",
-      "model": "Non-Motorized"
+      "brand": "Woodway",
+      "model": "Curve"
     },
-    "treadmillFocus": "",
-    "abstract": "Study examined energy expenditure while walking on a non-motorized treadmill to assess metabolic demands.",
+    "treadmillFocus": "Focus",
+    "abstract": "Historically, non-motorized treadmills have been very large and required the stabilization of participants by either holding onto surrounding objects or wearing a harness during exercise sessions. Recently, smaller curved non-motorized treadmills have become available and are now being utilized in fitness centers. <b>PURPOSE:</b> To determine the physiological responses to walking on a curved non-motorized treadmill and to compare these responses to those of walking on a motorized treadmill. <b>METHODS:</b> Physically active, healthy college students (n = 11, males = 6, females = 5) walked on the motorized (MT) and a curved non-motorized (CT) treadmills at 2.4, 4.0 and 5.6 km · hour<sup>-1</sup>. Each exercise bout lasted for 6 minutes. A 10 minute rest period occurred between exercises on each treadmill and all exercise bouts occurred on the same day. The order of use for the treadmills was randomized. All subjects had experience on both treadmills prior to any testing being performed. Heart rate (HR), oxygen uptake variables (V̇o2, VE, RR, RER), muscle oxygenation (StO2) and ratings of perceived exertion (RPE) during the last minute of each exercise bout were used for analysis. A two-way ANOVA with repeated measures was performed, followed by dependent t-tests where appropriate (*P<0.05). <b>RESULTS:</b> Oxygen uptake variables and HR were all significantly greater for the CT than for the MT (see table below). The RPE and StO<sub>2</sub> variables followed this trend, though not all of the differences were significant (table values in mean ± SD). <sup>DISCUSSION:</sup> All subjects easily performed all speeds on the CT without the assistance of a harness or holding on. All speeds were easily walked, except the CT5.6, which resulted in a very fast walk that bordered on jogging. The increased physical effort, as indicated by higher V̇o2 and HR values, while walking on the CT is probably due to the greater friction and/or increased muscle activation inherent with the use of a non-motorized treadmill. The results indicate that for those individuals who cannot attain desired increases in exercise intensity through jogging or running, significantly increased energy expenditure at the same speed and perceived exertion can occur while walking on the CT. <sup>PRACTICAL APPLICATION:</sup> The increased energy expenditure at each of the given walking speeds on the CT could have dramatic implications for populations that cannot achieve running speeds. For individuals whom are overweight, diseased or returning from injury, walking on the CT could allow the attainment of HR values similar to those achieved during running. The current study utilized a healthy, active population, but the results should be applicable to the aforementioned populations that cannot generally maintain running speeds for desired durations. N=12; 7 males (22.7±2.4 years; 69.5± 2.2 inches; 159.3 ± 13.7 lbs); 6 females (22.4±1.7 years; 64.4±0.8 inches; 132.5±8.7 lbs) ",
     "keyFindings": "Energy expenditure measured during walking on non-motorized treadmill",
     "keywords": [],
     "openAccess": false,
-    "DOI": "",
+    "DOI": "http://journals.lww.com/00124278-201103001-00172",
     "citations": []
   }
 ]
