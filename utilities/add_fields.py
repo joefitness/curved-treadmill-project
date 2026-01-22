@@ -3,8 +3,9 @@ import json
 INPUT_FILE = "test.json"
 OUTPUT_FILE = "test_with_all_fields.json"
 
+# Add the required fields here
 REQUIRED_FIELDS = {
-    "keywords": [],
+    "studyType": [],
     "DOI": "",
     "treadmillFocus": ""
 }
