@@ -2,7 +2,7 @@
 
 A curated research database using curved non-motorized treadmills.
 
-<mark> This project is in active development. Information may be incomplete or inaccurate. </mark>
+ ⚠️ This project is in active development. Information may be incomplete or inaccurate. ⚠️  
 
 ## **studies.json notes**
 
