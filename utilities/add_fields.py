@@ -5,9 +5,29 @@ OUTPUT_FILE = "test_with_all_fields.json"
 
 # Add the required fields here
 REQUIRED_FIELDS = {
-    "studyType": [],
-    "DOI": "",
-    "treadmillFocus": ""
+    "demographics": {
+        "n":0,
+        "ageMean":0,
+        "ageSD": 0,
+        "heightMean": 0,
+        "heightSD": 0,
+        "weightMean": 0,
+        "weightSD": 0,
+        "nMale": 0,
+        "nFemale": 0,
+        "maleAge": 0,
+        "maleAgeSD": 0,
+        "femaleAge": 0,
+        "femaleAgeSD": 0,
+        "maleHeight": 0,
+        "maleHeightSD": 0,
+        "femaleHeight": 0,
+        "femaleHeightSD": 0,
+        "maleWeight": 0,
+        "maleWeightSD": 0,
+        "femaleWeight": 0,
+        "femaleWeightSD": 0
+        }
 }
 
 with open(INPUT_FILE, "r") as f:

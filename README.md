@@ -2,7 +2,13 @@
 
 A curated research database using curved non-motorized treadmills.
 
-*Note:* This project is in active development.
+<mark> This project is in active development. Information may be incomplete or inaccurate. </mark>
+
+## **studies.json notes**
+
+- Height in centimeters
+- Mass / Weight in kilograms
+- Age range is estimated with ±SD if not given excplictly
 
 ---
 **Copyright & Fair Use**  
