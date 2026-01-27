@@ -1,7 +1,7 @@
 // Configuration - update this array with your blog post filenames
 const BLOG_POSTS = [
-    'posts/example-post.md',
-    'posts/getting-started.md',
+    './posts/example-post.md',
+    './posts/getting-started.md',
     // Add more posts here
 ];
 
