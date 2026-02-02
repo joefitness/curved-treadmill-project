@@ -1,6 +1,6 @@
-# Curved-Treadmill-Project  
+# Curved Non-Motorized Treadmill Project  
 
-A curated research database using curved non-motorized treadmills.
+A curated list of research using curved non-motorized treadmills (CNMT).  
 
  ⚠️ This project is in active development. Information may be incomplete or inaccurate. ⚠️  
 
