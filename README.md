@@ -2,7 +2,8 @@
 
 A curated list of research using curved non-motorized treadmills (CNMT).  
 
- ⚠️ This project is in active development. Information may be incomplete or inaccurate. ⚠️  
+**⚠️ WARNING ⚠️**  
+*This project is in active development. Information may be incomplete or inaccurate.*  
 
 ## **studies.json notes**
 
