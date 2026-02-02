@@ -1,4 +1,4 @@
-# Curved Non-Motorized Treadmill Project  
+# Curved Non-Motorized Treadmill Project 🏃🏼‍♀️  
 
 A curated list of research using curved non-motorized treadmills (CNMT).  
 
