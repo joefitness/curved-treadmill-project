@@ -2,6 +2,8 @@
 
 A curated list of research using curved non-motorized treadmills (CNMT).  
 
+Project Link: [https://joefitness.github.io/curved-treadmill-project/](https://joefitness.github.io/curved-treadmill-project/)  
+
 **⚠️ WARNING ⚠️**  
 *This project is in active development. Information may be incomplete or inaccurate.*  
 
