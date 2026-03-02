@@ -1,5 +1,4 @@
 [
-
   {
     "id": "sugiyama2026",
     "year": 2026,
@@ -68,6 +67,71 @@
     "DOI": "https://doi.org/10.1080/17483107.2026.2626848",
     "citations": []
   },
+{
+    "id": "lavoie2025",
+    "year": 2025,
+    "title": "Running and Thinking: Unmasking the Lingering Effects of Sports Concussions Through Complex Dual-Task Testing",
+    "authors": [
+     "Lavoie, G.",
+     "Bolduc, M.",
+     "Sicard, V.",
+     "Lepore, F.",
+     "Ellemberg, D."
+    ],
+    "journal": "Sports",
+    "methods": [
+      "Observational Study"
+    ],
+    "population": {
+      "ageLower": 18,
+      "ageUpper": 25,
+      "sex": "Mixed",
+      "healthStatus": "Healthy",
+      "expertise": "Concussion History",
+      "demographics": {
+        "n": 43,
+        "ageMean": 20.56,
+        "ageSD": 2.24,
+        "heightMean": 0,
+        "heightSD": 0,
+        "weightMean": 0,
+        "weightSD": 0,
+        "nMale": 30,
+        "nFemale": 12,
+        "maleAge": 0,
+        "maleAgeSD": 0,
+        "femaleAge": 0,
+        "femaleAgeSD": 0,
+        "maleHeight": 0,
+        "maleHeightSD": 0,
+        "femaleHeight": 0,
+        "femaleHeightSD": 0,
+        "maleWeight": 0,
+        "maleWeightSD": 0,
+        "femaleWeight": 0,
+        "femaleWeightSD": 0
+      }
+    },
+    "sampleSize": 43,
+    "treadmill": {
+      "brand": "Woodway",
+      "model": "Curve Trainer"
+    },
+    "treadmillFocus": "Utility",
+    "abstract": "<b>Objective:</b> This study investigated gait and cognitive dual-task costs under a dual-task paradigm that was more challenging than the traditional tasks used in research. <b>Methods:</b> A total of 43 18-25-year-old male and female student athletes were recruited (20 asymptomatic concussed athletes who suffered at least one concussion 2.79-7.92 months before testing, 23 never concussed). Athletes performed a complex rapid decision-making and executive function computerized task while walking continuously and maintaining a predetermined speed on a non-motorized treadmill (6.5 km/h). The outcome measures were gait and cognitive dual-task costs. <b>Results:</b> Repeated-measures ANOVAs were conducted to evaluate group differences. Pearson correlations were conducted to evaluate the association between dual-task costs and concussion injury variables. The results showed that both groups experienced greater difficulty with dual-task performance related to gait, whereas only the concussion group exhibited poorer cognitive performance under the dual-task condition (both not significant). The significant correlation between time since injury and gait dual-task cost (r = -0.72, p < 0.001) indicated that athletes with a more recent concussion increased their gait speed whilst athletes with an older concussion reduced their gait speed during the dual-task. Moreover, the cognitive dual-task cost was significantly correlated to symptom recovery (r = 0.461, p = 0.047), suggesting that a longer recovery time from concussion is associated with an increased dual-task cost. <b>Conclusions:</b> While dual-task gait alterations were common to both groups, only individuals with a history of concussion showed specific cognitive impairments under dual-task conditions. The observed associations between dual-task costs and both time since injury and symptom recovery underscore the potential of complex dual-task assessments to provide nuanced insights into post-concussion recovery trajectories and to detect subtle, lingering deficits.",
+    "keyFindings": "CNMT along with a cognitive task may be used to evaluate concussion recovery",
+    "keywords": [
+      "mild traumatic brain injury",
+      "cognition",
+      "gait" ],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.3390/sports13050144",
+    "citations": []
+  },
+
+
+
+
   {
     "id": "benari2025",
     "year": 2025,
