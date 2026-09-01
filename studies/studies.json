@@ -53,12 +53,14 @@
     },
     "treadmillFocus": "Utility",
     "abstract": "<b>Objectives</b> To compare the force and stretch demands experienced by the hamstrings during seven resistance training rehabilitation exercises and progressively increasing running speeds. <b>Methods</b> A cross-sectional design. Ten male and 10 female active participants performed two trials each of four self-paced gait speeds on a treadmill (walk, and jog, run and sprint at 50%, 75% and 100% of maximum effort, respectively) and two sets of six repetitions each of seven resistance training exercises at a rate of perceived exertion ≥8/10. Data from MRI, electromyography and three-dimensional motion capture were used with musculoskeletal modelling to estimate the muscle forces and musculotendinous unit stretch during each task for the biceps femoris long head (BFlh), semimembranosus (SM) and semitendinosus (ST). <b>Results</b> The bilateral Romanian deadlift (RDL) produced significantly greater peak force in the BFlh (1.6BW, 95% CI 1.5 to 1.7) and SM (1.9BW, 95% CI 1.8 to 2.1) than any other resistance training or gait task (p<0.001). Four resistance training exercises generated peak BFlh forces that were not significantly different (p≥0.433) to maximum speed sprinting (1.0 BW, 95% CI 0.9 to 1.1): unilateral hamstring bridge (1.1 BW, 95% CI 0.9 to 1.2) and the unilateral eccentric hip extension, unilateral eccentric slider and Nordic hamstring exercise (NHE) (all 0.9 BW, 95% CI 0.8 to 1.0). The RDL and unilateral hamstring bridge produced significantly greater peak stretch than any other task for BFlh, SM and ST (p<0.001), while the NHE and unilateral eccentric slider produced significantly lower stretch than any other task (p<0.001), except the hip thrust for the ST (p≥0.143). <b>Conclusions</b> The force and stretch demands experienced by the hamstrings during common resistance training exercises ranged from less than walking (eg, hip thrust) to more than sprinting (eg, RDL). However, differences between exercises and running tasks depended on the specific muscle investigated. Our results inform exercise selection strategies for hamstring injury prevention and rehabilitation.",
-    "keyFindings": "",
-    "keywords": [ ],
+    "keyFindings": "A CNMT was used to establish a baseline of hamstring load (force and stretch) at four velocities (walk, 50%, 75%, and 100% effort) for comparison of hamstring load during seven resistance training exercises. ",
+    "keywords": ["hamstring injury", "hamstring health", "injury prevention" ],
     "openAccess": true,
     "DOI": "https://doi.org/10.1136/bjsports-2025-110847",
     "citations": []
   },
+
+
 
 
   {
