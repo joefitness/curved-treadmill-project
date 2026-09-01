@@ -1,5 +1,65 @@
 [
   {
+    "id": "ryan2025",
+    "year": 2025,
+    "title": "Reliability of tests assessing hamstring function during hip extension and their associations with maximal sprinting speed: a cross-sectional study",
+    "authors": [
+      "Ryan, S.F.",
+      "Ju, W.",
+      "Tofari, P.J.",
+      "Hulm, S.",
+      "Constantinou, M.",
+      "Hickey, J.T."
+    ],
+    "journal": "Physical Therapy in Sport",
+    "methods": [
+      "Cross-Sectional Study"
+    ],
+    "population": {
+      "ageLower": 21,
+      "ageUpper": 31,
+      "sex": "Male",
+      "healthStatus": "Healthy",
+      "expertise": "",
+      "demographics": {
+        "n": 20,
+        "ageMean": 26,
+        "ageSD": 5,
+        "heightMean": 181,
+        "heightSD": 7,
+        "weightMean": 81,
+        "weightSD": 7,
+        "nMale": 0,
+        "nFemale": 0,
+        "maleAge": 0,
+        "maleAgeSD": 0,
+        "femaleAge": 0,
+        "femaleAgeSD": 0,
+        "maleHeight": 0,
+        "maleHeightSD": 0,
+        "femaleHeight": 0,
+        "femaleHeightSD": 0,
+        "maleWeight": 0,
+        "maleWeightSD": 0,
+        "femaleWeight": 0,
+        "femaleWeightSD": 0
+      }
+    },
+    "sampleSize": 20,
+    "treadmill": {
+      "brand": "Woodway",
+      "model": "Curve 3.0"
+    },
+    "treadmillFocus": "Utility",
+    "abstract": "<b>Objective:</b> Establish test re-test reliability of three tests assessing hamstring function during hip extention and investigate their associations with maximal sprinting speed. <b>Design:</b> Cross-sectional. <b>Setting:</b> Biomechanics laboratory. <b>Participants:</b> Twenty healthy, physically active men (age = 26 ± 5 years; height = 1.81 ± 0.07 m; body mass = 81 ± 7 kg). <b>Main outcome measures:</b> Participants performed a maximal sprinting speed test on a non-motorised-treadmill (NMT) and three tests assessing hamstring function (hamstring scooter, hamstring push and hamstring switch), during test and re-test sessions seven days apart. Hamstring scooter peak horizontal force was measured using the NMT, while hamstring push and hamstring switch peak hip extension forces were measured using force plates (ForceDecks Lite, Vald Performance, Brisbane, Australia). We calculated each test's intraclass correlation coefficient (ICC) with 95% confidence intervals (95% CI) within (ICC2,1) test and re-test sessions, respectively, and between (ICC2,k) test and re-test sessions, along with Pearson's correlation coefficient (r-value) with maximal sprinting speed. <b>Results:</b> Test re-test reliability ranged from moderate to excellent for all tests. The hamstring scooter was the only test with a statistically significant association (p < 0.01; r = 0.76) with maximal sprinting speed. Conclusions: The tests described in this study all had moderate to excellent test re-test reliability, but only the hamstring scooter was associated with maximal sprinting speed.",
+    "keyFindings": "",
+    "keywords": ["Horizontal force", "Isometric", "Plyometric", "Strength"],
+    "openAccess": true,
+    "DOI": "https://doi.org/10.1016/j.ptsp.2025.07.005",
+    "citations": []
+  },
+
+  {
     "id": "breed2026",
     "year": 2026,
     "title": "Hamstring force and stretch during progressively increasing running speeds and the eccentric phase of resistance training exercises commonly used for injury prevention and rehabilitation",
@@ -59,9 +119,6 @@
     "DOI": "https://doi.org/10.1136/bjsports-2025-110847",
     "citations": []
   },
-
-
-
 
   {
     "id": "sugiyama2026",
