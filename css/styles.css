@@ -209,11 +209,11 @@
             background-color: transparent;
         }
 
-        .study-card.utility::before {
+        .study-card.applied::before {
             background-color: #c8e6c9;
         }
 
-        .study-card.focus::before {
+        .study-card.methodological::before {
             background-color: #ffe0b2;
         }
 
