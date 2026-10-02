@@ -1,72 +1,26 @@
 let studiesData = []
 let filteredStudies = []
 
-// ---------------------------------------------------------------------------
-// DOM helpers: tolerate filters that are removed or commented out of the HTML
-// ---------------------------------------------------------------------------
-
-const $ = id => document.getElementById(id)
-
-// Read a control's value; a missing control yields a neutral default
-// (empty string = "no constraint" for every filter below).
-function getValue (id, fallback = '') {
-  return $(id)?.value ?? fallback
-}
-
-// Set a control's value only if it exists.
-function setValue (id, value) {
-  const el = $(id)
-  if (el) el.value = value
-}
-
-// Append <option>s to a <select>, if that <select> exists.
-function populateSelect (id, values) {
-  const select = $(id)
-  if (!select) return
-  values.forEach(value => {
-    const option = document.createElement('option')
-    option.value = value
-    option.textContent = value
-    select.appendChild(option)
-  })
-}
-
-// Attach a listener only if the element exists.
-function bind (id, eventName, handler) {
-  $(id)?.addEventListener(eventName, handler)
-}
-
-// ---------------------------------------------------------------------------
-// Data loading
-// ---------------------------------------------------------------------------
-
+// Load data from JSON file
 fetch('studies/studies.json')
-  .then(response => {
-    if (!response.ok) throw new Error(`HTTP ${response.status}`)
-    return response.json()
-  })
+  .then(response => response.json())
   .then(data => {
     studiesData = data
     filteredStudies = [...studiesData]
     populateFilters()
-    filterAndSortStudies()
+    filterAndSortStudies() // Changed from displayStudies() to apply sorting
   })
   .catch(error => {
     console.error('Error loading studies:', error)
-    const container = $('studiesContainer')
-    if (container) {
-      container.innerHTML =
-        '<div class="no-results">Error loading studies. Please make sure studies.json is in the same directory.</div>'
-    }
+    document.getElementById('studiesContainer').innerHTML =
+      '<div class="no-results">Error loading studies. Please make sure studies.json is in the same directory.</div>'
   })
 
-// ---------------------------------------------------------------------------
-// UI behavior
-// ---------------------------------------------------------------------------
-
 function toggleFilters () {
-  $('filterSection')?.classList.toggle('collapsed')
-  document.querySelector('.filter-toggle')?.classList.toggle('collapsed')
+  const filterSection = document.getElementById('filterSection')
+  const toggleButton = document.querySelector('.filter-toggle')
+  filterSection.classList.toggle('collapsed')
+  toggleButton.classList.toggle('collapsed')
 }
 
 function populateFilters () {
@@ -84,48 +38,73 @@ function populateFilters () {
     }
   })
 
-  populateSelect('methodFilter', methods)
-  populateSelect('sexFilter', Array.from(sexOptions).sort())
-  populateSelect('healthStatusFilter', Array.from(healthStatuses).sort())
+  const methodFilter = document.getElementById('methodFilter')
+  methods.forEach(method => {
+    const option = document.createElement('option')
+    option.value = method
+    option.textContent = method
+    methodFilter.appendChild(option)
+  })
 
-  const treadmillBrandCheckboxes = $('treadmillBrandCheckboxes')
-  if (treadmillBrandCheckboxes) {
-    Array.from(treadmillBrands)
-      .sort()
-      .forEach(brand => {
-        const div = document.createElement('div')
-        div.className = 'checkbox-item'
+  const sexFilter = document.getElementById('sexFilter')
+  Array.from(sexOptions)
+    .sort()
+    .forEach(sex => {
+      const option = document.createElement('option')
+      option.value = sex
+      option.textContent = sex
+      sexFilter.appendChild(option)
+    })
 
-        const checkbox = document.createElement('input')
-        checkbox.type = 'checkbox'
-        checkbox.id = `brand-${brand}`
-        checkbox.value = brand
-        checkbox.addEventListener('change', filterAndSortStudies)
+  const treadmillBrandCheckboxes = document.getElementById(
+    'treadmillBrandCheckboxes'
+  )
+  Array.from(treadmillBrands)
+    .sort()
+    .forEach(brand => {
+      const div = document.createElement('div')
+      div.className = 'checkbox-item'
 
-        const label = document.createElement('label')
-        label.htmlFor = `brand-${brand}`
-        label.textContent = brand
+      const checkbox = document.createElement('input')
+      checkbox.type = 'checkbox'
+      checkbox.id = `brand-${brand}`
+      checkbox.value = brand
+      checkbox.addEventListener('change', filterAndSortStudies)
 
-        div.appendChild(checkbox)
-        div.appendChild(label)
-        treadmillBrandCheckboxes.appendChild(div)
-      })
-  }
+      const label = document.createElement('label')
+      label.htmlFor = `brand-${brand}`
+      label.textContent = brand
+
+      div.appendChild(checkbox)
+      div.appendChild(label)
+      treadmillBrandCheckboxes.appendChild(div)
+    })
+
+  const healthStatusFilter = document.getElementById('healthStatusFilter')
+  Array.from(healthStatuses)
+    .sort()
+    .forEach(status => {
+      const option = document.createElement('option')
+      option.value = status
+      option.textContent = status
+      healthStatusFilter.appendChild(option)
+    })
 }
 
 function filterAndSortStudies () {
-  const searchTerm = getValue('search').toLowerCase()
-  const methodFilter = getValue('methodFilter')
-  const minAge = getValue('minAge')
-  const maxAge = getValue('maxAge')
-  const sexFilter = getValue('sexFilter')
-  const openAccessFilter = getValue('openAccessFilter')
-  const healthStatusFilter = getValue('healthStatusFilter')
-  const treadmillFocusFilter = getValue('treadmillFocusFilter')
-  const sortBy = getValue('sortBy', 'date-desc')
+  const searchTerm = document.getElementById('search').value.toLowerCase()
+  const methodFilter = document.getElementById('methodFilter').value
+  const minAge = document.getElementById('minAge').value
+  const maxAge = document.getElementById('maxAge').value
+  const sexFilter = document.getElementById('sexFilter').value
+  const openAccessFilter = document.getElementById('openAccessFilter').value
+  const healthStatusFilter = document.getElementById('healthStatusFilter').value
+  const treadmillFocusFilter = document.getElementById(
+    'treadmillFocusFilter'
+  ).value
+  const sortBy = document.getElementById('sortBy').value
 
-  // querySelectorAll returns an empty NodeList (not null) when the container
-  // is absent, so this is already safe: no brands selected = no constraint.
+  // Get selected treadmill brands
   const selectedBrands = Array.from(
     document.querySelectorAll('#treadmillBrandCheckboxes input:checked')
   ).map(cb => cb.value)
@@ -191,11 +170,10 @@ function filterAndSortStudies () {
         return a.year - b.year
       case 'title':
         return a.title.localeCompare(b.title)
-      case 'author': {
+      case 'author':
         const lastNameA = a.authors[0].split(',')[0].trim()
         const lastNameB = b.authors[0].split(',')[0].trim()
         return lastNameA.localeCompare(lastNameB)
-      }
       default:
         return 0
     }
@@ -225,17 +203,12 @@ function formatCitation (studyId) {
 }
 
 function displayStudies () {
-  const container = $('studiesContainer')
-  const resultsCount = $('resultsCount')
+  const container = document.getElementById('studiesContainer')
+  const resultsCount = document.getElementById('resultsCount')
 
-  if (resultsCount) {
-    resultsCount.textContent = `${filteredStudies.length} ${
-      filteredStudies.length === 1 ? 'study' : 'studies'
-    } found`
-  }
-
-  // Without a container there is nowhere to render, so stop quietly.
-  if (!container) return
+  resultsCount.textContent = `${filteredStudies.length} ${
+    filteredStudies.length === 1 ? 'study' : 'studies'
+  } found`
 
   if (filteredStudies.length === 0) {
     container.innerHTML =
@@ -363,70 +336,80 @@ function displayStudies () {
 }
 
 function toggleAbstract (studyId) {
-  const abstractDiv = $(`abstract-${studyId}`)
-  if (!abstractDiv) return
+  const abstractDiv = document.getElementById(`abstract-${studyId}`)
   const button = abstractDiv.previousElementSibling
 
   if (abstractDiv.classList.contains('show')) {
     abstractDiv.classList.remove('show')
-    if (button) button.textContent = 'Show Abstract'
+    button.textContent = 'Show Abstract'
   } else {
     abstractDiv.classList.add('show')
-    if (button) button.textContent = 'Hide Abstract'
+    button.textContent = 'Hide Abstract'
   }
 }
 
-// Clear every filter control that exists in the page.
-const FILTER_VALUE_IDS = [
-  'search',
-  'methodFilter',
-  'minAge',
-  'maxAge',
-  'sexFilter',
-  'openAccessFilter',
-  'healthStatusFilter',
-  'treadmillFocusFilter'
-]
-
-function clearFilterControls () {
-  FILTER_VALUE_IDS.forEach(id => setValue(id, ''))
+function filterByCitation (studyId) {
+  document.getElementById('search').value = ''
+  document.getElementById('methodFilter').value = ''
+  document.getElementById('minAge').value = ''
+  document.getElementById('maxAge').value = ''
+  document.getElementById('sexFilter').value = ''
+  document.getElementById('openAccessFilter').value = ''
+  document.getElementById('healthStatusFilter').value = ''
   document
     .querySelectorAll('#treadmillBrandCheckboxes input')
     .forEach(cb => (cb.checked = false))
-}
-
-function filterByCitation (studyId) {
-  clearFilterControls()
 
   filteredStudies = studiesData.filter(study => study.id === studyId)
   displayStudies()
 
   setTimeout(() => {
-    $(`study-${studyId}`)?.scrollIntoView({
-      behavior: 'smooth',
-      block: 'center'
-    })
+    document
+      .getElementById(`study-${studyId}`)
+      .scrollIntoView({ behavior: 'smooth', block: 'center' })
   }, 100)
 }
 
 function resetFilters () {
-  clearFilterControls()
-  setValue('sortBy', 'date-desc')
+  document.getElementById('search').value = ''
+  document.getElementById('methodFilter').value = ''
+  document.getElementById('minAge').value = ''
+  document.getElementById('maxAge').value = ''
+  document.getElementById('sexFilter').value = ''
+  document.getElementById('openAccessFilter').value = ''
+  document.getElementById('healthStatusFilter').value = ''
+  document.getElementById('treadmillFocusFilter').value = ''
+  document.getElementById('sortBy').value = 'date-desc'
+  document
+    .querySelectorAll('#treadmillBrandCheckboxes input')
+    .forEach(cb => (cb.checked = false))
   filterAndSortStudies()
 }
 
-// ---------------------------------------------------------------------------
-// Event wiring (each binding is skipped if its element is absent)
-// ---------------------------------------------------------------------------
-
-;[
-  ['search', 'input'],
-  ['methodFilter', 'change'],
-  ['minAge', 'input'],
-  ['maxAge', 'input'],
-  ['sexFilter', 'change'],
-  ['openAccessFilter', 'change'],
-  ['healthStatusFilter', 'change'],
-  ['treadmillFocusFilter', 'change'],
-  ['sortBy', 'change']
-].forEach(([id, eventName]) => bind(id, eventName, filterAndSortStudies))
+document
+  .getElementById('search')
+  .addEventListener('input', filterAndSortStudies)
+document
+  .getElementById('methodFilter')
+  .addEventListener('change', filterAndSortStudies)
+document
+  .getElementById('minAge')
+  .addEventListener('input', filterAndSortStudies)
+document
+  .getElementById('maxAge')
+  .addEventListener('input', filterAndSortStudies)
+document
+  .getElementById('sexFilter')
+  .addEventListener('change', filterAndSortStudies)
+document
+  .getElementById('openAccessFilter')
+  .addEventListener('change', filterAndSortStudies)
+document
+  .getElementById('healthStatusFilter')
+  .addEventListener('change', filterAndSortStudies)
+document
+  .getElementById('treadmillFocusFilter')
+  .addEventListener('change', filterAndSortStudies)
+document
+  .getElementById('sortBy')
+  .addEventListener('change', filterAndSortStudies)
