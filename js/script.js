@@ -298,6 +298,7 @@ const DEFAULT_CARD_HTML = `
     <span data-section="treadmill"><strong>Treadmill:</strong> <span data-field="treadmill"></span></span>
     <span data-section="doi"><strong>DOI:</strong> <a data-field="doi" target="_blank" rel="noopener noreferrer"></a></span>
   </div>
+  <div data-section="treadmillTask"><strong>Treadmill Task:</strong> <span data-field="treadmillTask"></span></div>
   <div><strong>Key Findings:</strong> <span data-field="keyFindings"></span></div>
   <button type="button" class="abstract-toggle" data-action="toggle-abstract">Show Abstract</button>
   <div class="abstract-content" data-field="abstract"></div>
@@ -380,6 +381,24 @@ function renderCard (study) {
   setField(card, 'year', study.year)
   setField(card, 'journal', study.journal)
   setField(card, 'sampleSize', study.sampleSize)
+  if (study.treadmillTask) {
+    if (!setField(card, 'treadmillTask', study.treadmillTask)) {
+      // Custom #studyCardTpl without a treadmillTask slot: inject one directly above Key Findings
+      const anchor = card.querySelector('[data-field="keyFindings"]')
+      const row = document.createElement('div')
+      row.dataset.section = 'treadmillTask'
+      const label = document.createElement('strong')
+      label.textContent = 'Treadmill Task:'
+      const value = document.createElement('span')
+      value.dataset.field = 'treadmillTask'
+      value.textContent = study.treadmillTask
+      row.append(label, ' ', value)
+      const target = anchor && (anchor.parentElement !== card ? anchor.parentElement : anchor)
+      if (target) target.before(row)
+    }
+  } else {
+    removeSection(card, 'treadmillTask')
+  }
   setField(card, 'keyFindings', study.keyFindings)
   setField(card, 'abstract', study.abstract)
 
