@@ -1,9 +1,62 @@
 [
   {
+    "id": "dabbs2021",
+    "year": 2021,
+    "title": "The Effect of Motorized vs Non-Motorized Treadmills on Exercise Economy during Acute Sub-maximal Bouts in Collegiate Cross-Country Female Athletes",
+    "authors": ["Dabbs, N.C.", "Reid, M.J.", "Wimbish, J.", "Ng, J"],
+    "journal": "International Journal of Kinesiology & Sports Science",
+    "methods": [
+      "Cross-Sectional Study"
+    ],
+    "population": {
+      "ageLower": null,
+      "ageUpper": null,
+      "sex": "Female",
+      "healthStatus": "Healthy",
+      "expertise": "Division II cross-country athletes",
+      "demographics": {
+        "n": 13,
+        "ageMean": 21,
+        "ageSD": 3,
+        "heightMean": 161.5,
+        "heightSD": 4.9,
+        "weightMean": 55.4,
+        "weightSD": 6.4,
+        "nMale": 0,
+        "nFemale": 13,
+        "maleAge": null,
+        "maleAgeSD": null,
+        "femaleAge": 21,
+        "femaleAgeSD": 3,
+        "maleHeight": null,
+        "maleHeightSD": null,
+        "femaleHeight": 161.5,
+        "femaleHeightSD": 4.9,
+        "maleWeight": null,
+        "maleWeightSD": null,
+        "femaleWeight": 55.4,
+        "femaleWeightSD": 6.4
+      }
+    },
+    "sampleSize": 13,
+    "treadmill": {
+      "brand": "Woodway",
+      "model": "Curve 3.0"
+    },
+    "treadmillFocus": "Methodological",
+    "abstract": "<b>Background:</b> Fitness equipment manufacturers have developed non-motorized treadmills (NMT) to better replicate overground running, a characteristic which motorized treadmills (MT) purportedly lack. Because NMTs are novel, limited empirical evidence exists regarding acute physiological and neuromuscular activity responses to its use. Objectives: The purpose of this investigation was to examine the effect of walking and running on an NMT and MT on exercise economy (EE), cardiometabolic responses, lower-body muscle activity, and rating of perceived exertion (RPE) in division II female cross-country athletes. <b>Methods:</b> Thirteen female cross-country athletes volunteered to complete a treadmill protocol that consisted of a warm-up walk, a 5-min walk, a 5-min run, and a 5-min cool-down walk on an NMT and MT on two separate occasions. During both treadmill conditions, VO2, RER, neuromuscular activity, HR, and RPE were recorded and analyzed every minute. <b>Results:</b> VO2 (NMT= 36.8 ± 10.0 ml/kg/min; MT= 27.4 ± 6.7 ml/kg/min), RER (NMT= 1.02 ± 0.14; MT= 0.89 ± 0.08), HR (NMT= 167 ± 18 bpm; MT= 142 ± 21 bpm), and RPE (NMT= 12 ± 2; MT= 9 ± 2) measures were significantly (p<0.05 for all) greater on the NMT than the MT in walking and running. <b>Conclusions:</b> The greater VO2, RER, and HR experienced on the NMT indicates higher physical exertion, and the greater RPE on the NMT indicates the participants' perception of exertion correspond to the physiological responses. While cardiometabolic demand was greater on the NMT, thereby suggesting exercise economy was greater with the MT.",
+    "keyFindings": "VO2, RER, HR, and RPE were significantly higher on the NMT than the MT in both walking and running at matched speeds, indicating lower exercise economy on the NMT. Lower-body muscle activation did not differ between treadmills except for greater vastus lateralis activation during NMT walking.",
+    "treadmillTask": "Walking and running at matched self-selected speeds (5-min walk, 5-min run) on an CNMT and an MT in randomized order.",
+    "keywords": ["Aerobic", "Running", "Electromyography", "Oxygen Uptake", "Walking"],
+    "openAccess": true,
+    "DOI": "10.7575/aiac.ijkss.v.9n.2p.1",
+    "citations": []
+  },
+  {
     "id": "kirby2021",
     "year": 2021,
     "title": "The balance of muscle oxygen supply and demand reveals critical metabolic rate and predicts time to exhaustion",
-    "authors": ["B.S. Kirby", "D.A. Clark", "E.M. Bradley", "B.W. Wilkins"],
+    "authors": ["Kirby, B.S.", "Clark, D.A.", "Bradley, E.M.", "Wilkins, B.W."],
     "journal": "Journal of Applied Physiology",
     "methods": [],
     "population": {
