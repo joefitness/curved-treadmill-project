@@ -1,5 +1,56 @@
 [
   {
+    "id": "kirby2021",
+    "year": 2021,
+    "title": "The balance of muscle oxygen supply and demand reveals critical metabolic rate and predicts time to exhaustion",
+    "authors": ["B.S. Kirby", "D.A. Clark", "E.M. Bradley", "B.W. Wilkins"],
+    "journal": "Journal of Applied Physiology",
+    "methods": [],
+    "population": {
+      "ageLower": null,
+      "ageUpper": null,
+      "sex": "Mixed",
+      "healthStatus": "Healthy, nonsmokers, nonobese, normotensive, no medications",
+      "expertise": "Recreationally active",
+      "demographics": {
+        "n": 17,
+        "ageMean": 32,
+        "ageSD": 2,
+        "heightMean": 178,
+        "heightSD": 2,
+        "weightMean": 73,
+        "weightSD": 4,
+        "nMale": 12,
+        "nFemale": 5,
+        "maleAge": null,
+        "maleAgeSD": null,
+        "femaleAge": null,
+        "femaleAgeSD": null,
+        "maleHeight": null,
+        "maleHeightSD": null,
+        "femaleHeight": null,
+        "femaleHeightSD": null,
+        "maleWeight": null,
+        "maleWeightSD": null,
+        "femaleWeight": null,
+        "femaleWeightSD": null
+      }
+    },
+    "sampleSize": 17,
+    "treadmill": {
+      "brand": "Woodway",
+      "model": "Curve"
+    },
+    "treadmillFocus": "Applied",
+    "abstract": "We tested the hypothesis that during whole body exercise, the balance between muscle O2 supply and metabolic demand may elucidate intensity domains, reveal a critical metabolic rate, and predict time to exhaustion. Seventeen active, healthy volunteers (12 males, 5 females; 32 ± 2 yr) participated in two distinct protocols. Study 1 (n = 7) consisted of constant work rate cycling in the moderate, heavy, and severe exercise intensity domains with concurrent measures of pulmonary V̇O2 and local %SmO2 [via near-infrared spectroscopy (NIRS)] on quadriceps and forearm sites. Average %SmO2 at both sites displayed a domain-dependent response (P < 0.05). A negative %SmO2 slope was evident during severe-domain exercise but was positive during exercise below critical power (CP) at both muscle sites. In study 2 (n = 10), quadriceps and forearm site %SmO2 was measured during three continuous running trials to exhaustion and three intermittent intensity (ratio = 60 s severe: 30 s lower intensity) trials to exhaustion. Intensity-dependent negative %SmO2 slopes were observed for all trials (P < 0.05) and predicted zero slope at critical velocity. %SmO2 accurately predicted depletion and repletion of %D' balance on a second-by-second basis (R2 = 0.99, P < 0.05; both sites). Time to exhaustion predictions during continuous and intermittent exercise were either not different or better with %SmO2 [standard error of the estimate (SEE) < 20.52 s for quad, <44.03 s for forearm] versus running velocity (SEE < 65.76 s). Muscle O2 balance provides a dynamic physiological delineation between sustainable and unsustainable exercise (consistent with a \"critical metabolic rate\") and predicts real-time depletion and repletion of finite work capacity and time to exhaustion.",
+    "keyFindings": "%SmO2 differed by intensity domain at both the quadriceps and forearm. The %SmO2 slope was negative only in the severe domain and zero or positive below critical power/velocity. Slope reached zero at about 98.7% of critical velocity. %SmO2 tracked second-by-second D' balance (R² > 0.94). %SmO2 slope predicted time to exhaustion as well as or better than running velocity.",
+    "treadmillTask": "Self-paced running to volitional exhaustion on a curved treadmill, using 5-min and 15-min time trials, a 10-min constant work rate trial, and intermittent 60 s severe : 30 s recovery trials.",
+    "keywords": ["critical power", "fatigue", "NIRS", "oxygen delivery", "task failure"],
+    "openAccess": false,
+    "DOI": "10.1152/japplphysiol.00058.2021",
+    "citations": []
+  },
+  {
     "id": "jo2022",
     "year": 2022,
     "title": "The Effects of 10-Day Exogenous Ketone Consumption on Repeated Time Trial Running Performances: A Randomized-Control Trial",
