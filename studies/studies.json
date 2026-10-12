@@ -1,5 +1,173 @@
 [
   {
+  "id": "hatchett2018b",
+  "year": 2018,
+  "title": "Energy Expenditure for Aerobic Exercise on a Curved, Non-Motorized Treadmill Versus a Traditional Motorized Treadmill",
+  "authors": [
+    "Hatchett, A.",
+    "Brewer, C.",
+    "Armstrong, K.",
+    "Parr, B."
+  ],
+  "journal": "Archives of Physical Health and Sports Medicine",
+  "methods": [ ],
+  "population": {
+    "ageLower": null,
+    "ageUpper": null,
+    "sex": "Mixed",
+    "healthStatus": "Healthy",
+    "expertise": "Recreationally-trained",
+    "demographics": {
+      "n": 9,
+      "ageMean": 27.2,
+      "ageSD": 10.2,
+      "heightMean": 160.2,
+      "heightSD": 17.3,
+      "weightMean": 79.1,
+      "weightSD": 10.3,
+      "nMale": 4,
+      "nFemale": 5,
+      "maleAge": null,
+      "maleAgeSD": null,
+      "femaleAge": null,
+      "femaleAgeSD": null,
+      "maleHeight": null,
+      "maleHeightSD": null,
+      "femaleHeight": null,
+      "femaleHeightSD": null,
+      "maleWeight": null,
+      "maleWeightSD": null,
+      "femaleWeight": null,
+      "femaleWeightSD": null
+    }
+  },
+  "sampleSize": 9,
+  "treadmill": {
+    "brand": "TrueForm",
+    "model": "Runner"
+  },
+  "treadmillFocus": "Methodological",
+  "abstract": "<b>Background:</b> While running on a traditional motorized treadmill (TMT) and a curved-deck, non-motorized treadmill (CNT) will both result in energy expenditure, it is unknown whether there is a difference in energy expenditure between the TMT and CNT. The purpose of this research was to determine if there is a significant difference in energy expenditure between running on a CNT and TMT for equivalent distances of running. <b>Methods:</b> Nine healthy, recreationally-trained athletes (age 27.2±10.2 years) volunteered to have their effort analyzed while running on a TMT and CNT. After a familiarization period, each subject was randomly assigned to complete their first 1-mile bout on the TMT or CNT. Once completed, they were given sufficient rest before completing the second 1-mile bout on the opposing treadmill. Dependent t-test were used to test for differences between VO2(L*min-1) rate of energy expenditure (REE) (kcals-min1; kcals mile-1), and heart rate (beats min). <b>Results:</b> Running one mile on a CNT resulted in a greater VO2 (p=.0006) REE(kcals-min1 p=.0005; kcals-mile1 p=.0001) and HR (p=.005). <b>Conclusion:</b> These findings indicate that running on a CNT results in a greater metabolic effort. The cause of this demand is yet to be conclusively determined.",
+  "keyFindings": "Running 1 mile on a CNMT results in significantly higher VO2, rate of energy expenditure, and heart rate compared to a traditional MT.",
+  "treadmillTask": "Running a 1-mile distance at a self-selected speed.",
+  "keywords": [
+    "Treadmill",
+    "Curved",
+    "energy expenditure",
+    "calorie expenditure",
+    "heart rate"
+  ],
+  "openAccess": true,
+  "DOI": "10.22259/2639-1805.0101005",
+  "citations": []
+},
+  {
+    "id": "catalavilaplana2025",
+    "year": 2025,
+    "title": "Changes in Frequency Domain Accelerations During Prolonged Running on Different Surfaces",
+    "authors": ["Catalá-Vilaplana, I.", "Encarnación-Martínez, A.", "Pérez-Soriano, P."],
+    "journal": "Applied Sciences",
+    "methods": [
+      "Crossover Study"
+    ],
+    "population": {
+      "ageLower": null,
+      "ageUpper": null,
+      "sex": "Mixed",
+      "healthStatus": "Healthy",
+      "expertise": "Recreational runners",
+      "demographics": {
+        "n": 21,
+        "ageMean": 36,
+        "ageSD": 9,
+        "heightMean": 176,
+        "heightSD": 8,
+        "weightMean": 69,
+        "weightSD": 10,
+        "nMale": 17,
+        "nFemale": 4,
+        "maleAge": null,
+        "maleAgeSD": null,
+        "femaleAge": null,
+        "femaleAgeSD": null,
+        "maleHeight": null,
+        "maleHeightSD": null,
+        "femaleHeight": null,
+        "femaleHeightSD": null,
+        "maleWeight": null,
+        "maleWeightSD": null,
+        "femaleWeight": null,
+        "femaleWeightSD": null
+      }
+    },
+    "sampleSize": 21,
+    "treadmill": {
+      "brand": "Bodytone",
+      "model": "ZRO-T"
+    },
+    "treadmillFocus": "Methodological",
+    "abstract": "Curved non-motorized treadmills (cNMTs) have been demonstrated to reduce impact accelerations in comparison with motorized treadmills (MTs). Most studies have analyzed impacts in the time domain, but analysis in the frequency domain can provide useful information associated with the increase in the running risk of injury. The purpose of this study was to analyze the frequency components (low- and high-frequency bands) of impact accelerations, countermovement jump (CMJ) height, and perceived comfort during a prolonged run on different surfaces: MT, cNMT, and overground (OVG). Twenty-one recreational runners completed three randomized prolonged running tests on cNMT, MT, and OVG for 30 min (80% of the individual maximal aerobic speed). Impact accelerations were registered at minutes 5 and 30 of the test, the countermovement jump test (CMJ) was performed before (PreTest) and after (PostTest) the test, and perceived comfort was determined at the end of each test. A two-way repeated-measures analysis of variance (significance at p < 0.05) showed a reduction on cNMT in both low- and high-frequency bands of impact accelerations, such as head power (p < 0.001, ESd = 3.0) on the cNMT vs. the MT and tibia peak power (p = 0.001, ESd = 2.2) on the cNMT vs. OVG. However, cNMT was perceived as the least comfortable surface by runners. The prolonged running effect decreased impact accelerations during the treadmill running test (MT and cNMT) in the low-frequency band, while CMJ height decreased (p = 0.024, ESd = 1.4) during the PostTest vs. PreTest with the cNMT. Using a cNMT could be an interesting strategy for load reduction in long-distance runners or in return-to-play rehabilitation protocols.",
+    "keyFindings": "Low- and high-frequency impact accelerations were lowest on the CNMT, followed by the MT, and highest overground. The CNMT was rated the least comfortable surface and OVG the most. Over the 30-min run, low-frequency head power, head peak power and tibia peak power frequency decreased on both treadmills, and CMJ height fell about 5.7% on the CNMT only.",
+    "treadmillTask": "30-min run at 80% of maximal aerobic speed on a CNMT, an MT (1% incline) and overground, in randomized order, with accelerometer data taken at minutes 5 and 30.",
+    "keywords": ["biomechanics", "curved treadmill", "accelerometer", "impacts", "frequency components", "locomotion"],
+    "openAccess": true,
+    "DOI": "10.3390/app15189936",
+    "citations": []
+  },
+  {
+    "id": "morrow2022",
+    "year": 2022,
+    "title": "Physiological Responses to Speed-Matched Running on Non-Motorized Assault AirRunner versus Traditional Treadmills in Active Females: A Pilot Study",
+    "authors": ["Morrow, N.", "Weighart, H.", "Alonzo, D.", "Mitchell, K.", "Ives, S.J."],
+    "journal": "International Journal of Exercise Science",
+    "methods": [
+      "Crossover Study"
+    ],
+    "population": {
+      "ageLower": null,
+      "ageUpper": null,
+      "sex": "Female",
+      "healthStatus": "Healthy",
+      "expertise": "Recreationally active runners",
+      "demographics": {
+        "n": 4,
+        "ageMean": 21,
+        "ageSD": 0.4,
+        "heightMean": 165,
+        "heightSD": 1.4,
+        "weightMean": 58.9,
+        "weightSD": 1.6,
+        "nMale": 0,
+        "nFemale": 4,
+        "maleAge": null,
+        "maleAgeSD": null,
+        "femaleAge": 21,
+        "femaleAgeSD": 0.4,
+        "maleHeight": null,
+        "maleHeightSD": null,
+        "femaleHeight": 165,
+        "femaleHeightSD": 1.4,
+        "maleWeight": null,
+        "maleWeightSD": null,
+        "femaleWeight": 58.9,
+        "femaleWeightSD": 1.6
+      }
+    },
+    "sampleSize": 4,
+    "treadmill": {
+      "brand": "Assault",
+      "model": "AirRunner"
+    },
+    "treadmillFocus": "Physiological",
+    "abstract": "Treadmills are utilized as a training tool to improve aerobic fitness, but precise understanding of intensity and the corresponding physiological strain is critical for optimizing exercise prescription and associated adaptations. Running on non-motorized, curved treadmills may result in greater oxygen uptake (VO2), increased heart rate (HR), and increased rating of perceived exertion (RPE) compared to traditional motorized treadmills. The purpose of this study was to investigate the physiological responses on non-motorized versus traditional motorized treadmills during speed-matched running. Participants were 4 college-aged, recreationally active females. HR, VO2, respiratory exchange ratio (RER), and RPE were monitored during 3 speed-matched stages of incremental exercise in two conditions: the non-motorized Assault AirRunner and a traditional motorized treadmill, as well as for 5 minutes post-exercise. VO2, RER, and HR were greater in the Assault condition (ESVO2 = 0.998, ESRER = 0.839, ESHR = 0.972, p < 0.05). While not significant between groups, RPE showed a greater increase with increasing speeds in the Assault condition (ES = 0.728), as did RER (ES = 0.800, p < 0.05). Cumulative excess-post exercise oxygen consumption (EPOC) during a five-minute period post-exercise was also greater in the Assault condition, and HR and RER remained higher five minutes post-exercise in the Assault condition (ESEPOC = 0.738, ESHR = 1.600, ESRER = 2.075, p < 0.05). The Assault AirRunner elicited greater physiological responses (VO2, carbohydrate usage, and HR) in response to speed-matched running in comparison to a traditional motorized treadmill in active college-aged females. Collectively, aerobic exercise conducted on the Assault AirRunner has a greater physiological and perceived intensity and need to be taken into consideration when designing and implementing training programs or testing.",
+    "keyFindings": "VO2, HR and RER were higher on the CNMT than the motorized treadmill at matched speeds (VO2 by about 8.2 mL/kg/min, HR by about 18 bpm, RER by 0.09). EPOC, HR and RER also remained higher 5 min post-exercise. RPE rose more steeply with speed on the CNMT but did not differ significantly between conditions.",
+    "treadmillTask": "Running at matched speeds of 3, 5 and 7 mph (3 min each) on the CNMT and a motorized treadmill, followed by 5 min of seated recovery, in counterbalanced order.",
+    "keywords": ["metabolism", "energy cost", "women", "motorized", "training"],
+    "openAccess": true,
+    "DOI": "10.70252/HCKO2954",
+    "citations": []
+  }, 
+  {
     "id": "dabbs2021",
     "year": 2021,
     "title": "The Effect of Motorized vs Non-Motorized Treadmills on Exercise Economy during Acute Sub-maximal Bouts in Collegiate Cross-Country Female Athletes",
